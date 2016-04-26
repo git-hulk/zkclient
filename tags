@@ -1,0 +1,1654 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACL	winconfig.h	/^#define ACL /;"	d
+ACL	zookeeper.jute.h	/^struct ACL {$/;"	s
+ACL_vector	zookeeper.jute.h	/^struct ACL_vector {$/;"	s
+AF_INET6	winconfig.h	/^#undef AF_INET6$/;"	d
+ASSOCIATING_STATE_DEF	zk_adaptor.h	/^#define ASSOCIATING_STATE_DEF /;"	d
+AUTH_FAILED_STATE_DEF	zk_adaptor.h	/^#define AUTH_FAILED_STATE_DEF /;"	d
+AUTH_XID	zk_adaptor.h	/^#define AUTH_XID /;"	d
+AuthPacket	zookeeper.jute.h	/^struct AuthPacket {$/;"	s
+BACKSPACE	linenoise/linenoise.c	/^	BACKSPACE =  127    \/* Backspace *\/$/;"	e	enum:KEY_ACTION	file:
+BINDIR	Makefile	/^BINDIR=$(INSTALLDIR)\/bin$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -Wall -DTHREADED$/;"	m
+CHANGED_EVENT_DEF	zk_adaptor.h	/^#define CHANGED_EVENT_DEF /;"	d
+CHILD_EVENT_DEF	zk_adaptor.h	/^#define CHILD_EVENT_DEF /;"	d
+CINCLUDES	Makefile	/^CINCLUDES = -I.$/;"	m
+CLIBS	Makefile	/^CLIBS = -lpthread -lm$/;"	m
+CLI_OBJS	Makefile	/^CLI_OBJS= cli.o $(OBJS)$/;"	m
+COMPLETION_ACLLIST	zookeeper.c	/^#define COMPLETION_ACLLIST /;"	d	file:
+COMPLETION_DATA	zookeeper.c	/^#define COMPLETION_DATA /;"	d	file:
+COMPLETION_MULTI	zookeeper.c	/^#define COMPLETION_MULTI /;"	d	file:
+COMPLETION_STAT	zookeeper.c	/^#define COMPLETION_STAT /;"	d	file:
+COMPLETION_STRING	zookeeper.c	/^#define COMPLETION_STRING /;"	d	file:
+COMPLETION_STRINGLIST	zookeeper.c	/^#define COMPLETION_STRINGLIST /;"	d	file:
+COMPLETION_STRINGLIST_STAT	zookeeper.c	/^#define COMPLETION_STRINGLIST_STAT /;"	d	file:
+COMPLETION_VOID	zookeeper.c	/^#define COMPLETION_VOID /;"	d	file:
+COMPLETION_WATCH	zookeeper.c	/^#define COMPLETION_WATCH /;"	d	file:
+CONNECTED_STATE_DEF	zk_adaptor.h	/^#define CONNECTED_STATE_DEF /;"	d
+CONNECTING_STATE_DEF	zk_adaptor.h	/^#define CONNECTING_STATE_DEF /;"	d
+CREATED_EVENT_DEF	zk_adaptor.h	/^#define CREATED_EVENT_DEF /;"	d
+CTRL_A	linenoise/linenoise.c	/^	CTRL_A = 1,         \/* Ctrl+a *\/$/;"	e	enum:KEY_ACTION	file:
+CTRL_B	linenoise/linenoise.c	/^	CTRL_B = 2,         \/* Ctrl-b *\/$/;"	e	enum:KEY_ACTION	file:
+CTRL_C	linenoise/linenoise.c	/^	CTRL_C = 3,         \/* Ctrl-c *\/$/;"	e	enum:KEY_ACTION	file:
+CTRL_D	linenoise/linenoise.c	/^	CTRL_D = 4,         \/* Ctrl-d *\/$/;"	e	enum:KEY_ACTION	file:
+CTRL_E	linenoise/linenoise.c	/^	CTRL_E = 5,         \/* Ctrl-e *\/$/;"	e	enum:KEY_ACTION	file:
+CTRL_F	linenoise/linenoise.c	/^	CTRL_F = 6,         \/* Ctrl-f *\/$/;"	e	enum:KEY_ACTION	file:
+CTRL_H	linenoise/linenoise.c	/^	CTRL_H = 8,         \/* Ctrl-h *\/$/;"	e	enum:KEY_ACTION	file:
+CTRL_K	linenoise/linenoise.c	/^	CTRL_K = 11,        \/* Ctrl+k *\/$/;"	e	enum:KEY_ACTION	file:
+CTRL_L	linenoise/linenoise.c	/^	CTRL_L = 12,        \/* Ctrl+l *\/$/;"	e	enum:KEY_ACTION	file:
+CTRL_N	linenoise/linenoise.c	/^	CTRL_N = 14,        \/* Ctrl-n *\/$/;"	e	enum:KEY_ACTION	file:
+CTRL_P	linenoise/linenoise.c	/^	CTRL_P = 16,        \/* Ctrl-p *\/$/;"	e	enum:KEY_ACTION	file:
+CTRL_T	linenoise/linenoise.c	/^	CTRL_T = 20,        \/* Ctrl-t *\/$/;"	e	enum:KEY_ACTION	file:
+CTRL_U	linenoise/linenoise.c	/^	CTRL_U = 21,        \/* Ctrl+u *\/$/;"	e	enum:KEY_ACTION	file:
+CTRL_W	linenoise/linenoise.c	/^	CTRL_W = 23,        \/* Ctrl+w *\/$/;"	e	enum:KEY_ACTION	file:
+CheckVersionRequest	zookeeper.jute.h	/^struct CheckVersionRequest {$/;"	s
+CheckVersionRequest_init	zookeeper.c	/^static int CheckVersionRequest_init(zhandle_t *zh, struct CheckVersionRequest *req,$/;"	f	file:
+CheckVersionTxn	zookeeper.jute.h	/^struct CheckVersionTxn {$/;"	s
+ConnectRequest	zookeeper.jute.h	/^struct ConnectRequest {$/;"	s
+ConnectResponse	zookeeper.jute.h	/^struct ConnectResponse {$/;"	s
+CreateRequest	zookeeper.jute.h	/^struct CreateRequest {$/;"	s
+CreateRequest_init	zookeeper.c	/^static int CreateRequest_init(zhandle_t *zh, struct CreateRequest *req,$/;"	f	file:
+CreateResponse	zookeeper.jute.h	/^struct CreateResponse {$/;"	s
+CreateSessionTxn	zookeeper.jute.h	/^struct CreateSessionTxn {$/;"	s
+CreateTxn	zookeeper.jute.h	/^struct CreateTxn {$/;"	s
+CreateTxnV0	zookeeper.jute.h	/^struct CreateTxnV0 {$/;"	s
+DEFINE_HASHTABLE_INSERT	hashtable.h	/^#define DEFINE_HASHTABLE_INSERT(/;"	d
+DEFINE_HASHTABLE_ITERATOR_SEARCH	hashtable_itr.h	/^#define DEFINE_HASHTABLE_ITERATOR_SEARCH(/;"	d
+DEFINE_HASHTABLE_REMOVE	hashtable.h	/^#define DEFINE_HASHTABLE_REMOVE(/;"	d
+DEFINE_HASHTABLE_SEARCH	hashtable.h	/^#define DEFINE_HASHTABLE_SEARCH(/;"	d
+DELETED_EVENT_DEF	zk_adaptor.h	/^#define DELETED_EVENT_DEF /;"	d
+DYLIBCMD	cJSON/Makefile	/^  DYLIBCMD = $(CC) -G -o $(DYLIBNAME)$/;"	m
+DYLIBCMD	cJSON/Makefile	/^DYLIBCMD = $(CC) -shared -o $(DYLIBNAME)$/;"	m
+DYLIBNAME	cJSON/Makefile	/^  DYLIBNAME = $(LIBNAME).dylib$/;"	m
+DYLIBNAME	cJSON/Makefile	/^DYLIBNAME = $(LIBNAME).so $/;"	m
+DeleteRequest	zookeeper.jute.h	/^struct DeleteRequest {$/;"	s
+DeleteRequest_init	zookeeper.c	/^int DeleteRequest_init(zhandle_t *zh, struct DeleteRequest *req, $/;"	f
+DeleteTxn	zookeeper.jute.h	/^struct DeleteTxn {$/;"	s
+EAI_ADDRFAMILY	winconfig.h	/^#define EAI_ADDRFAMILY /;"	d
+EHOSTDOWN	winconfig.h	/^#define EHOSTDOWN /;"	d
+EINPROGRESS	winconfig.h	/^#define EINPROGRESS /;"	d
+ENTER	linenoise/linenoise.c	/^	ENTER = 13,         \/* Enter *\/$/;"	e	enum:KEY_ACTION	file:
+ESC	linenoise/linenoise.c	/^	ESC = 27,           \/* Escape *\/$/;"	e	enum:KEY_ACTION	file:
+ESTALE	winconfig.h	/^#define ESTALE /;"	d
+EWOULDBLOCK	winconfig.h	/^#define EWOULDBLOCK /;"	d
+EXPIRED_SESSION_STATE_DEF	zk_adaptor.h	/^#define EXPIRED_SESSION_STATE_DEF /;"	d
+ErrorResponse	zookeeper.jute.h	/^struct ErrorResponse {$/;"	s
+ErrorTxn	zookeeper.jute.h	/^struct ErrorTxn {$/;"	s
+ExistsRequest	zookeeper.jute.h	/^struct ExistsRequest {$/;"	s
+ExistsResponse	zookeeper.jute.h	/^struct ExistsResponse {$/;"	s
+FORMAT_LOG_BUF_SIZE	zk_log.c	/^#define FORMAT_LOG_BUF_SIZE /;"	d	file:
+FileHeader	zookeeper.jute.h	/^struct FileHeader {$/;"	s
+GetACLRequest	zookeeper.jute.h	/^struct GetACLRequest {$/;"	s
+GetACLResponse	zookeeper.jute.h	/^struct GetACLResponse {$/;"	s
+GetChildren2Request	zookeeper.jute.h	/^struct GetChildren2Request {$/;"	s
+GetChildren2Response	zookeeper.jute.h	/^struct GetChildren2Response {$/;"	s
+GetChildrenRequest	zookeeper.jute.h	/^struct GetChildrenRequest {$/;"	s
+GetChildrenResponse	zookeeper.jute.h	/^struct GetChildrenResponse {$/;"	s
+GetDataRequest	zookeeper.jute.h	/^struct GetDataRequest {$/;"	s
+GetDataResponse	zookeeper.jute.h	/^struct GetDataResponse {$/;"	s
+GetMaxChildrenRequest	zookeeper.jute.h	/^struct GetMaxChildrenRequest {$/;"	s
+GetMaxChildrenResponse	zookeeper.jute.h	/^struct GetMaxChildrenResponse {$/;"	s
+GetSASLRequest	zookeeper.jute.h	/^struct GetSASLRequest {$/;"	s
+HANDSHAKE_REQ_SIZE	zk_adaptor.h	/^#define HANDSHAKE_REQ_SIZE /;"	d
+HAVE_ARPA_INET_H	config.h	/^#define HAVE_ARPA_INET_H /;"	d
+HAVE_ARPA_INET_H	winconfig.h	/^#undef HAVE_ARPA_INET_H$/;"	d
+HAVE_DLFCN_H	config.h	/^#define HAVE_DLFCN_H /;"	d
+HAVE_DLFCN_H	winconfig.h	/^#undef HAVE_DLFCN_H$/;"	d
+HAVE_FCNTL_H	config.h	/^#define HAVE_FCNTL_H /;"	d
+HAVE_FCNTL_H	winconfig.h	/^#undef HAVE_FCNTL_H$/;"	d
+HAVE_GENERATED_ZOOKEEPER_JUTE_C	config.h	/^#define HAVE_GENERATED_ZOOKEEPER_JUTE_C /;"	d
+HAVE_GENERATED_ZOOKEEPER_JUTE_C	winconfig.h	/^#define HAVE_GENERATED_ZOOKEEPER_JUTE_C /;"	d
+HAVE_GENERATED_ZOOKEEPER_JUTE_H	config.h	/^#define HAVE_GENERATED_ZOOKEEPER_JUTE_H /;"	d
+HAVE_GENERATED_ZOOKEEPER_JUTE_H	winconfig.h	/^#define HAVE_GENERATED_ZOOKEEPER_JUTE_H /;"	d
+HAVE_GETCWD	config.h	/^#define HAVE_GETCWD /;"	d
+HAVE_GETCWD	winconfig.h	/^#undef HAVE_GETCWD$/;"	d
+HAVE_GETHOSTBYNAME	config.h	/^#define HAVE_GETHOSTBYNAME /;"	d
+HAVE_GETHOSTBYNAME	winconfig.h	/^#undef HAVE_GETHOSTBYNAME$/;"	d
+HAVE_GETHOSTNAME	config.h	/^#define HAVE_GETHOSTNAME /;"	d
+HAVE_GETHOSTNAME	winconfig.h	/^#define HAVE_GETHOSTNAME /;"	d
+HAVE_GETLOGIN	config.h	/^#define HAVE_GETLOGIN /;"	d
+HAVE_GETLOGIN	winconfig.h	/^#undef HAVE_GETLOGIN$/;"	d
+HAVE_GETPWUID_R	config.h	/^#define HAVE_GETPWUID_R /;"	d
+HAVE_GETPWUID_R	winconfig.h	/^#undef HAVE_GETPWUID_R$/;"	d
+HAVE_GETTIMEOFDAY	config.h	/^#define HAVE_GETTIMEOFDAY /;"	d
+HAVE_GETTIMEOFDAY	winconfig.h	/^#undef HAVE_GETTIMEOFDAY$/;"	d
+HAVE_GETUID	config.h	/^#define HAVE_GETUID /;"	d
+HAVE_GETUID	winconfig.h	/^#undef HAVE_GETUID$/;"	d
+HAVE_INTTYPES_H	config.h	/^#define HAVE_INTTYPES_H /;"	d
+HAVE_INTTYPES_H	winconfig.h	/^#undef HAVE_INTTYPES_H$/;"	d
+HAVE_MEMMOVE	config.h	/^#define HAVE_MEMMOVE /;"	d
+HAVE_MEMMOVE	winconfig.h	/^#undef HAVE_MEMMOVE$/;"	d
+HAVE_MEMORY_H	config.h	/^#define HAVE_MEMORY_H /;"	d
+HAVE_MEMORY_H	winconfig.h	/^#undef HAVE_MEMORY_H$/;"	d
+HAVE_MEMSET	config.h	/^#define HAVE_MEMSET /;"	d
+HAVE_MEMSET	winconfig.h	/^#undef HAVE_MEMSET$/;"	d
+HAVE_NETDB_H	config.h	/^#define HAVE_NETDB_H /;"	d
+HAVE_NETDB_H	winconfig.h	/^#undef HAVE_NETDB_H$/;"	d
+HAVE_NETINET_IN_H	config.h	/^#define HAVE_NETINET_IN_H /;"	d
+HAVE_NETINET_IN_H	winconfig.h	/^#undef HAVE_NETINET_IN_H$/;"	d
+HAVE_POLL	config.h	/^#define HAVE_POLL /;"	d
+HAVE_POLL	winconfig.h	/^#undef HAVE_POLL$/;"	d
+HAVE_SOCKET	config.h	/^#define HAVE_SOCKET /;"	d
+HAVE_SOCKET	winconfig.h	/^#undef HAVE_SOCKET$/;"	d
+HAVE_STDINT_H	config.h	/^#define HAVE_STDINT_H /;"	d
+HAVE_STDINT_H	winconfig.h	/^#undef HAVE_STDINT_H$/;"	d
+HAVE_STDLIB_H	config.h	/^#define HAVE_STDLIB_H /;"	d
+HAVE_STDLIB_H	winconfig.h	/^#define HAVE_STDLIB_H /;"	d
+HAVE_STRCHR	config.h	/^#define HAVE_STRCHR /;"	d
+HAVE_STRCHR	winconfig.h	/^#define HAVE_STRCHR /;"	d
+HAVE_STRDUP	config.h	/^#define HAVE_STRDUP /;"	d
+HAVE_STRDUP	winconfig.h	/^#define HAVE_STRDUP /;"	d
+HAVE_STRERROR	config.h	/^#define HAVE_STRERROR /;"	d
+HAVE_STRERROR	winconfig.h	/^#define HAVE_STRERROR /;"	d
+HAVE_STRINGS_H	config.h	/^#define HAVE_STRINGS_H /;"	d
+HAVE_STRINGS_H	winconfig.h	/^#undef HAVE_STRINGS_H$/;"	d
+HAVE_STRING_H	config.h	/^#define HAVE_STRING_H /;"	d
+HAVE_STRING_H	winconfig.h	/^#undef HAVE_STRING_H$/;"	d
+HAVE_STRTOL	config.h	/^#define HAVE_STRTOL /;"	d
+HAVE_STRTOL	winconfig.h	/^#undef HAVE_STRTOL$/;"	d
+HAVE_SYS_SOCKET_H	config.h	/^#define HAVE_SYS_SOCKET_H /;"	d
+HAVE_SYS_SOCKET_H	winconfig.h	/^#undef HAVE_SYS_SOCKET_H$/;"	d
+HAVE_SYS_STAT_H	config.h	/^#define HAVE_SYS_STAT_H /;"	d
+HAVE_SYS_STAT_H	winconfig.h	/^#undef HAVE_SYS_STAT_H$/;"	d
+HAVE_SYS_TIME_H	config.h	/^#define HAVE_SYS_TIME_H /;"	d
+HAVE_SYS_TIME_H	winconfig.h	/^#undef HAVE_SYS_TIME_H$/;"	d
+HAVE_SYS_TYPES_H	config.h	/^#define HAVE_SYS_TYPES_H /;"	d
+HAVE_SYS_TYPES_H	winconfig.h	/^#undef HAVE_SYS_TYPES_H$/;"	d
+HAVE_SYS_UTSNAME_H	config.h	/^#define HAVE_SYS_UTSNAME_H /;"	d
+HAVE_SYS_UTSNAME_H	winconfig.h	/^#undef HAVE_SYS_UTSNAME_H$/;"	d
+HAVE_UNISTD_H	config.h	/^#define HAVE_UNISTD_H /;"	d
+HAVE_UNISTD_H	winconfig.h	/^#undef HAVE_UNISTD_H$/;"	d
+HISTORY_FILE_PATH	zkclient.c	/^#define HISTORY_FILE_PATH /;"	d	file:
+IF_DEBUG	zookeeper.c	/^#define IF_DEBUG(/;"	d	file:
+INCLUDE_PATH	cJSON/Makefile	/^INCLUDE_PATH ?= include\/cjson$/;"	m
+INSTALL	Makefile	/^INSTALL=\/usr\/bin\/install$/;"	m
+INSTALL	cJSON/Makefile	/^  INSTALL = cp -r$/;"	m
+INSTALL	cJSON/Makefile	/^INSTALL ?= cp -a$/;"	m
+INSTALLDIR	Makefile	/^INSTALLDIR=\/usr\/local$/;"	m
+INSTALL_INCLUDE_PATH	cJSON/Makefile	/^INSTALL_INCLUDE_PATH = $(DESTDIR)$(PREFIX)\/$(INCLUDE_PATH)$/;"	m
+INSTALL_LIBRARY_PATH	cJSON/Makefile	/^INSTALL_LIBRARY_PATH = $(DESTDIR)$(PREFIX)\/$(LIBRARY_PATH)$/;"	m
+INT16_C	winstdint.h	/^#define INT16_C(/;"	d
+INT16_MAX	winstdint.h	/^#define INT16_MAX /;"	d
+INT16_MIN	winstdint.h	/^#define INT16_MIN /;"	d
+INT32_C	winstdint.h	/^#define INT32_C(/;"	d
+INT32_MAX	winstdint.h	/^#define INT32_MAX /;"	d
+INT32_MIN	winstdint.h	/^#define INT32_MIN /;"	d
+INT64_C	winstdint.h	/^#define INT64_C(/;"	d
+INT64_MAX	winstdint.h	/^#define INT64_MAX /;"	d
+INT64_MIN	winstdint.h	/^#define INT64_MIN /;"	d
+INT8_C	winstdint.h	/^#define INT8_C(/;"	d
+INT8_MAX	winstdint.h	/^#define INT8_MAX /;"	d
+INT8_MIN	winstdint.h	/^#define INT8_MIN /;"	d
+INTMAX_C	winstdint.h	/^#define INTMAX_C /;"	d
+INTMAX_MAX	winstdint.h	/^#define INTMAX_MAX /;"	d
+INTMAX_MIN	winstdint.h	/^#define INTMAX_MIN /;"	d
+INTPTR_MAX	winstdint.h	/^#  define INTPTR_MAX /;"	d
+INTPTR_MIN	winstdint.h	/^#  define INTPTR_MIN /;"	d
+INT_FAST16_MAX	winstdint.h	/^#define INT_FAST16_MAX /;"	d
+INT_FAST16_MIN	winstdint.h	/^#define INT_FAST16_MIN /;"	d
+INT_FAST32_MAX	winstdint.h	/^#define INT_FAST32_MAX /;"	d
+INT_FAST32_MIN	winstdint.h	/^#define INT_FAST32_MIN /;"	d
+INT_FAST64_MAX	winstdint.h	/^#define INT_FAST64_MAX /;"	d
+INT_FAST64_MIN	winstdint.h	/^#define INT_FAST64_MIN /;"	d
+INT_FAST8_MAX	winstdint.h	/^#define INT_FAST8_MAX /;"	d
+INT_FAST8_MIN	winstdint.h	/^#define INT_FAST8_MIN /;"	d
+INT_LEAST16_MAX	winstdint.h	/^#define INT_LEAST16_MAX /;"	d
+INT_LEAST16_MIN	winstdint.h	/^#define INT_LEAST16_MIN /;"	d
+INT_LEAST32_MAX	winstdint.h	/^#define INT_LEAST32_MAX /;"	d
+INT_LEAST32_MIN	winstdint.h	/^#define INT_LEAST32_MIN /;"	d
+INT_LEAST64_MAX	winstdint.h	/^#define INT_LEAST64_MAX /;"	d
+INT_LEAST64_MIN	winstdint.h	/^#define INT_LEAST64_MIN /;"	d
+INT_LEAST8_MAX	winstdint.h	/^#define INT_LEAST8_MAX /;"	d
+INT_LEAST8_MIN	winstdint.h	/^#define INT_LEAST8_MIN /;"	d
+Id	zookeeper.jute.h	/^struct Id {$/;"	s
+Id_vector	zookeeper.jute.h	/^struct Id_vector {$/;"	s
+KAFKA_INSPECT_OBJS	Makefile	/^KAFKA_INSPECT_OBJS= cJSON\/cJSON.o kafka_inspect.o $(OBJS)$/;"	m
+KEY_ACTION	linenoise/linenoise.c	/^enum KEY_ACTION{$/;"	g	file:
+KEY_NULL	linenoise/linenoise.c	/^	KEY_NULL = 0,	    \/* NULL *\/$/;"	e	enum:KEY_ACTION	file:
+LIBNAME	cJSON/Makefile	/^LIBNAME = libcjson$/;"	m
+LIBRARY_PATH	cJSON/Makefile	/^LIBRARY_PATH ?= lib$/;"	m
+LINENOISE_DEFAULT_HISTORY_MAX_LEN	linenoise/linenoise.c	/^#define LINENOISE_DEFAULT_HISTORY_MAX_LEN /;"	d	file:
+LINENOISE_HISTORY_NEXT	linenoise/linenoise.c	/^#define LINENOISE_HISTORY_NEXT /;"	d	file:
+LINENOISE_HISTORY_PREV	linenoise/linenoise.c	/^#define LINENOISE_HISTORY_PREV /;"	d	file:
+LINENOISE_MAX_LINE	linenoise/linenoise.c	/^#define LINENOISE_MAX_LINE /;"	d	file:
+LOGSTREAM	zookeeper_log.h	/^#define LOGSTREAM /;"	d
+LOG_DEBUG	zookeeper_log.h	/^#define LOG_DEBUG(/;"	d
+LOG_ERROR	zookeeper_log.h	/^#define LOG_ERROR(/;"	d
+LOG_INFO	zookeeper_log.h	/^#define LOG_INFO(/;"	d
+LOG_WARN	zookeeper_log.h	/^#define LOG_WARN(/;"	d
+LT_OBJDIR	config.h	/^#define LT_OBJDIR /;"	d
+LT_OBJDIR	winconfig.h	/^#define LT_OBJDIR$/;"	d
+LearnerInfo	zookeeper.jute.h	/^struct LearnerInfo {$/;"	s
+MultiHeader	zookeeper.jute.h	/^struct MultiHeader {$/;"	s
+MultiTxn	zookeeper.jute.h	/^struct MultiTxn {$/;"	s
+NOTCONNECTED_STATE_DEF	zk_adaptor.h	/^#define NOTCONNECTED_STATE_DEF /;"	d
+NOTWATCHING_EVENT_DEF	zk_adaptor.h	/^#define NOTWATCHING_EVENT_DEF /;"	d
+NTDDI_VERSION	winconfig.h	/^#define NTDDI_VERSION /;"	d
+OBJ	cJSON/Makefile	/^OBJ = cJSON.o$/;"	m
+OBJS	Makefile	/^OBJS= recordio.o mt_adaptor.o winport.o zk_hashtable.o zk_log.o zookeeper.o zookeeper.jute.o hashtable.o hashtable_itr.o $/;"	m
+PACKAGE	config.h	/^#define PACKAGE /;"	d
+PACKAGE	winconfig.h	/^#define PACKAGE /;"	d
+PACKAGE_BUGREPORT	config.h	/^#define PACKAGE_BUGREPORT /;"	d
+PACKAGE_BUGREPORT	winconfig.h	/^#define PACKAGE_BUGREPORT /;"	d
+PACKAGE_NAME	config.h	/^#define PACKAGE_NAME /;"	d
+PACKAGE_NAME	winconfig.h	/^#define PACKAGE_NAME /;"	d
+PACKAGE_STRING	config.h	/^#define PACKAGE_STRING /;"	d
+PACKAGE_STRING	winconfig.h	/^#define PACKAGE_STRING /;"	d
+PACKAGE_TARNAME	config.h	/^#define PACKAGE_TARNAME /;"	d
+PACKAGE_TARNAME	winconfig.h	/^#define PACKAGE_TARNAME /;"	d
+PACKAGE_URL	config.h	/^#define PACKAGE_URL /;"	d
+PACKAGE_URL	winconfig.h	/^#define PACKAGE_URL /;"	d
+PACKAGE_VERSION	config.h	/^#define PACKAGE_VERSION /;"	d
+PACKAGE_VERSION	winconfig.h	/^#define PACKAGE_VERSION /;"	d
+PING_XID	zk_adaptor.h	/^#define PING_XID /;"	d
+POLL_NFDS_TYPE	config.h	/^#define POLL_NFDS_TYPE /;"	d
+POLL_NFDS_TYPE	winconfig.h	/^#define POLL_NFDS_TYPE$/;"	d
+PREFIX	cJSON/Makefile	/^PREFIX ?= \/usr\/local$/;"	m
+PROCESS_SESSION_EVENT	zk_adaptor.h	/^#define PROCESS_SESSION_EVENT(/;"	d
+PROG1	Makefile	/^PROG1 = cli $/;"	m
+PROG2	Makefile	/^PROG2 = kafka_inspect$/;"	m
+PROG3	Makefile	/^PROG3 = zkclient$/;"	m
+PROMPT	zkclient.c	/^#define PROMPT /;"	d	file:
+PROTO_H_	proto.h	/^#define PROTO_H_$/;"	d
+PTHREAD_MUTEX_RECURSIVE	winport.h	/^#define PTHREAD_MUTEX_RECURSIVE /;"	d
+PTRDIFF_MAX	winstdint.h	/^#  define PTRDIFF_MAX /;"	d
+PTRDIFF_MIN	winstdint.h	/^#  define PTRDIFF_MIN /;"	d
+QuorumPacket	zookeeper.jute.h	/^struct QuorumPacket {$/;"	s
+R_CFLAGS	cJSON/Makefile	/^R_CFLAGS = -fpic $(CFLAGS) -Wall -Werror -Wstrict-prototypes -Wwrite-strings -D_POSIX_C_SOURCE=200112L$/;"	m
+ReplyHeader	zookeeper.jute.h	/^struct ReplyHeader {$/;"	s
+RequestHeader	zookeeper.jute.h	/^struct RequestHeader {$/;"	s
+Request_path_init	zookeeper.c	/^static int Request_path_init(zhandle_t *zh, int flags, $/;"	f	file:
+Request_path_watch_init	zookeeper.c	/^static int Request_path_watch_init(zhandle_t *zh, int flags,$/;"	f	file:
+SESSION_EVENT_DEF	zk_adaptor.h	/^#define SESSION_EVENT_DEF /;"	d
+SET_WATCHES_XID	zk_adaptor.h	/^#define SET_WATCHES_XID /;"	d
+SIG_ATOMIC_MAX	winstdint.h	/^#define SIG_ATOMIC_MAX /;"	d
+SIG_ATOMIC_MIN	winstdint.h	/^#define SIG_ATOMIC_MIN /;"	d
+SIZE_MAX	winstdint.h	/^#     define SIZE_MAX /;"	d
+STDC_HEADERS	config.h	/^#define STDC_HEADERS /;"	d
+STDC_HEADERS	winconfig.h	/^#define STDC_HEADERS$/;"	d
+STLIBNAME	cJSON/Makefile	/^STLIBNAME = $(LIBNAME).a$/;"	m
+STRUCT_INITIALIZER	recordio.h	/^#define STRUCT_INITIALIZER(/;"	d
+SYNCHRONOUS_MARKER	zookeeper.c	/^static void *SYNCHRONOUS_MARKER = (void*)&SYNCHRONOUS_MARKER;$/;"	v	file:
+SetACLRequest	zookeeper.jute.h	/^struct SetACLRequest {$/;"	s
+SetACLResponse	zookeeper.jute.h	/^struct SetACLResponse {$/;"	s
+SetACLTxn	zookeeper.jute.h	/^struct SetACLTxn {$/;"	s
+SetDataRequest	zookeeper.jute.h	/^struct SetDataRequest {$/;"	s
+SetDataRequest_init	zookeeper.c	/^static int SetDataRequest_init(zhandle_t *zh, struct SetDataRequest *req,$/;"	f	file:
+SetDataResponse	zookeeper.jute.h	/^struct SetDataResponse {$/;"	s
+SetDataTxn	zookeeper.jute.h	/^struct SetDataTxn {$/;"	s
+SetMaxChildrenRequest	zookeeper.jute.h	/^struct SetMaxChildrenRequest {$/;"	s
+SetMaxChildrenTxn	zookeeper.jute.h	/^struct SetMaxChildrenTxn {$/;"	s
+SetSASLRequest	zookeeper.jute.h	/^struct SetSASLRequest {$/;"	s
+SetSASLResponse	zookeeper.jute.h	/^struct SetSASLResponse {$/;"	s
+SetWatches	zookeeper.jute.h	/^struct SetWatches {$/;"	s
+Stat	zookeeper.jute.h	/^struct Stat {$/;"	s
+StatPersisted	zookeeper.jute.h	/^struct StatPersisted {$/;"	s
+StatPersistedV1	zookeeper.jute.h	/^struct StatPersistedV1 {$/;"	s
+String_vector	zookeeper.jute.h	/^struct String_vector {$/;"	s
+SyncRequest	zookeeper.jute.h	/^struct SyncRequest {$/;"	s
+SyncResponse	zookeeper.jute.h	/^struct SyncResponse {$/;"	s
+TAB	linenoise/linenoise.c	/^	TAB = 9,            \/* Tab *\/$/;"	e	enum:KEY_ACTION	file:
+TESTS	cJSON/Makefile	/^TESTS = test$/;"	m
+THREADED	mt_adaptor.c	/^#define THREADED$/;"	d	file:
+TIME_NOW_BUF_SIZE	zk_log.c	/^#define TIME_NOW_BUF_SIZE /;"	d	file:
+TIME_WITH_SYS_TIME	config.h	/^#define TIME_WITH_SYS_TIME /;"	d
+TIME_WITH_SYS_TIME	winconfig.h	/^#define TIME_WITH_SYS_TIME$/;"	d
+Txn	zookeeper.jute.h	/^struct Txn {$/;"	s
+TxnHeader	zookeeper.jute.h	/^struct TxnHeader {$/;"	s
+Txn_vector	zookeeper.jute.h	/^struct Txn_vector {$/;"	s
+UINT16_C	winstdint.h	/^#define UINT16_C(/;"	d
+UINT16_MAX	winstdint.h	/^#define UINT16_MAX /;"	d
+UINT32_C	winstdint.h	/^#define UINT32_C(/;"	d
+UINT32_MAX	winstdint.h	/^#define UINT32_MAX /;"	d
+UINT64_C	winstdint.h	/^#define UINT64_C(/;"	d
+UINT64_MAX	winstdint.h	/^#define UINT64_MAX /;"	d
+UINT8_C	winstdint.h	/^#define UINT8_C(/;"	d
+UINT8_MAX	winstdint.h	/^#define UINT8_MAX /;"	d
+UINTMAX_C	winstdint.h	/^#define UINTMAX_C /;"	d
+UINTMAX_MAX	winstdint.h	/^#define UINTMAX_MAX /;"	d
+UINTPTR_MAX	winstdint.h	/^#  define UINTPTR_MAX /;"	d
+UINT_FAST16_MAX	winstdint.h	/^#define UINT_FAST16_MAX /;"	d
+UINT_FAST32_MAX	winstdint.h	/^#define UINT_FAST32_MAX /;"	d
+UINT_FAST64_MAX	winstdint.h	/^#define UINT_FAST64_MAX /;"	d
+UINT_FAST8_MAX	winstdint.h	/^#define UINT_FAST8_MAX /;"	d
+UINT_LEAST16_MAX	winstdint.h	/^#define UINT_LEAST16_MAX /;"	d
+UINT_LEAST32_MAX	winstdint.h	/^#define UINT_LEAST32_MAX /;"	d
+UINT_LEAST64_MAX	winstdint.h	/^#define UINT_LEAST64_MAX /;"	d
+UINT_LEAST8_MAX	winstdint.h	/^#define UINT_LEAST8_MAX /;"	d
+USE_IPV6	zookeeper.c	/^#define USE_IPV6$/;"	d	file:
+USE_STATIC_LIB	mt_adaptor.c	/^#  define USE_STATIC_LIB$/;"	d	file:
+USE_STATIC_LIB	st_adaptor.c	/^#  define USE_STATIC_LIB$/;"	d	file:
+USE_STATIC_LIB	zk_log.c	/^#  define USE_STATIC_LIB$/;"	d	file:
+USE_STATIC_LIB	zookeeper.c	/^#  define USE_STATIC_LIB$/;"	d	file:
+VERSION	config.h	/^#define VERSION /;"	d
+VERSION	winconfig.h	/^#define VERSION /;"	d
+WATCHER_EVENT_XID	zk_adaptor.h	/^#define WATCHER_EVENT_XID /;"	d
+WCHAR_MAX	winstdint.h	/^#  define WCHAR_MAX /;"	d
+WCHAR_MIN	winstdint.h	/^#  define WCHAR_MIN /;"	d
+WIN32_LEAN_AND_MEAN	winconfig.h	/^#define WIN32_LEAN_AND_MEAN$/;"	d
+WINPORT_H_	winport.h	/^#define WINPORT_H_$/;"	d
+WINT_MAX	winstdint.h	/^#define WINT_MAX /;"	d
+WINT_MIN	winstdint.h	/^#define WINT_MIN /;"	d
+WatcherEvent	zookeeper.jute.h	/^struct WatcherEvent {$/;"	s
+Win32WSACleanup	winport.c	/^void Win32WSACleanup()$/;"	f
+Win32WSAStartup	winport.c	/^int Win32WSAStartup()$/;"	f
+ZAPIERROR	zookeeper.h	/^  ZAPIERROR = -100,$/;"	e	enum:ZOO_ERRORS
+ZAUTHFAILED	zookeeper.h	/^  ZAUTHFAILED = -115, \/*!< Client authentication failed *\/$/;"	e	enum:ZOO_ERRORS
+ZBADARGUMENTS	zookeeper.h	/^  ZBADARGUMENTS = -8, \/*!< Invalid arguments *\/$/;"	e	enum:ZOO_ERRORS
+ZBADVERSION	zookeeper.h	/^  ZBADVERSION = -103, \/*!< Version conflict *\/$/;"	e	enum:ZOO_ERRORS
+ZCLOSING	zookeeper.h	/^  ZCLOSING = -116, \/*!< ZooKeeper is closing *\/$/;"	e	enum:ZOO_ERRORS
+ZCONNECTIONLOSS	zookeeper.h	/^  ZCONNECTIONLOSS = -4, \/*!< Connection to the server has been lost *\/$/;"	e	enum:ZOO_ERRORS
+ZDATAINCONSISTENCY	zookeeper.h	/^  ZDATAINCONSISTENCY = -3, \/*!< A data inconsistency was found *\/$/;"	e	enum:ZOO_ERRORS
+ZINVALIDACL	zookeeper.h	/^  ZINVALIDACL = -114, \/*!< Invalid ACL specified *\/$/;"	e	enum:ZOO_ERRORS
+ZINVALIDCALLBACK	zookeeper.h	/^  ZINVALIDCALLBACK = -113, \/*!< Invalid callback specified *\/$/;"	e	enum:ZOO_ERRORS
+ZINVALIDSTATE	zookeeper.h	/^  ZINVALIDSTATE = -9, \/*!< Invliad zhandle state *\/$/;"	e	enum:ZOO_ERRORS
+ZKCLIENT_OBJS	Makefile	/^ZKCLIENT_OBJS= zkclient.o linenoise\/linenoise.o $(OBJS)$/;"	m
+ZK_ADAPTOR_H_	zk_adaptor.h	/^#define ZK_ADAPTOR_H_$/;"	d
+ZK_HASHTABLE_H_	zk_hashtable.h	/^#define ZK_HASHTABLE_H_$/;"	d
+ZK_LOG_H_	zookeeper_log.h	/^#define ZK_LOG_H_$/;"	d
+ZMARSHALLINGERROR	zookeeper.h	/^  ZMARSHALLINGERROR = -5, \/*!< Error while marshalling or unmarshalling data *\/$/;"	e	enum:ZOO_ERRORS
+ZNOAUTH	zookeeper.h	/^  ZNOAUTH = -102, \/*!< Not authenticated *\/$/;"	e	enum:ZOO_ERRORS
+ZNOCHILDRENFOREPHEMERALS	zookeeper.h	/^  ZNOCHILDRENFOREPHEMERALS = -108, \/*!< Ephemeral nodes may not have children *\/$/;"	e	enum:ZOO_ERRORS
+ZNODEEXISTS	zookeeper.h	/^  ZNODEEXISTS = -110, \/*!< The node already exists *\/$/;"	e	enum:ZOO_ERRORS
+ZNONODE	zookeeper.h	/^  ZNONODE = -101, \/*!< Node does not exist *\/$/;"	e	enum:ZOO_ERRORS
+ZNOTEMPTY	zookeeper.h	/^  ZNOTEMPTY = -111, \/*!< The node has children *\/$/;"	e	enum:ZOO_ERRORS
+ZNOTHING	zookeeper.h	/^  ZNOTHING = -117, \/*!< (not error) no server responses to process *\/$/;"	e	enum:ZOO_ERRORS
+ZOK	zookeeper.h	/^  ZOK = 0, \/*!< Everything is OK *\/$/;"	e	enum:ZOO_ERRORS
+ZOOAPI	zookeeper.h	/^#    define ZOOAPI /;"	d
+ZOOAPI	zookeeper.h	/^#    define ZOOAPI$/;"	d
+ZOOKEEPER_H_	zookeeper.h	/^#define ZOOKEEPER_H_$/;"	d
+ZOOKEEPER_READ	zookeeper.c	/^const int ZOOKEEPER_READ = 1 << 1;$/;"	v
+ZOOKEEPER_VERSION_H_	zookeeper_version.h	/^#define ZOOKEEPER_VERSION_H_$/;"	d
+ZOOKEEPER_WRITE	zookeeper.c	/^const int ZOOKEEPER_WRITE = 1 << 0;$/;"	v
+ZOO_ANYONE_ID_UNSAFE	zookeeper.c	/^struct Id ZOO_ANYONE_ID_UNSAFE = {"world", "anyone"};$/;"	v	typeref:struct:Id
+ZOO_ASSOCIATING_STATE	zookeeper.c	/^const int ZOO_ASSOCIATING_STATE = ASSOCIATING_STATE_DEF;$/;"	v
+ZOO_AUTH_FAILED_STATE	zookeeper.c	/^const int ZOO_AUTH_FAILED_STATE = AUTH_FAILED_STATE_DEF;$/;"	v
+ZOO_AUTH_IDS	zookeeper.c	/^struct Id ZOO_AUTH_IDS = {"auth", ""};$/;"	v	typeref:struct:Id
+ZOO_CHANGED_EVENT	zookeeper.c	/^const int ZOO_CHANGED_EVENT = CHANGED_EVENT_DEF;$/;"	v
+ZOO_CHECK_OP	proto.h	/^#define ZOO_CHECK_OP /;"	d
+ZOO_CHILD_EVENT	zookeeper.c	/^const int ZOO_CHILD_EVENT = CHILD_EVENT_DEF;$/;"	v
+ZOO_CLOSE_OP	proto.h	/^#define ZOO_CLOSE_OP /;"	d
+ZOO_CONNECTED_STATE	zookeeper.c	/^const int ZOO_CONNECTED_STATE = CONNECTED_STATE_DEF;$/;"	v
+ZOO_CONNECTING_STATE	zookeeper.c	/^const int ZOO_CONNECTING_STATE = CONNECTING_STATE_DEF;$/;"	v
+ZOO_CREATED_EVENT	zookeeper.c	/^const int ZOO_CREATED_EVENT = CREATED_EVENT_DEF;$/;"	v
+ZOO_CREATE_OP	proto.h	/^#define ZOO_CREATE_OP /;"	d
+ZOO_CREATOR_ALL_ACL	zookeeper.c	/^struct ACL_vector ZOO_CREATOR_ALL_ACL = { 1, _CREATOR_ALL_ACL_ACL};$/;"	v	typeref:struct:ACL_vector
+ZOO_DELETED_EVENT	zookeeper.c	/^const int ZOO_DELETED_EVENT = DELETED_EVENT_DEF;$/;"	v
+ZOO_DELETE_OP	proto.h	/^#define ZOO_DELETE_OP /;"	d
+ZOO_EPHEMERAL	zookeeper.c	/^const int ZOO_EPHEMERAL = 1 << 0;$/;"	v
+ZOO_ERRORS	zookeeper.h	/^enum ZOO_ERRORS {$/;"	g
+ZOO_EXISTS_OP	proto.h	/^#define ZOO_EXISTS_OP /;"	d
+ZOO_EXPIRED_SESSION_STATE	zookeeper.c	/^const int ZOO_EXPIRED_SESSION_STATE = EXPIRED_SESSION_STATE_DEF;$/;"	v
+ZOO_GETACL_OP	proto.h	/^#define ZOO_GETACL_OP /;"	d
+ZOO_GETCHILDREN2_OP	proto.h	/^#define ZOO_GETCHILDREN2_OP /;"	d
+ZOO_GETCHILDREN_OP	proto.h	/^#define ZOO_GETCHILDREN_OP /;"	d
+ZOO_GETDATA_OP	proto.h	/^#define ZOO_GETDATA_OP /;"	d
+ZOO_LOG_LEVEL_DEBUG	zookeeper.h	/^typedef enum {ZOO_LOG_LEVEL_ERROR=1,ZOO_LOG_LEVEL_WARN=2,ZOO_LOG_LEVEL_INFO=3,ZOO_LOG_LEVEL_DEBUG=4} ZooLogLevel;$/;"	e	enum:__anon9
+ZOO_LOG_LEVEL_ERROR	zookeeper.h	/^typedef enum {ZOO_LOG_LEVEL_ERROR=1,ZOO_LOG_LEVEL_WARN=2,ZOO_LOG_LEVEL_INFO=3,ZOO_LOG_LEVEL_DEBUG=4} ZooLogLevel;$/;"	e	enum:__anon9
+ZOO_LOG_LEVEL_INFO	zookeeper.h	/^typedef enum {ZOO_LOG_LEVEL_ERROR=1,ZOO_LOG_LEVEL_WARN=2,ZOO_LOG_LEVEL_INFO=3,ZOO_LOG_LEVEL_DEBUG=4} ZooLogLevel;$/;"	e	enum:__anon9
+ZOO_LOG_LEVEL_WARN	zookeeper.h	/^typedef enum {ZOO_LOG_LEVEL_ERROR=1,ZOO_LOG_LEVEL_WARN=2,ZOO_LOG_LEVEL_INFO=3,ZOO_LOG_LEVEL_DEBUG=4} ZooLogLevel;$/;"	e	enum:__anon9
+ZOO_MAJOR_VERSION	zookeeper_version.h	/^#define ZOO_MAJOR_VERSION /;"	d
+ZOO_MINOR_VERSION	zookeeper_version.h	/^#define ZOO_MINOR_VERSION /;"	d
+ZOO_MULTI_OP	proto.h	/^#define ZOO_MULTI_OP /;"	d
+ZOO_NOTIFY_OP	proto.h	/^#define ZOO_NOTIFY_OP /;"	d
+ZOO_NOTWATCHING_EVENT	zookeeper.c	/^const int ZOO_NOTWATCHING_EVENT = NOTWATCHING_EVENT_DEF;$/;"	v
+ZOO_OPEN_ACL_UNSAFE	zookeeper.c	/^struct ACL_vector ZOO_OPEN_ACL_UNSAFE = { 1, _OPEN_ACL_UNSAFE_ACL};$/;"	v	typeref:struct:ACL_vector
+ZOO_PATCH_VERSION	zookeeper_version.h	/^#define ZOO_PATCH_VERSION /;"	d
+ZOO_PERM_ADMIN	zookeeper.c	/^const int ZOO_PERM_ADMIN = 1 << 4;$/;"	v
+ZOO_PERM_ALL	zookeeper.c	/^const int ZOO_PERM_ALL = 0x1f;$/;"	v
+ZOO_PERM_CREATE	zookeeper.c	/^const int ZOO_PERM_CREATE = 1 << 2;$/;"	v
+ZOO_PERM_DELETE	zookeeper.c	/^const int ZOO_PERM_DELETE = 1 << 3;$/;"	v
+ZOO_PERM_READ	zookeeper.c	/^const int ZOO_PERM_READ = 1 << 0;$/;"	v
+ZOO_PERM_WRITE	zookeeper.c	/^const int ZOO_PERM_WRITE = 1 << 1;$/;"	v
+ZOO_PING_OP	proto.h	/^#define ZOO_PING_OP /;"	d
+ZOO_READ_ACL_UNSAFE	zookeeper.c	/^struct ACL_vector ZOO_READ_ACL_UNSAFE = { 1, _READ_ACL_UNSAFE_ACL};$/;"	v	typeref:struct:ACL_vector
+ZOO_SEQUENCE	zookeeper.c	/^const int ZOO_SEQUENCE = 1 << 1;$/;"	v
+ZOO_SESSION_EVENT	zookeeper.c	/^const int ZOO_SESSION_EVENT = SESSION_EVENT_DEF;$/;"	v
+ZOO_SETACL_OP	proto.h	/^#define ZOO_SETACL_OP /;"	d
+ZOO_SETAUTH_OP	proto.h	/^#define ZOO_SETAUTH_OP /;"	d
+ZOO_SETDATA_OP	proto.h	/^#define ZOO_SETDATA_OP /;"	d
+ZOO_SETWATCHES_OP	proto.h	/^#define ZOO_SETWATCHES_OP /;"	d
+ZOO_SYNC_OP	proto.h	/^#define ZOO_SYNC_OP /;"	d
+ZOPERATIONTIMEOUT	zookeeper.h	/^  ZOPERATIONTIMEOUT = -7, \/*!< Operation timeout *\/$/;"	e	enum:ZOO_ERRORS
+ZRUNTIMEINCONSISTENCY	zookeeper.h	/^  ZRUNTIMEINCONSISTENCY = -2, \/*!< A runtime inconsistency was found *\/$/;"	e	enum:ZOO_ERRORS
+ZSESSIONEXPIRED	zookeeper.h	/^  ZSESSIONEXPIRED = -112, \/*!< The session has been expired by the server *\/$/;"	e	enum:ZOO_ERRORS
+ZSESSIONMOVED	zookeeper.h	/^  ZSESSIONMOVED = -118 \/*!<session moved to another server, so operation is ignored *\/ $/;"	e	enum:ZOO_ERRORS
+ZSYSTEMERROR	zookeeper.h	/^  ZSYSTEMERROR = -1,$/;"	e	enum:ZOO_ERRORS
+ZUNIMPLEMENTED	zookeeper.h	/^  ZUNIMPLEMENTED = -6, \/*!< Operation is unimplemented *\/$/;"	e	enum:ZOO_ERRORS
+ZooLogLevel	zookeeper.h	/^typedef enum {ZOO_LOG_LEVEL_ERROR=1,ZOO_LOG_LEVEL_WARN=2,ZOO_LOG_LEVEL_INFO=3,ZOO_LOG_LEVEL_DEBUG=4} ZooLogLevel;$/;"	t	typeref:enum:__anon9
+_CREATOR_ALL_ACL_ACL	zookeeper.c	/^static struct ACL _CREATOR_ALL_ACL_ACL[] = {{0x1f, {"auth", ""}}};$/;"	v	typeref:struct:ACL	file:
+_CRT_SECURE_NO_WARNINGS	winconfig.h	/^#define _CRT_SECURE_NO_WARNINGS$/;"	d
+_GNU_SOURCE	mt_adaptor.c	/^#define _GNU_SOURCE$/;"	d	file:
+_LL_CAST_	cli.c	/^#define _LL_CAST_ /;"	d	file:
+_MSC_STDINT_H_	winstdint.h	/^#define _MSC_STDINT_H_$/;"	d
+_OPEN_ACL_UNSAFE_ACL	zookeeper.c	/^static struct ACL _OPEN_ACL_UNSAFE_ACL[] = {{0x1f, {"world", "anyone"}}};$/;"	v	typeref:struct:ACL	file:
+_READ_ACL_UNSAFE_ACL	zookeeper.c	/^static struct ACL _READ_ACL_UNSAFE_ACL[] = {{0x01, {"world", "anyone"}}};$/;"	v	typeref:struct:ACL	file:
+_W64	winstdint.h	/^#     define _W64 /;"	d
+_W64	winstdint.h	/^#     define _W64$/;"	d
+_WIN32_WINNT	winconfig.h	/^#define _WIN32_WINNT /;"	d
+_WIN32_WINNT_NT4	winconfig.h	/^#define _WIN32_WINNT_NT4 /;"	d
+__HASHTABLE_CWC22_H__	hashtable.h	/^#define __HASHTABLE_CWC22_H__$/;"	d
+__HASHTABLE_ITR_CWC22__	hashtable_itr.h	/^#define __HASHTABLE_ITR_CWC22__$/;"	d
+__HASHTABLE_PRIVATE_CWC22_H__	hashtable_private.h	/^#define __HASHTABLE_PRIVATE_CWC22_H__$/;"	d
+__LINENOISE_H	linenoise/linenoise.h	/^#define __LINENOISE_H$/;"	d
+__RECORDIO_H__	recordio.h	/^#define __RECORDIO_H__$/;"	d
+__ZOOKEEPER_JUTE__	zookeeper.jute.h	/^#define __ZOOKEEPER_JUTE__$/;"	d
+__attribute__	winconfig.h	/^#define __attribute__(/;"	d
+__func__	winconfig.h	/^#define __func__ /;"	d
+_auth_completion_list	zookeeper.c	/^typedef struct _auth_completion_list {$/;"	s	file:
+_auth_info	zk_adaptor.h	/^typedef struct _auth_info {$/;"	s
+_auth_list_head	zk_adaptor.h	/^typedef struct _auth_list_head {$/;"	s
+_buffer_head	zk_adaptor.h	/^typedef struct _buffer_head {$/;"	s
+_buffer_list	zk_adaptor.h	/^typedef struct _buffer_list {$/;"	s
+_completion_head	zk_adaptor.h	/^typedef struct _completion_head {$/;"	s
+_completion_list	zookeeper.c	/^typedef struct _completion_list {$/;"	s	file:
+_watcher_object	zk_hashtable.c	/^typedef struct _watcher_object {$/;"	s	file:
+_watcher_registration	zk_hashtable.h	/^typedef struct _watcher_registration {$/;"	s
+_zhandle	zk_adaptor.h	/^struct _zhandle {$/;"	s
+_zk_hashtable	zk_hashtable.c	/^struct _zk_hashtable {$/;"	s	file:
+abAppend	linenoise/linenoise.c	/^static void abAppend(struct abuf *ab, const char *s, int len) {$/;"	f	file:
+abFree	linenoise/linenoise.c	/^static void abFree(struct abuf *ab) {$/;"	f	file:
+abInit	linenoise/linenoise.c	/^static void abInit(struct abuf *ab) {$/;"	f	file:
+abuf	linenoise/linenoise.c	/^struct abuf {$/;"	s	file:
+acl	zk_adaptor.h	/^            struct ACL_vector acl;$/;"	m	struct:sync_completion::__anon3::__anon6	typeref:struct:sync_completion::__anon3::__anon6::ACL_vector
+acl	zk_adaptor.h	/^        } acl;$/;"	m	union:sync_completion::__anon3	typeref:struct:sync_completion::__anon3::__anon6
+acl	zookeeper.h	/^            const struct ACL_vector *acl;$/;"	m	struct:zoo_op::__anon11::__anon12	typeref:struct:zoo_op::__anon11::__anon12::ACL_vector
+acl	zookeeper.jute.h	/^    struct ACL_vector acl;$/;"	m	struct:CreateRequest	typeref:struct:CreateRequest::ACL_vector
+acl	zookeeper.jute.h	/^    struct ACL_vector acl;$/;"	m	struct:CreateTxn	typeref:struct:CreateTxn::ACL_vector
+acl	zookeeper.jute.h	/^    struct ACL_vector acl;$/;"	m	struct:CreateTxnV0	typeref:struct:CreateTxnV0::ACL_vector
+acl	zookeeper.jute.h	/^    struct ACL_vector acl;$/;"	m	struct:GetACLResponse	typeref:struct:GetACLResponse::ACL_vector
+acl	zookeeper.jute.h	/^    struct ACL_vector acl;$/;"	m	struct:SetACLRequest	typeref:struct:SetACLRequest::ACL_vector
+acl	zookeeper.jute.h	/^    struct ACL_vector acl;$/;"	m	struct:SetACLTxn	typeref:struct:SetACLTxn::ACL_vector
+acl_completion_t	zookeeper.h	/^typedef void (*acl_completion_t)(int rc, struct ACL_vector *acl,$/;"	t
+acl_result	zookeeper.c	/^        acl_completion_t acl_result;$/;"	m	union:completion::__anon8	file:
+activateWatcher	zk_hashtable.c	/^void activateWatcher(zhandle_t *zh, watcher_registration_t* reg, int rc)$/;"	f
+active_child_watchers	zk_adaptor.h	/^    zk_hashtable* active_child_watchers;$/;"	m	struct:_zhandle
+active_exist_watchers	zk_adaptor.h	/^    zk_hashtable* active_exist_watchers;$/;"	m	struct:_zhandle
+active_node_watchers	zk_adaptor.h	/^    zk_hashtable* active_node_watchers;   $/;"	m	struct:_zhandle
+adaptor_destroy	mt_adaptor.c	/^void adaptor_destroy(zhandle_t *zh)$/;"	f
+adaptor_destroy	st_adaptor.c	/^void adaptor_destroy(zhandle_t *zh){}$/;"	f
+adaptor_finish	mt_adaptor.c	/^void adaptor_finish(zhandle_t *zh)$/;"	f
+adaptor_finish	st_adaptor.c	/^void adaptor_finish(zhandle_t *zh){}$/;"	f
+adaptor_init	mt_adaptor.c	/^int adaptor_init(zhandle_t *zh)$/;"	f
+adaptor_init	st_adaptor.c	/^int adaptor_init(zhandle_t *zh)$/;"	f
+adaptor_priv	zk_adaptor.h	/^    void *adaptor_priv;$/;"	m	struct:_zhandle
+adaptor_send_queue	mt_adaptor.c	/^int adaptor_send_queue(zhandle_t *zh, int timeout)$/;"	f
+adaptor_send_queue	st_adaptor.c	/^int adaptor_send_queue(zhandle_t *zh, int timeout)$/;"	f
+adaptor_threads	zk_adaptor.h	/^struct adaptor_threads {$/;"	s
+add_acl_completion	zookeeper.c	/^static int add_acl_completion(zhandle_t *zh, int xid, acl_completion_t dc,$/;"	f	file:
+add_auth_completion	zookeeper.c	/^static void add_auth_completion(auth_completion_list_t* a_list, void_completion_t* completion,$/;"	f	file:
+add_completion	zookeeper.c	/^static int add_completion(zhandle_t *zh, int xid, int completion_type,$/;"	f	file:
+add_data_completion	zookeeper.c	/^static int add_data_completion(zhandle_t *zh, int xid, data_completion_t dc,$/;"	f	file:
+add_for_event	zk_hashtable.c	/^static void add_for_event(zk_hashtable *ht, char *path, watcher_object_list_t **list)$/;"	f	file:
+add_last_auth	zookeeper.c	/^static void add_last_auth(auth_list_head_t *auth_list, auth_info *add_el) {$/;"	f	file:
+add_multi_completion	zookeeper.c	/^static int add_multi_completion(zhandle_t *zh, int xid, void_completion_t dc,$/;"	f	file:
+add_stat_completion	zookeeper.c	/^static int add_stat_completion(zhandle_t *zh, int xid, stat_completion_t dc,$/;"	f	file:
+add_string_completion	zookeeper.c	/^static int add_string_completion(zhandle_t *zh, int xid,$/;"	f	file:
+add_strings_completion	zookeeper.c	/^static int add_strings_completion(zhandle_t *zh, int xid,$/;"	f	file:
+add_strings_stat_completion	zookeeper.c	/^static int add_strings_stat_completion(zhandle_t *zh, int xid,$/;"	f	file:
+add_to_list	zk_hashtable.c	/^static int add_to_list(watcher_object_list_t **wl, watcher_object_t *wo,$/;"	f	file:
+add_void_completion	zookeeper.c	/^static int add_void_completion(zhandle_t *zh, int xid, void_completion_t dc,$/;"	f	file:
+address	cJSON/test.c	/^struct record {const char *precision;double lat,lon;const char *address,*city,*state,*zip,*country; };$/;"	m	struct:record	file:
+addrs	zk_adaptor.h	/^    struct sockaddr_storage *addrs; \/* the addresses that correspond to the hostname *\/$/;"	m	struct:_zhandle	typeref:struct:_zhandle::sockaddr_storage
+addrs_count	zk_adaptor.h	/^    int addrs_count; \/* The number of addresses in the addrs array *\/$/;"	m	struct:_zhandle
+alloc_sync_completion	mt_adaptor.c	/^struct sync_completion *alloc_sync_completion(void)$/;"	f
+alloc_sync_completion	st_adaptor.c	/^struct sync_completion *alloc_sync_completion(void)$/;"	f
+allocate_ACL_vector	zookeeper.jute.c	/^int allocate_ACL_vector(struct ACL_vector *v, int32_t len) {$/;"	f
+allocate_Id_vector	zookeeper.jute.c	/^int allocate_Id_vector(struct Id_vector *v, int32_t len) {$/;"	f
+allocate_String_vector	zookeeper.jute.c	/^int allocate_String_vector(struct String_vector *v, int32_t len) {$/;"	f
+allocate_Txn_vector	zookeeper.jute.c	/^int allocate_Txn_vector(struct Txn_vector *v, int32_t len) {$/;"	f
+allocate_buffer	zookeeper.c	/^static buffer_list_t *allocate_buffer(char *buff, int len)$/;"	f	file:
+api_epilog	zookeeper.c	/^int api_epilog(zhandle_t *zh,int rc)$/;"	f
+api_prolog	zookeeper.c	/^void api_prolog(zhandle_t* zh)$/;"	f
+atexit_registered	linenoise/linenoise.c	/^static int atexit_registered = 0; \/* Register atexit just 1 time. *\/$/;"	v	file:
+auth	zk_adaptor.h	/^     auth_info *auth;$/;"	m	struct:_auth_list_head
+auth	zk_adaptor.h	/^    struct buffer auth;$/;"	m	struct:_auth_info	typeref:struct:_auth_info::buffer
+auth	zookeeper.jute.h	/^    struct buffer auth;$/;"	m	struct:AuthPacket	typeref:struct:AuthPacket::buffer
+auth_completion_func	zookeeper.c	/^static void auth_completion_func(int rc, zhandle_t* zh)$/;"	f	file:
+auth_completion_list_t	zookeeper.c	/^} auth_completion_list_t;$/;"	t	typeref:struct:_auth_completion_list	file:
+auth_data	zookeeper.c	/^    const char *auth_data;$/;"	m	struct:_auth_completion_list	file:
+auth_h	zk_adaptor.h	/^    auth_list_head_t auth_h; \/* authentication data list *\/$/;"	m	struct:_zhandle
+auth_info	zk_adaptor.h	/^} auth_info;$/;"	t	typeref:struct:_auth_info
+auth_list_head_t	zk_adaptor.h	/^} auth_list_head_t;$/;"	t	typeref:struct:_auth_list_head
+authinfo	zookeeper.jute.h	/^    struct Id_vector authinfo;$/;"	m	struct:QuorumPacket	typeref:struct:QuorumPacket::Id_vector
+aversion	zookeeper.jute.h	/^    int32_t aversion;$/;"	m	struct:Stat
+aversion	zookeeper.jute.h	/^    int32_t aversion;$/;"	m	struct:StatPersisted
+aversion	zookeeper.jute.h	/^    int32_t aversion;$/;"	m	struct:StatPersistedV1
+b	linenoise/linenoise.c	/^    char *b;$/;"	m	struct:abuf	file:
+batchMode	cli.c	/^static int batchMode=0;$/;"	v	file:
+broker_list	kafka_inspect.c	/^void broker_list() {$/;"	f
+brokers_ids_path	kafka_inspect.c	/^const char *brokers_ids_path = "\/brokers\/ids";$/;"	v
+buf	linenoise/linenoise.c	/^    char *buf;          \/* Edited line buffer. *\/$/;"	m	struct:linenoiseState	file:
+buf	zookeeper.h	/^	        char *buf;$/;"	m	struct:zoo_op::__anon11::__anon12
+buff	recordio.h	/^    char *buff;$/;"	m	struct:buffer
+buff_len	zk_adaptor.h	/^            int buff_len;$/;"	m	struct:sync_completion::__anon3::__anon5
+buff_struct	recordio.c	/^struct buff_struct {$/;"	s	file:
+buffer	cJSON/cJSON.c	/^typedef struct {char *buffer; int length; int offset; } printbuffer;$/;"	m	struct:__anon1	file:
+buffer	recordio.c	/^    char *buffer;$/;"	m	struct:buff_struct	file:
+buffer	recordio.h	/^struct buffer {$/;"	s
+buffer	zk_adaptor.h	/^            char *buffer;$/;"	m	struct:sync_completion::__anon3::__anon5
+buffer	zk_adaptor.h	/^    char *buffer;$/;"	m	struct:_buffer_list
+buffer	zookeeper.c	/^    buffer_list_t *buffer;$/;"	m	struct:_completion_list	file:
+buffer_head_t	zk_adaptor.h	/^} buffer_head_t;$/;"	t	typeref:struct:_buffer_head
+buffer_list_t	zk_adaptor.h	/^} buffer_list_t;$/;"	t	typeref:struct:_buffer_list
+buflen	linenoise/linenoise.c	/^    size_t buflen;      \/* Edited line buffer size. *\/$/;"	m	struct:linenoiseState	file:
+buflen	zookeeper.h	/^            int buflen;$/;"	m	struct:zoo_op::__anon11::__anon12
+c	zookeeper.c	/^    completion_t c;$/;"	m	struct:_completion_list	file:
+cJSON	cJSON/cJSON.h	/^typedef struct cJSON {$/;"	s
+cJSON	cJSON/cJSON.h	/^} cJSON;$/;"	t	typeref:struct:cJSON
+cJSONUtils_AddPatchToArray	cJSON/cJSON_Utils.c	/^void cJSONUtils_AddPatchToArray(cJSON *array,const char *op,const char *path,cJSON *val)	{cJSONUtils_GeneratePatch(array,op,path,0,val);}$/;"	f
+cJSONUtils_ApplyPatch	cJSON/cJSON_Utils.c	/^static int cJSONUtils_ApplyPatch(cJSON *object,cJSON *patch)$/;"	f	file:
+cJSONUtils_ApplyPatches	cJSON/cJSON_Utils.c	/^int cJSONUtils_ApplyPatches(cJSON *object,cJSON *patches)$/;"	f
+cJSONUtils_Compare	cJSON/cJSON_Utils.c	/^static int cJSONUtils_Compare(cJSON *a,cJSON *b)$/;"	f	file:
+cJSONUtils_CompareToPatch	cJSON/cJSON_Utils.c	/^static void cJSONUtils_CompareToPatch(cJSON *patches,const char *path,cJSON *from,cJSON *to)$/;"	f	file:
+cJSONUtils_FindPointerFromObjectTo	cJSON/cJSON_Utils.c	/^char *cJSONUtils_FindPointerFromObjectTo(cJSON *object,cJSON *target)$/;"	f
+cJSONUtils_GeneratePatch	cJSON/cJSON_Utils.c	/^static void cJSONUtils_GeneratePatch(cJSON *patches,const char *op,const char *path,const char *suffix,cJSON *val)$/;"	f	file:
+cJSONUtils_GeneratePatches	cJSON/cJSON_Utils.c	/^cJSON* cJSONUtils_GeneratePatches(cJSON *from,cJSON *to)$/;"	f
+cJSONUtils_GetPointer	cJSON/cJSON_Utils.c	/^cJSON *cJSONUtils_GetPointer(cJSON *object,const char *pointer)$/;"	f
+cJSONUtils_InplaceDecodePointerString	cJSON/cJSON_Utils.c	/^static void cJSONUtils_InplaceDecodePointerString(char *string)$/;"	f	file:
+cJSONUtils_PatchDetach	cJSON/cJSON_Utils.c	/^static cJSON *cJSONUtils_PatchDetach(cJSON *object,const char *path)$/;"	f	file:
+cJSONUtils_PointerEncodedstrcpy	cJSON/cJSON_Utils.c	/^static void cJSONUtils_PointerEncodedstrcpy(char *d,const char *s)$/;"	f	file:
+cJSONUtils_PointerEncodedstrlen	cJSON/cJSON_Utils.c	/^static int cJSONUtils_PointerEncodedstrlen(const char *s)	{int l=0;for (;*s;s++,l++) if (*s=='~' || *s=='\/') l++;return l;}$/;"	f	file:
+cJSONUtils_Pstrcasecmp	cJSON/cJSON_Utils.c	/^static int cJSONUtils_Pstrcasecmp(const char *a,const char *e)$/;"	f	file:
+cJSONUtils_SortList	cJSON/cJSON_Utils.c	/^static cJSON *cJSONUtils_SortList(cJSON *list)$/;"	f	file:
+cJSONUtils_SortObject	cJSON/cJSON_Utils.c	/^void cJSONUtils_SortObject(cJSON *object)	{object->child=cJSONUtils_SortList(object->child);}$/;"	f
+cJSONUtils_strcasecmp	cJSON/cJSON_Utils.c	/^static int cJSONUtils_strcasecmp(const char *s1,const char *s2)$/;"	f	file:
+cJSON_AddBoolToObject	cJSON/cJSON.h	/^#define cJSON_AddBoolToObject(/;"	d
+cJSON_AddFalseToObject	cJSON/cJSON.h	/^#define cJSON_AddFalseToObject(/;"	d
+cJSON_AddItemReferenceToArray	cJSON/cJSON.c	/^void	cJSON_AddItemReferenceToArray(cJSON *array, cJSON *item)						{cJSON_AddItemToArray(array,create_reference(item));}$/;"	f
+cJSON_AddItemReferenceToObject	cJSON/cJSON.c	/^void	cJSON_AddItemReferenceToObject(cJSON *object,const char *string,cJSON *item)	{cJSON_AddItemToObject(object,string,create_reference(item));}$/;"	f
+cJSON_AddItemToArray	cJSON/cJSON.c	/^void   cJSON_AddItemToArray(cJSON *array, cJSON *item)						{cJSON *c=array->child;if (!item) return; if (!c) {array->child=item;} else {while (c && c->next) c=c->next; suffix_object(c,item);}}$/;"	f
+cJSON_AddItemToObject	cJSON/cJSON.c	/^void   cJSON_AddItemToObject(cJSON *object,const char *string,cJSON *item)	{if (!item) return; if (item->string) cJSON_free(item->string);item->string=cJSON_strdup(string);cJSON_AddItemToArray(object,item);}$/;"	f
+cJSON_AddItemToObjectCS	cJSON/cJSON.c	/^void   cJSON_AddItemToObjectCS(cJSON *object,const char *string,cJSON *item)	{if (!item) return; if (!(item->type&cJSON_StringIsConst) && item->string) cJSON_free(item->string);item->string=(char*)string;item->type|=cJSON_StringIsConst;cJSON_AddItemToArray(object,item);}$/;"	f
+cJSON_AddNullToObject	cJSON/cJSON.h	/^#define cJSON_AddNullToObject(/;"	d
+cJSON_AddNumberToObject	cJSON/cJSON.h	/^#define cJSON_AddNumberToObject(/;"	d
+cJSON_AddStringToObject	cJSON/cJSON.h	/^#define cJSON_AddStringToObject(/;"	d
+cJSON_AddTrueToObject	cJSON/cJSON.h	/^#define cJSON_AddTrueToObject(/;"	d
+cJSON_Array	cJSON/cJSON.h	/^#define cJSON_Array /;"	d
+cJSON_ArrayForEach	cJSON/cJSON.h	/^#define cJSON_ArrayForEach(/;"	d
+cJSON_CreateArray	cJSON/cJSON.c	/^cJSON *cJSON_CreateArray(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_Array;return item;}$/;"	f
+cJSON_CreateBool	cJSON/cJSON.c	/^cJSON *cJSON_CreateBool(int b)					{cJSON *item=cJSON_New_Item();if(item)item->type=b?cJSON_True:cJSON_False;return item;}$/;"	f
+cJSON_CreateDoubleArray	cJSON/cJSON.c	/^cJSON *cJSON_CreateDoubleArray(const double *numbers,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateFalse	cJSON/cJSON.c	/^cJSON *cJSON_CreateFalse(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_False;return item;}$/;"	f
+cJSON_CreateFloatArray	cJSON/cJSON.c	/^cJSON *cJSON_CreateFloatArray(const float *numbers,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateIntArray	cJSON/cJSON.c	/^cJSON *cJSON_CreateIntArray(const int *numbers,int count)		{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateNull	cJSON/cJSON.c	/^cJSON *cJSON_CreateNull(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_NULL;return item;}$/;"	f
+cJSON_CreateNumber	cJSON/cJSON.c	/^cJSON *cJSON_CreateNumber(double num)			{cJSON *item=cJSON_New_Item();if(item){item->type=cJSON_Number;item->valuedouble=num;item->valueint=(int)num;}return item;}$/;"	f
+cJSON_CreateObject	cJSON/cJSON.c	/^cJSON *cJSON_CreateObject(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_Object;return item;}$/;"	f
+cJSON_CreateString	cJSON/cJSON.c	/^cJSON *cJSON_CreateString(const char *string)	{cJSON *item=cJSON_New_Item();if(item){item->type=cJSON_String;item->valuestring=cJSON_strdup(string);}return item;}$/;"	f
+cJSON_CreateStringArray	cJSON/cJSON.c	/^cJSON *cJSON_CreateStringArray(const char **strings,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateString(strings[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateTrue	cJSON/cJSON.c	/^cJSON *cJSON_CreateTrue(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_True;return item;}$/;"	f
+cJSON_Delete	cJSON/cJSON.c	/^void cJSON_Delete(cJSON *c)$/;"	f
+cJSON_DeleteItemFromArray	cJSON/cJSON.c	/^void   cJSON_DeleteItemFromArray(cJSON *array,int which)			{cJSON_Delete(cJSON_DetachItemFromArray(array,which));}$/;"	f
+cJSON_DeleteItemFromObject	cJSON/cJSON.c	/^void   cJSON_DeleteItemFromObject(cJSON *object,const char *string) {cJSON_Delete(cJSON_DetachItemFromObject(object,string));}$/;"	f
+cJSON_DetachItemFromArray	cJSON/cJSON.c	/^cJSON *cJSON_DetachItemFromArray(cJSON *array,int which)			{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) return 0;$/;"	f
+cJSON_DetachItemFromObject	cJSON/cJSON.c	/^cJSON *cJSON_DetachItemFromObject(cJSON *object,const char *string) {int i=0;cJSON *c=object->child;while (c && cJSON_strcasecmp(c->string,string)) i++,c=c->next;if (c) return cJSON_DetachItemFromArray(object,i);return 0;}$/;"	f
+cJSON_Duplicate	cJSON/cJSON.c	/^cJSON *cJSON_Duplicate(cJSON *item,int recurse)$/;"	f
+cJSON_False	cJSON/cJSON.h	/^#define cJSON_False /;"	d
+cJSON_GetArrayItem	cJSON/cJSON.c	/^cJSON *cJSON_GetArrayItem(cJSON *array,int item)				{cJSON *c=array->child;  while (c && item>0) item--,c=c->next; return c;}$/;"	f
+cJSON_GetArraySize	cJSON/cJSON.c	/^int    cJSON_GetArraySize(cJSON *array)							{cJSON *c=array->child;int i=0;while(c)i++,c=c->next;return i;}$/;"	f
+cJSON_GetErrorPtr	cJSON/cJSON.c	/^const char *cJSON_GetErrorPtr(void) {return ep;}$/;"	f
+cJSON_GetObjectItem	cJSON/cJSON.c	/^cJSON *cJSON_GetObjectItem(cJSON *object,const char *string)	{cJSON *c=object->child; while (c && cJSON_strcasecmp(c->string,string)) c=c->next; return c;}$/;"	f
+cJSON_HasObjectItem	cJSON/cJSON.c	/^int cJSON_HasObjectItem(cJSON *object,const char *string)	{$/;"	f
+cJSON_Hooks	cJSON/cJSON.h	/^typedef struct cJSON_Hooks {$/;"	s
+cJSON_Hooks	cJSON/cJSON.h	/^} cJSON_Hooks;$/;"	t	typeref:struct:cJSON_Hooks
+cJSON_InitHooks	cJSON/cJSON.c	/^void cJSON_InitHooks(cJSON_Hooks* hooks)$/;"	f
+cJSON_InsertItemInArray	cJSON/cJSON.c	/^void   cJSON_InsertItemInArray(cJSON *array,int which,cJSON *newitem)		{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) {cJSON_AddItemToArray(array,newitem);return;}$/;"	f
+cJSON_IsReference	cJSON/cJSON.h	/^#define cJSON_IsReference /;"	d
+cJSON_Minify	cJSON/cJSON.c	/^void cJSON_Minify(char *json)$/;"	f
+cJSON_NULL	cJSON/cJSON.h	/^#define cJSON_NULL /;"	d
+cJSON_New_Item	cJSON/cJSON.c	/^static cJSON *cJSON_New_Item(void)$/;"	f	file:
+cJSON_Number	cJSON/cJSON.h	/^#define cJSON_Number /;"	d
+cJSON_Object	cJSON/cJSON.h	/^#define cJSON_Object /;"	d
+cJSON_Parse	cJSON/cJSON.c	/^cJSON *cJSON_Parse(const char *value) {return cJSON_ParseWithOpts(value,0,0);}$/;"	f
+cJSON_ParseWithOpts	cJSON/cJSON.c	/^cJSON *cJSON_ParseWithOpts(const char *value,const char **return_parse_end,int require_null_terminated)$/;"	f
+cJSON_Print	cJSON/cJSON.c	/^char *cJSON_Print(cJSON *item)				{return print_value(item,0,1,0);}$/;"	f
+cJSON_PrintBuffered	cJSON/cJSON.c	/^char *cJSON_PrintBuffered(cJSON *item,int prebuffer,int fmt)$/;"	f
+cJSON_PrintUnformatted	cJSON/cJSON.c	/^char *cJSON_PrintUnformatted(cJSON *item)	{return print_value(item,0,0,0);}$/;"	f
+cJSON_ReplaceItemInArray	cJSON/cJSON.c	/^void   cJSON_ReplaceItemInArray(cJSON *array,int which,cJSON *newitem)		{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) return;$/;"	f
+cJSON_ReplaceItemInObject	cJSON/cJSON.c	/^void   cJSON_ReplaceItemInObject(cJSON *object,const char *string,cJSON *newitem){int i=0;cJSON *c=object->child;while(c && cJSON_strcasecmp(c->string,string))i++,c=c->next;if(c){newitem->string=cJSON_strdup(string);cJSON_ReplaceItemInArray(object,i,newitem);}}$/;"	f
+cJSON_SetIntValue	cJSON/cJSON.h	/^#define cJSON_SetIntValue(/;"	d
+cJSON_SetNumberValue	cJSON/cJSON.h	/^#define cJSON_SetNumberValue(/;"	d
+cJSON_String	cJSON/cJSON.h	/^#define cJSON_String /;"	d
+cJSON_StringIsConst	cJSON/cJSON.h	/^#define cJSON_StringIsConst /;"	d
+cJSON_True	cJSON/cJSON.h	/^#define cJSON_True /;"	d
+cJSON__h	cJSON/cJSON.h	/^#define cJSON__h$/;"	d
+cJSON_free	cJSON/cJSON.c	/^static void (*cJSON_free)(void *ptr) = free;$/;"	v	file:
+cJSON_malloc	cJSON/cJSON.c	/^static void *(*cJSON_malloc)(size_t sz) = malloc;$/;"	v	file:
+cJSON_strcasecmp	cJSON/cJSON.c	/^static int cJSON_strcasecmp(const char *s1,const char *s2)$/;"	f	file:
+cJSON_strdup	cJSON/cJSON.c	/^static char* cJSON_strdup(const char* str)$/;"	f	file:
+calculate_interval	zookeeper.c	/^static inline int calculate_interval(const struct timeval *start,$/;"	f	file:
+checkResponseLatency	zookeeper.c	/^static void checkResponseLatency(zhandle_t* zh)$/;"	f	file:
+check_events	zookeeper.c	/^static int check_events(zhandle_t *zh, int events)$/;"	f	file:
+check_op	zookeeper.h	/^        } check_op;$/;"	m	union:zoo_op::__anon11	typeref:struct:zoo_op::__anon11::__anon15
+checker	zk_hashtable.h	/^    result_checker_fn checker;$/;"	m	struct:_watcher_registration
+child	cJSON/cJSON.h	/^	struct cJSON *child;		\/* An array or object item will have a child pointer pointing to a chain of the items in the array\/object. *\/$/;"	m	struct:cJSON	typeref:struct:cJSON::cJSON
+childWatches	zookeeper.jute.h	/^    struct String_vector childWatches;$/;"	m	struct:SetWatches	typeref:struct:SetWatches::String_vector
+child_result_checker	zookeeper.c	/^zk_hashtable *child_result_checker(zhandle_t *zh, int rc)$/;"	f
+children	zookeeper.jute.h	/^    struct String_vector children;$/;"	m	struct:GetChildren2Response	typeref:struct:GetChildren2Response::String_vector
+children	zookeeper.jute.h	/^    struct String_vector children;$/;"	m	struct:GetChildrenResponse	typeref:struct:GetChildrenResponse::String_vector
+chroot	zk_adaptor.h	/^    char *chroot;$/;"	m	struct:_zhandle
+city	cJSON/test.c	/^struct record {const char *precision;double lat,lon;const char *address,*city,*state,*zip,*country; };$/;"	m	struct:record	file:
+cleanup_bufs	zookeeper.c	/^static void cleanup_bufs(zhandle_t *zh,int callCompletion,int rc)$/;"	f	file:
+clientId	zookeeper.jute.h	/^    int64_t clientId;$/;"	m	struct:TxnHeader
+clientIdFile	cli.c	/^static const char *clientIdFile = 0;$/;"	v	file:
+client_id	zk_adaptor.h	/^    clientid_t client_id;$/;"	m	struct:_zhandle
+client_id	zookeeper.h	/^    int64_t client_id;$/;"	m	struct:__anon10
+clientid_t	zookeeper.h	/^} clientid_t;$/;"	t	typeref:struct:__anon10
+clist	zookeeper.c	/^    completion_head_t clist; \/* For multi-op *\/$/;"	m	struct:completion	file:
+clone_watcher_object	zk_hashtable.c	/^watcher_object_t* clone_watcher_object(watcher_object_t* wo)$/;"	f
+close	winport.c	/^int close(SOCKET fd) {$/;"	f
+close_buffer_iarchive	recordio.c	/^void close_buffer_iarchive(struct iarchive **ia)$/;"	f
+close_buffer_oarchive	recordio.c	/^void close_buffer_oarchive(struct oarchive **oa, int free_buffer)$/;"	f
+close_requested	zk_adaptor.h	/^    volatile int close_requested;$/;"	m	struct:_zhandle
+cmd	cli.c	/^static char cmd[1024];$/;"	v	file:
+collectWatchers	zk_hashtable.c	/^watcher_object_list_t *collectWatchers(zhandle_t *zh,int type, char *path)$/;"	f
+collect_keys	zk_hashtable.c	/^char **collect_keys(zk_hashtable *ht, int *count)$/;"	f
+collect_session_watchers	zk_hashtable.c	/^static void collect_session_watchers(zhandle_t *zh,$/;"	f	file:
+cols	linenoise/linenoise.c	/^    size_t cols;        \/* Number of columns in terminal. *\/$/;"	m	struct:linenoiseState	file:
+command_completion	zkclient.c	/^static void command_completion(const char *buf, int len, linenoiseCompletions *lc) {$/;"	f	file:
+commands	zkclient.c	/^const char * commands[] = {$/;"	v
+complete	zk_adaptor.h	/^    int complete;$/;"	m	struct:sync_completion
+completeLine	linenoise/linenoise.c	/^static int completeLine(struct linenoiseState *ls, linenoiseCompletions lc) {$/;"	f	file:
+completion	linenoise/example.c	/^void completion(const char *buf, linenoiseCompletions *lc) {$/;"	f
+completion	zk_adaptor.h	/^     pthread_t completion;$/;"	m	struct:adaptor_threads
+completion	zk_adaptor.h	/^    void_completion_t completion;$/;"	m	struct:_auth_info
+completion	zkclient.c	/^void completion(const char *buf, linenoiseCompletions *lc) {$/;"	f
+completion	zookeeper.c	/^    void_completion_t completion;$/;"	m	struct:_auth_completion_list	file:
+completion	zookeeper.c	/^typedef struct completion {$/;"	s	file:
+completionCallback	linenoise/linenoise.c	/^static linenoiseCompletionCallback *completionCallback = NULL;$/;"	v	file:
+completion_head_t	zk_adaptor.h	/^} completion_head_t;$/;"	t	typeref:struct:_completion_head
+completion_list_t	zookeeper.c	/^} completion_list_t;$/;"	t	typeref:struct:_completion_list	file:
+completion_t	zookeeper.c	/^} completion_t;$/;"	t	typeref:struct:completion	file:
+completions_to_process	zk_adaptor.h	/^    completion_head_t completions_to_process; \/* completions that are ready to run *\/$/;"	m	struct:_zhandle
+cond	load_gen.c	/^static pthread_cond_t cond=PTHREAD_COND_INITIALIZER;$/;"	v	file:
+cond	zk_adaptor.h	/^     pthread_cond_t cond;       \/\/ barrier's conditional$/;"	m	struct:adaptor_threads
+cond	zk_adaptor.h	/^    pthread_cond_t cond;$/;"	m	struct:_completion_head
+cond	zk_adaptor.h	/^    pthread_cond_t cond;$/;"	m	struct:sync_completion
+connect_index	zk_adaptor.h	/^    int connect_index; \/* The index of the address to connect to *\/$/;"	m	struct:_zhandle
+connect_req	zk_adaptor.h	/^struct connect_req {$/;"	s
+consumers_group_path	kafka_inspect.c	/^const char *consumers_group_path = "\/consumers";$/;"	v
+context	zk_adaptor.h	/^    void *context;$/;"	m	struct:_zhandle
+context	zk_hashtable.c	/^    void* context;$/;"	m	struct:_watcher_object	file:
+context	zk_hashtable.h	/^    void* context;$/;"	m	struct:_watcher_registration
+copy_table	zk_hashtable.c	/^static void copy_table(zk_hashtable *from, watcher_object_list_t *to) {$/;"	f	file:
+copy_watchers	zk_hashtable.c	/^static void copy_watchers(watcher_object_list_t *from, watcher_object_list_t *to, int clone)$/;"	f	file:
+count	zookeeper.jute.h	/^    int32_t count;$/;"	m	struct:ACL_vector
+count	zookeeper.jute.h	/^    int32_t count;$/;"	m	struct:Id_vector
+count	zookeeper.jute.h	/^    int32_t count;$/;"	m	struct:String_vector
+count	zookeeper.jute.h	/^    int32_t count;$/;"	m	struct:Txn_vector
+counter	load_gen.c	/^static int counter; $/;"	v	file:
+counterCond	load_gen.c	/^static pthread_cond_t counterCond=PTHREAD_COND_INITIALIZER;$/;"	v	file:
+counterLock	load_gen.c	/^static pthread_mutex_t counterLock=PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+country	cJSON/test.c	/^struct record {const char *precision;double lat,lon;const char *address,*city,*state,*zip,*country; };$/;"	m	struct:record	file:
+createRoot	load_gen.c	/^int createRoot(const char* root){$/;"	f
+create_buffer_iarchive	recordio.c	/^struct iarchive *create_buffer_iarchive(char *buffer, int len)$/;"	f
+create_buffer_oarchive	recordio.c	/^struct oarchive *create_buffer_oarchive()$/;"	f
+create_completion	load_gen.c	/^void create_completion(int rc, const char *name, const void *data) {$/;"	f
+create_completion_entry	zookeeper.c	/^static completion_list_t* create_completion_entry(int xid, int completion_type,$/;"	f	file:
+create_hashtable	hashtable.c	/^create_hashtable(unsigned int minsize,$/;"	f
+create_objects	cJSON/test.c	/^void create_objects()$/;"	f
+create_op	zookeeper.h	/^        } create_op;$/;"	m	union:zoo_op::__anon11	typeref:struct:zoo_op::__anon11::__anon12
+create_reference	cJSON/cJSON.c	/^static cJSON *create_reference(cJSON *item) {cJSON *ref=cJSON_New_Item();if (!ref) return 0;memcpy(ref,item,sizeof(cJSON));ref->string=0;ref->type|=cJSON_IsReference;ref->next=ref->prev=0;return ref;}$/;"	f	file:
+create_socket_pair	mt_adaptor.c	/^int create_socket_pair(SOCKET fds[2]) $/;"	f
+create_watcher_object	zk_hashtable.c	/^static watcher_object_t* create_watcher_object(watcher_fn watcher,void* ctx)$/;"	f	file:
+create_watcher_object_list	zk_hashtable.c	/^static watcher_object_list_t* create_watcher_object_list(watcher_object_t* head) $/;"	f	file:
+create_watcher_registration	zookeeper.c	/^static watcher_registration_t* create_watcher_registration(const char* path,$/;"	f	file:
+create_zk_hashtable	zk_hashtable.c	/^zk_hashtable* create_zk_hashtable()$/;"	f
+ctime	zookeeper.jute.h	/^    int64_t ctime;$/;"	m	struct:Stat
+ctime	zookeeper.jute.h	/^    int64_t ctime;$/;"	m	struct:StatPersisted
+ctime	zookeeper.jute.h	/^    int64_t ctime;$/;"	m	struct:StatPersistedV1
+ctime_r	cli.c	/^#define ctime_r(/;"	d	file:
+curr_offset	zk_adaptor.h	/^    int curr_offset; \/* This is the offset into the header followed by offset into the buffer *\/$/;"	m	struct:_buffer_list
+cvec	linenoise/linenoise.h	/^  char **cvec;$/;"	m	struct:linenoiseCompletions
+cversion	zookeeper.jute.h	/^    int32_t cversion;$/;"	m	struct:Stat
+cversion	zookeeper.jute.h	/^    int32_t cversion;$/;"	m	struct:StatPersisted
+cversion	zookeeper.jute.h	/^    int32_t cversion;$/;"	m	struct:StatPersistedV1
+cxid	zookeeper.jute.h	/^    int32_t cxid;$/;"	m	struct:TxnHeader
+czxid	zookeeper.jute.h	/^    int64_t czxid;$/;"	m	struct:Stat
+czxid	zookeeper.jute.h	/^    int64_t czxid;$/;"	m	struct:StatPersisted
+czxid	zookeeper.jute.h	/^    int64_t czxid;$/;"	m	struct:StatPersistedV1
+data	zk_adaptor.h	/^        } data;$/;"	m	union:sync_completion::__anon3	typeref:struct:sync_completion::__anon3::__anon5
+data	zk_adaptor.h	/^    const char* data;$/;"	m	struct:_auth_info
+data	zookeeper.c	/^    const void *data;$/;"	m	struct:_completion_list	file:
+data	zookeeper.h	/^            const char *data;$/;"	m	struct:zoo_op::__anon11::__anon12
+data	zookeeper.h	/^            const char *data;$/;"	m	struct:zoo_op::__anon11::__anon14
+data	zookeeper.jute.h	/^    char * *data;$/;"	m	struct:String_vector
+data	zookeeper.jute.h	/^    struct ACL *data;$/;"	m	struct:ACL_vector	typeref:struct:ACL_vector::ACL
+data	zookeeper.jute.h	/^    struct Id *data;$/;"	m	struct:Id_vector	typeref:struct:Id_vector::Id
+data	zookeeper.jute.h	/^    struct Txn *data;$/;"	m	struct:Txn_vector	typeref:struct:Txn_vector::Txn
+data	zookeeper.jute.h	/^    struct buffer data;$/;"	m	struct:CreateRequest	typeref:struct:CreateRequest::buffer
+data	zookeeper.jute.h	/^    struct buffer data;$/;"	m	struct:CreateTxn	typeref:struct:CreateTxn::buffer
+data	zookeeper.jute.h	/^    struct buffer data;$/;"	m	struct:CreateTxnV0	typeref:struct:CreateTxnV0::buffer
+data	zookeeper.jute.h	/^    struct buffer data;$/;"	m	struct:GetDataResponse	typeref:struct:GetDataResponse::buffer
+data	zookeeper.jute.h	/^    struct buffer data;$/;"	m	struct:QuorumPacket	typeref:struct:QuorumPacket::buffer
+data	zookeeper.jute.h	/^    struct buffer data;$/;"	m	struct:SetDataRequest	typeref:struct:SetDataRequest::buffer
+data	zookeeper.jute.h	/^    struct buffer data;$/;"	m	struct:SetDataTxn	typeref:struct:SetDataTxn::buffer
+data	zookeeper.jute.h	/^    struct buffer data;$/;"	m	struct:Txn	typeref:struct:Txn::buffer
+dataLength	zookeeper.jute.h	/^    int32_t dataLength;$/;"	m	struct:Stat
+dataWatches	zookeeper.jute.h	/^    struct String_vector dataWatches;$/;"	m	struct:SetWatches	typeref:struct:SetWatches::String_vector
+data_completion_t	zookeeper.h	/^typedef void (*data_completion_t)(int rc, const char *value, int value_len,$/;"	t
+data_result	zookeeper.c	/^        data_completion_t data_result;$/;"	m	union:completion::__anon8	file:
+data_result_checker	zookeeper.c	/^zk_hashtable *data_result_checker(zhandle_t *zh, int rc)$/;"	f
+datalen	zookeeper.h	/^            int datalen;$/;"	m	struct:zoo_op::__anon11::__anon12
+datalen	zookeeper.h	/^            int datalen;$/;"	m	struct:zoo_op::__anon11::__anon14
+dbid	zookeeper.jute.h	/^    int64_t dbid;$/;"	m	struct:FileHeader
+deallocate_ACL	zookeeper.jute.c	/^void deallocate_ACL(struct ACL*v){$/;"	f
+deallocate_ACL_vector	zookeeper.jute.c	/^int deallocate_ACL_vector(struct ACL_vector *v) {$/;"	f
+deallocate_AuthPacket	zookeeper.jute.c	/^void deallocate_AuthPacket(struct AuthPacket*v){$/;"	f
+deallocate_Buffer	recordio.c	/^void deallocate_Buffer(struct buffer *b)$/;"	f
+deallocate_CheckVersionRequest	zookeeper.jute.c	/^void deallocate_CheckVersionRequest(struct CheckVersionRequest*v){$/;"	f
+deallocate_CheckVersionTxn	zookeeper.jute.c	/^void deallocate_CheckVersionTxn(struct CheckVersionTxn*v){$/;"	f
+deallocate_ConnectRequest	zookeeper.jute.c	/^void deallocate_ConnectRequest(struct ConnectRequest*v){$/;"	f
+deallocate_ConnectResponse	zookeeper.jute.c	/^void deallocate_ConnectResponse(struct ConnectResponse*v){$/;"	f
+deallocate_CreateRequest	zookeeper.jute.c	/^void deallocate_CreateRequest(struct CreateRequest*v){$/;"	f
+deallocate_CreateResponse	zookeeper.jute.c	/^void deallocate_CreateResponse(struct CreateResponse*v){$/;"	f
+deallocate_CreateSessionTxn	zookeeper.jute.c	/^void deallocate_CreateSessionTxn(struct CreateSessionTxn*v){$/;"	f
+deallocate_CreateTxn	zookeeper.jute.c	/^void deallocate_CreateTxn(struct CreateTxn*v){$/;"	f
+deallocate_CreateTxnV0	zookeeper.jute.c	/^void deallocate_CreateTxnV0(struct CreateTxnV0*v){$/;"	f
+deallocate_DeleteRequest	zookeeper.jute.c	/^void deallocate_DeleteRequest(struct DeleteRequest*v){$/;"	f
+deallocate_DeleteTxn	zookeeper.jute.c	/^void deallocate_DeleteTxn(struct DeleteTxn*v){$/;"	f
+deallocate_ErrorResponse	zookeeper.jute.c	/^void deallocate_ErrorResponse(struct ErrorResponse*v){$/;"	f
+deallocate_ErrorTxn	zookeeper.jute.c	/^void deallocate_ErrorTxn(struct ErrorTxn*v){$/;"	f
+deallocate_ExistsRequest	zookeeper.jute.c	/^void deallocate_ExistsRequest(struct ExistsRequest*v){$/;"	f
+deallocate_ExistsResponse	zookeeper.jute.c	/^void deallocate_ExistsResponse(struct ExistsResponse*v){$/;"	f
+deallocate_FileHeader	zookeeper.jute.c	/^void deallocate_FileHeader(struct FileHeader*v){$/;"	f
+deallocate_GetACLRequest	zookeeper.jute.c	/^void deallocate_GetACLRequest(struct GetACLRequest*v){$/;"	f
+deallocate_GetACLResponse	zookeeper.jute.c	/^void deallocate_GetACLResponse(struct GetACLResponse*v){$/;"	f
+deallocate_GetChildren2Request	zookeeper.jute.c	/^void deallocate_GetChildren2Request(struct GetChildren2Request*v){$/;"	f
+deallocate_GetChildren2Response	zookeeper.jute.c	/^void deallocate_GetChildren2Response(struct GetChildren2Response*v){$/;"	f
+deallocate_GetChildrenRequest	zookeeper.jute.c	/^void deallocate_GetChildrenRequest(struct GetChildrenRequest*v){$/;"	f
+deallocate_GetChildrenResponse	zookeeper.jute.c	/^void deallocate_GetChildrenResponse(struct GetChildrenResponse*v){$/;"	f
+deallocate_GetDataRequest	zookeeper.jute.c	/^void deallocate_GetDataRequest(struct GetDataRequest*v){$/;"	f
+deallocate_GetDataResponse	zookeeper.jute.c	/^void deallocate_GetDataResponse(struct GetDataResponse*v){$/;"	f
+deallocate_GetMaxChildrenRequest	zookeeper.jute.c	/^void deallocate_GetMaxChildrenRequest(struct GetMaxChildrenRequest*v){$/;"	f
+deallocate_GetMaxChildrenResponse	zookeeper.jute.c	/^void deallocate_GetMaxChildrenResponse(struct GetMaxChildrenResponse*v){$/;"	f
+deallocate_GetSASLRequest	zookeeper.jute.c	/^void deallocate_GetSASLRequest(struct GetSASLRequest*v){$/;"	f
+deallocate_Id	zookeeper.jute.c	/^void deallocate_Id(struct Id*v){$/;"	f
+deallocate_Id_vector	zookeeper.jute.c	/^int deallocate_Id_vector(struct Id_vector *v) {$/;"	f
+deallocate_LearnerInfo	zookeeper.jute.c	/^void deallocate_LearnerInfo(struct LearnerInfo*v){$/;"	f
+deallocate_MultiHeader	zookeeper.jute.c	/^void deallocate_MultiHeader(struct MultiHeader*v){$/;"	f
+deallocate_MultiTxn	zookeeper.jute.c	/^void deallocate_MultiTxn(struct MultiTxn*v){$/;"	f
+deallocate_QuorumPacket	zookeeper.jute.c	/^void deallocate_QuorumPacket(struct QuorumPacket*v){$/;"	f
+deallocate_ReplyHeader	zookeeper.jute.c	/^void deallocate_ReplyHeader(struct ReplyHeader*v){$/;"	f
+deallocate_RequestHeader	zookeeper.jute.c	/^void deallocate_RequestHeader(struct RequestHeader*v){$/;"	f
+deallocate_SetACLRequest	zookeeper.jute.c	/^void deallocate_SetACLRequest(struct SetACLRequest*v){$/;"	f
+deallocate_SetACLResponse	zookeeper.jute.c	/^void deallocate_SetACLResponse(struct SetACLResponse*v){$/;"	f
+deallocate_SetACLTxn	zookeeper.jute.c	/^void deallocate_SetACLTxn(struct SetACLTxn*v){$/;"	f
+deallocate_SetDataRequest	zookeeper.jute.c	/^void deallocate_SetDataRequest(struct SetDataRequest*v){$/;"	f
+deallocate_SetDataResponse	zookeeper.jute.c	/^void deallocate_SetDataResponse(struct SetDataResponse*v){$/;"	f
+deallocate_SetDataTxn	zookeeper.jute.c	/^void deallocate_SetDataTxn(struct SetDataTxn*v){$/;"	f
+deallocate_SetMaxChildrenRequest	zookeeper.jute.c	/^void deallocate_SetMaxChildrenRequest(struct SetMaxChildrenRequest*v){$/;"	f
+deallocate_SetMaxChildrenTxn	zookeeper.jute.c	/^void deallocate_SetMaxChildrenTxn(struct SetMaxChildrenTxn*v){$/;"	f
+deallocate_SetSASLRequest	zookeeper.jute.c	/^void deallocate_SetSASLRequest(struct SetSASLRequest*v){$/;"	f
+deallocate_SetSASLResponse	zookeeper.jute.c	/^void deallocate_SetSASLResponse(struct SetSASLResponse*v){$/;"	f
+deallocate_SetWatches	zookeeper.jute.c	/^void deallocate_SetWatches(struct SetWatches*v){$/;"	f
+deallocate_Stat	zookeeper.jute.c	/^void deallocate_Stat(struct Stat*v){$/;"	f
+deallocate_StatPersisted	zookeeper.jute.c	/^void deallocate_StatPersisted(struct StatPersisted*v){$/;"	f
+deallocate_StatPersistedV1	zookeeper.jute.c	/^void deallocate_StatPersistedV1(struct StatPersistedV1*v){$/;"	f
+deallocate_String	recordio.c	/^void deallocate_String(char **s)$/;"	f
+deallocate_String_vector	zookeeper.jute.c	/^int deallocate_String_vector(struct String_vector *v) {$/;"	f
+deallocate_SyncRequest	zookeeper.jute.c	/^void deallocate_SyncRequest(struct SyncRequest*v){$/;"	f
+deallocate_SyncResponse	zookeeper.jute.c	/^void deallocate_SyncResponse(struct SyncResponse*v){$/;"	f
+deallocate_Txn	zookeeper.jute.c	/^void deallocate_Txn(struct Txn*v){$/;"	f
+deallocate_TxnHeader	zookeeper.jute.c	/^void deallocate_TxnHeader(struct TxnHeader*v){$/;"	f
+deallocate_Txn_vector	zookeeper.jute.c	/^int deallocate_Txn_vector(struct Txn_vector *v) {$/;"	f
+deallocate_WatcherEvent	zookeeper.jute.c	/^void deallocate_WatcherEvent(struct WatcherEvent*v){$/;"	f
+delete_completion	load_gen.c	/^void delete_completion(int rc, const void *data) {$/;"	f
+delete_op	zookeeper.h	/^        } delete_op;$/;"	m	union:zoo_op::__anon11	typeref:struct:zoo_op::__anon11::__anon13
+deletedCounter	load_gen.c	/^static int deletedCounter;$/;"	v	file:
+deliverWatchers	zk_hashtable.c	/^void deliverWatchers(zhandle_t *zh, int type,int state, char *path, watcher_object_list_t **list)$/;"	f
+dequeue_buffer	zookeeper.c	/^static buffer_list_t *dequeue_buffer(buffer_head_t *list)$/;"	f	file:
+dequeue_completion	zookeeper.c	/^completion_list_t *dequeue_completion(completion_head_t *list)$/;"	f
+deserialize_ACL	zookeeper.jute.c	/^int deserialize_ACL(struct iarchive *in, const char *tag, struct ACL*v){$/;"	f
+deserialize_ACL_vector	zookeeper.jute.c	/^int deserialize_ACL_vector(struct iarchive *in, const char *tag, struct ACL_vector *v)$/;"	f
+deserialize_AuthPacket	zookeeper.jute.c	/^int deserialize_AuthPacket(struct iarchive *in, const char *tag, struct AuthPacket*v){$/;"	f
+deserialize_Bool	recordio.h	/^    int (*deserialize_Bool)(struct iarchive *ia, const char *name, int32_t *);$/;"	m	struct:iarchive
+deserialize_Buffer	recordio.h	/^    int (*deserialize_Buffer)(struct iarchive *ia, const char *name,$/;"	m	struct:iarchive
+deserialize_CheckVersionRequest	zookeeper.jute.c	/^int deserialize_CheckVersionRequest(struct iarchive *in, const char *tag, struct CheckVersionRequest*v){$/;"	f
+deserialize_CheckVersionTxn	zookeeper.jute.c	/^int deserialize_CheckVersionTxn(struct iarchive *in, const char *tag, struct CheckVersionTxn*v){$/;"	f
+deserialize_ConnectRequest	zookeeper.jute.c	/^int deserialize_ConnectRequest(struct iarchive *in, const char *tag, struct ConnectRequest*v){$/;"	f
+deserialize_ConnectResponse	zookeeper.jute.c	/^int deserialize_ConnectResponse(struct iarchive *in, const char *tag, struct ConnectResponse*v){$/;"	f
+deserialize_CreateRequest	zookeeper.jute.c	/^int deserialize_CreateRequest(struct iarchive *in, const char *tag, struct CreateRequest*v){$/;"	f
+deserialize_CreateResponse	zookeeper.jute.c	/^int deserialize_CreateResponse(struct iarchive *in, const char *tag, struct CreateResponse*v){$/;"	f
+deserialize_CreateSessionTxn	zookeeper.jute.c	/^int deserialize_CreateSessionTxn(struct iarchive *in, const char *tag, struct CreateSessionTxn*v){$/;"	f
+deserialize_CreateTxn	zookeeper.jute.c	/^int deserialize_CreateTxn(struct iarchive *in, const char *tag, struct CreateTxn*v){$/;"	f
+deserialize_CreateTxnV0	zookeeper.jute.c	/^int deserialize_CreateTxnV0(struct iarchive *in, const char *tag, struct CreateTxnV0*v){$/;"	f
+deserialize_DeleteRequest	zookeeper.jute.c	/^int deserialize_DeleteRequest(struct iarchive *in, const char *tag, struct DeleteRequest*v){$/;"	f
+deserialize_DeleteTxn	zookeeper.jute.c	/^int deserialize_DeleteTxn(struct iarchive *in, const char *tag, struct DeleteTxn*v){$/;"	f
+deserialize_ErrorResponse	zookeeper.jute.c	/^int deserialize_ErrorResponse(struct iarchive *in, const char *tag, struct ErrorResponse*v){$/;"	f
+deserialize_ErrorTxn	zookeeper.jute.c	/^int deserialize_ErrorTxn(struct iarchive *in, const char *tag, struct ErrorTxn*v){$/;"	f
+deserialize_ExistsRequest	zookeeper.jute.c	/^int deserialize_ExistsRequest(struct iarchive *in, const char *tag, struct ExistsRequest*v){$/;"	f
+deserialize_ExistsResponse	zookeeper.jute.c	/^int deserialize_ExistsResponse(struct iarchive *in, const char *tag, struct ExistsResponse*v){$/;"	f
+deserialize_FileHeader	zookeeper.jute.c	/^int deserialize_FileHeader(struct iarchive *in, const char *tag, struct FileHeader*v){$/;"	f
+deserialize_GetACLRequest	zookeeper.jute.c	/^int deserialize_GetACLRequest(struct iarchive *in, const char *tag, struct GetACLRequest*v){$/;"	f
+deserialize_GetACLResponse	zookeeper.jute.c	/^int deserialize_GetACLResponse(struct iarchive *in, const char *tag, struct GetACLResponse*v){$/;"	f
+deserialize_GetChildren2Request	zookeeper.jute.c	/^int deserialize_GetChildren2Request(struct iarchive *in, const char *tag, struct GetChildren2Request*v){$/;"	f
+deserialize_GetChildren2Response	zookeeper.jute.c	/^int deserialize_GetChildren2Response(struct iarchive *in, const char *tag, struct GetChildren2Response*v){$/;"	f
+deserialize_GetChildrenRequest	zookeeper.jute.c	/^int deserialize_GetChildrenRequest(struct iarchive *in, const char *tag, struct GetChildrenRequest*v){$/;"	f
+deserialize_GetChildrenResponse	zookeeper.jute.c	/^int deserialize_GetChildrenResponse(struct iarchive *in, const char *tag, struct GetChildrenResponse*v){$/;"	f
+deserialize_GetDataRequest	zookeeper.jute.c	/^int deserialize_GetDataRequest(struct iarchive *in, const char *tag, struct GetDataRequest*v){$/;"	f
+deserialize_GetDataResponse	zookeeper.jute.c	/^int deserialize_GetDataResponse(struct iarchive *in, const char *tag, struct GetDataResponse*v){$/;"	f
+deserialize_GetMaxChildrenRequest	zookeeper.jute.c	/^int deserialize_GetMaxChildrenRequest(struct iarchive *in, const char *tag, struct GetMaxChildrenRequest*v){$/;"	f
+deserialize_GetMaxChildrenResponse	zookeeper.jute.c	/^int deserialize_GetMaxChildrenResponse(struct iarchive *in, const char *tag, struct GetMaxChildrenResponse*v){$/;"	f
+deserialize_GetSASLRequest	zookeeper.jute.c	/^int deserialize_GetSASLRequest(struct iarchive *in, const char *tag, struct GetSASLRequest*v){$/;"	f
+deserialize_Id	zookeeper.jute.c	/^int deserialize_Id(struct iarchive *in, const char *tag, struct Id*v){$/;"	f
+deserialize_Id_vector	zookeeper.jute.c	/^int deserialize_Id_vector(struct iarchive *in, const char *tag, struct Id_vector *v)$/;"	f
+deserialize_Int	recordio.h	/^    int (*deserialize_Int)(struct iarchive *ia, const char *name, int32_t *);$/;"	m	struct:iarchive
+deserialize_LearnerInfo	zookeeper.jute.c	/^int deserialize_LearnerInfo(struct iarchive *in, const char *tag, struct LearnerInfo*v){$/;"	f
+deserialize_Long	recordio.h	/^    int (*deserialize_Long)(struct iarchive *ia, const char *name, int64_t *);$/;"	m	struct:iarchive
+deserialize_MultiHeader	zookeeper.jute.c	/^int deserialize_MultiHeader(struct iarchive *in, const char *tag, struct MultiHeader*v){$/;"	f
+deserialize_MultiTxn	zookeeper.jute.c	/^int deserialize_MultiTxn(struct iarchive *in, const char *tag, struct MultiTxn*v){$/;"	f
+deserialize_QuorumPacket	zookeeper.jute.c	/^int deserialize_QuorumPacket(struct iarchive *in, const char *tag, struct QuorumPacket*v){$/;"	f
+deserialize_ReplyHeader	zookeeper.jute.c	/^int deserialize_ReplyHeader(struct iarchive *in, const char *tag, struct ReplyHeader*v){$/;"	f
+deserialize_RequestHeader	zookeeper.jute.c	/^int deserialize_RequestHeader(struct iarchive *in, const char *tag, struct RequestHeader*v){$/;"	f
+deserialize_SetACLRequest	zookeeper.jute.c	/^int deserialize_SetACLRequest(struct iarchive *in, const char *tag, struct SetACLRequest*v){$/;"	f
+deserialize_SetACLResponse	zookeeper.jute.c	/^int deserialize_SetACLResponse(struct iarchive *in, const char *tag, struct SetACLResponse*v){$/;"	f
+deserialize_SetACLTxn	zookeeper.jute.c	/^int deserialize_SetACLTxn(struct iarchive *in, const char *tag, struct SetACLTxn*v){$/;"	f
+deserialize_SetDataRequest	zookeeper.jute.c	/^int deserialize_SetDataRequest(struct iarchive *in, const char *tag, struct SetDataRequest*v){$/;"	f
+deserialize_SetDataResponse	zookeeper.jute.c	/^int deserialize_SetDataResponse(struct iarchive *in, const char *tag, struct SetDataResponse*v){$/;"	f
+deserialize_SetDataTxn	zookeeper.jute.c	/^int deserialize_SetDataTxn(struct iarchive *in, const char *tag, struct SetDataTxn*v){$/;"	f
+deserialize_SetMaxChildrenRequest	zookeeper.jute.c	/^int deserialize_SetMaxChildrenRequest(struct iarchive *in, const char *tag, struct SetMaxChildrenRequest*v){$/;"	f
+deserialize_SetMaxChildrenTxn	zookeeper.jute.c	/^int deserialize_SetMaxChildrenTxn(struct iarchive *in, const char *tag, struct SetMaxChildrenTxn*v){$/;"	f
+deserialize_SetSASLRequest	zookeeper.jute.c	/^int deserialize_SetSASLRequest(struct iarchive *in, const char *tag, struct SetSASLRequest*v){$/;"	f
+deserialize_SetSASLResponse	zookeeper.jute.c	/^int deserialize_SetSASLResponse(struct iarchive *in, const char *tag, struct SetSASLResponse*v){$/;"	f
+deserialize_SetWatches	zookeeper.jute.c	/^int deserialize_SetWatches(struct iarchive *in, const char *tag, struct SetWatches*v){$/;"	f
+deserialize_Stat	zookeeper.jute.c	/^int deserialize_Stat(struct iarchive *in, const char *tag, struct Stat*v){$/;"	f
+deserialize_StatPersisted	zookeeper.jute.c	/^int deserialize_StatPersisted(struct iarchive *in, const char *tag, struct StatPersisted*v){$/;"	f
+deserialize_StatPersistedV1	zookeeper.jute.c	/^int deserialize_StatPersistedV1(struct iarchive *in, const char *tag, struct StatPersistedV1*v){$/;"	f
+deserialize_String	recordio.h	/^    int (*deserialize_String)(struct iarchive *ia, const char *name, char **);$/;"	m	struct:iarchive
+deserialize_String_vector	zookeeper.jute.c	/^int deserialize_String_vector(struct iarchive *in, const char *tag, struct String_vector *v)$/;"	f
+deserialize_SyncRequest	zookeeper.jute.c	/^int deserialize_SyncRequest(struct iarchive *in, const char *tag, struct SyncRequest*v){$/;"	f
+deserialize_SyncResponse	zookeeper.jute.c	/^int deserialize_SyncResponse(struct iarchive *in, const char *tag, struct SyncResponse*v){$/;"	f
+deserialize_Txn	zookeeper.jute.c	/^int deserialize_Txn(struct iarchive *in, const char *tag, struct Txn*v){$/;"	f
+deserialize_TxnHeader	zookeeper.jute.c	/^int deserialize_TxnHeader(struct iarchive *in, const char *tag, struct TxnHeader*v){$/;"	f
+deserialize_Txn_vector	zookeeper.jute.c	/^int deserialize_Txn_vector(struct iarchive *in, const char *tag, struct Txn_vector *v)$/;"	f
+deserialize_WatcherEvent	zookeeper.jute.c	/^int deserialize_WatcherEvent(struct iarchive *in, const char *tag, struct WatcherEvent*v){$/;"	f
+deserialize_multi	zookeeper.c	/^static int deserialize_multi(int xid, completion_list_t *cptr, struct iarchive *ia)$/;"	f	file:
+deserialize_prime_response	zookeeper.c	/^ static int deserialize_prime_response(struct prime_struct *req, char* buffer){$/;"	f	file:
+deserialize_response	zookeeper.c	/^static void deserialize_response(int type, int xid, int failed, int rc, completion_list_t *cptr, struct iarchive *ia)$/;"	f	file:
+destroy	zookeeper.c	/^static void destroy(zhandle_t *zh)$/;"	f	file:
+destroy_completion_entry	zookeeper.c	/^static void destroy_completion_entry(completion_list_t* c){$/;"	f	file:
+destroy_watcher_object_list	zk_hashtable.c	/^static void destroy_watcher_object_list(watcher_object_list_t* list)$/;"	f	file:
+destroy_watcher_registration	zookeeper.c	/^static void destroy_watcher_registration(watcher_registration_t* wo){$/;"	f	file:
+destroy_zk_hashtable	zk_hashtable.c	/^void destroy_zk_hashtable(zk_hashtable* ht)$/;"	f
+destructor	winport.h	/^  void (*destructor) (void *);  $/;"	m	struct:pthread_key_t_
+disableRawMode	linenoise/linenoise.c	/^static void disableRawMode(int fd) {$/;"	f	file:
+disable_conn_permute	zookeeper.c	/^static int disable_conn_permute=0; \/\/ permute enabled by default$/;"	v	file:
+doCreateNodes	load_gen.c	/^int doCreateNodes(const char* root, int count){$/;"	f
+doDeletes	load_gen.c	/^int doDeletes(const char* root, int count){$/;"	f
+doReads	load_gen.c	/^int doReads(const char* root, int count){$/;"	f
+doWrites	load_gen.c	/^int doWrites(const char* root, int count){$/;"	f
+do_clean_hashtable	zk_hashtable.c	/^static void do_clean_hashtable(zk_hashtable* ht)$/;"	f	file:
+do_completion	mt_adaptor.c	/^unsigned __stdcall do_completion( void * v)$/;"	f
+do_foreach_watcher	zk_hashtable.c	/^static void do_foreach_watcher(watcher_object_t* wo,zhandle_t* zh,$/;"	f	file:
+do_insert_watcher_object	zk_hashtable.c	/^static int do_insert_watcher_object(zk_hashtable *ht, const char *path, watcher_object_t* wo)$/;"	f	file:
+do_io	mt_adaptor.c	/^unsigned __stdcall do_io( void * v)$/;"	f
+dofile	cJSON/test.c	/^void dofile(char *filename)$/;"	f
+doit	cJSON/test.c	/^void doit(char *text)$/;"	f
+done	zookeeper.jute.h	/^    int32_t done;$/;"	m	struct:MultiHeader
+dumpStat	cli.c	/^void dumpStat(const struct Stat *stat) {$/;"	f
+e	hashtable_itr.h	/^    struct entry *e;$/;"	m	struct:hashtable_itr	typeref:struct:hashtable_itr::entry
+enableRawMode	linenoise/linenoise.c	/^static int enableRawMode(int fd) {$/;"	f	file:
+end_record	recordio.h	/^    int (*end_record)(struct iarchive *ia, const char *tag);$/;"	m	struct:iarchive
+end_record	recordio.h	/^    int (*end_record)(struct oarchive *oa, const char *tag);$/;"	m	struct:oarchive
+end_vector	recordio.h	/^    int (*end_vector)(struct iarchive *ia, const char *tag);$/;"	m	struct:iarchive
+end_vector	recordio.h	/^    int (*end_vector)(struct oarchive *oa, const char *tag);$/;"	m	struct:oarchive
+ensure	cJSON/cJSON.c	/^static char* ensure(printbuffer *p,int needed)$/;"	f	file:
+ensureConnected	load_gen.c	/^void ensureConnected(){$/;"	f
+enter_critical	mt_adaptor.c	/^void enter_critical(zhandle_t* zh)$/;"	f
+enter_critical	st_adaptor.c	/^void enter_critical(zhandle_t* zh){}$/;"	f
+entry	hashtable_private.h	/^struct entry$/;"	s
+entrycount	hashtable_private.h	/^    unsigned int entrycount;$/;"	m	struct:hashtable
+ep	cJSON/cJSON.c	/^static const char *ep;$/;"	v	file:
+ephemeral	zookeeper.jute.h	/^    int32_t ephemeral;$/;"	m	struct:CreateTxn
+ephemeral	zookeeper.jute.h	/^    int32_t ephemeral;$/;"	m	struct:CreateTxnV0
+ephemeralOwner	zookeeper.jute.h	/^    int64_t ephemeralOwner;$/;"	m	struct:Stat
+ephemeralOwner	zookeeper.jute.h	/^    int64_t ephemeralOwner;$/;"	m	struct:StatPersisted
+ephemeralOwner	zookeeper.jute.h	/^    int64_t ephemeralOwner;$/;"	m	struct:StatPersistedV1
+eqfn	hashtable_private.h	/^    int (*eqfn) (void *k1, void *k2);$/;"	m	struct:hashtable
+err	zookeeper.h	/^    int err;$/;"	m	struct:zoo_op_result
+err	zookeeper.jute.h	/^    int32_t err;$/;"	m	struct:ErrorResponse
+err	zookeeper.jute.h	/^    int32_t err;$/;"	m	struct:ErrorTxn
+err	zookeeper.jute.h	/^    int32_t err;$/;"	m	struct:MultiHeader
+err	zookeeper.jute.h	/^    int32_t err;$/;"	m	struct:ReplyHeader
+existWatches	zookeeper.jute.h	/^    struct String_vector existWatches;$/;"	m	struct:SetWatches	typeref:struct:SetWatches::String_vector
+exists_result_checker	zookeeper.c	/^zk_hashtable *exists_result_checker(zhandle_t *zh, int rc)$/;"	f
+fd	zk_adaptor.h	/^    SOCKET fd; \/* the descriptor used to talk to zookeeper *\/$/;"	m	struct:_zhandle
+fetch_and_add	mt_adaptor.c	/^int32_t fetch_and_add(volatile int32_t* operand, int incr)$/;"	f
+firstByteMark	cJSON/cJSON.c	/^static const unsigned char firstByteMark[7] = { 0x00, 0x00, 0xC0, 0xE0, 0xF0, 0xF8, 0xFC };$/;"	v	file:
+flags	zookeeper.h	/^            int flags;$/;"	m	struct:zoo_op::__anon11::__anon12
+flags	zookeeper.jute.h	/^    int32_t flags;$/;"	m	struct:CreateRequest
+flush_send_queue	zookeeper.c	/^int flush_send_queue(zhandle_t*zh, int timeout)$/;"	f
+format_current_endpoint_info	zookeeper.c	/^static const char* format_current_endpoint_info(zhandle_t* zh)$/;"	f	file:
+format_endpoint_info	zookeeper.c	/^static const char* format_endpoint_info(const struct sockaddr_storage* ep)$/;"	f	file:
+format_log_message	zk_log.c	/^const char* format_log_message(const char* format,...)$/;"	f
+format_log_msg_buffer	zk_log.c	/^static pthread_key_t format_log_msg_buffer;$/;"	v	file:
+freeBuffer	zk_log.c	/^void freeBuffer(void* p){$/;"	f
+freeCompletions	linenoise/linenoise.c	/^static void freeCompletions(linenoiseCompletions *lc) {$/;"	f	file:
+freeHistory	linenoise/linenoise.c	/^static void freeHistory(void) {$/;"	f	file:
+free_String_vector	load_gen.c	/^static int free_String_vector(struct String_vector *v) {$/;"	f	file:
+free_auth_completion	zookeeper.c	/^static void free_auth_completion(auth_completion_list_t *a_list) {$/;"	f	file:
+free_auth_info	zookeeper.c	/^static void free_auth_info(auth_list_head_t *auth_list)$/;"	f	file:
+free_buffer	zookeeper.c	/^static void free_buffer(buffer_list_t *b)$/;"	f	file:
+free_buffers	zookeeper.c	/^void free_buffers(buffer_head_t *list)$/;"	f
+free_completions	zookeeper.c	/^void free_completions(zhandle_t *zh,int callCompletion,int reason)$/;"	f
+free_duplicate_path	zookeeper.c	/^void free_duplicate_path(const char *free_path, const char* path) {$/;"	f
+free_fn	cJSON/cJSON.h	/^      void (*free_fn)(void *ptr);$/;"	m	struct:cJSON_Hooks
+free_key_list	zookeeper.c	/^static void free_key_list(char **list, int count)$/;"	f	file:
+free_sync_completion	mt_adaptor.c	/^void free_sync_completion(struct sync_completion *sc)$/;"	f
+free_sync_completion	st_adaptor.c	/^void free_sync_completion(struct sync_completion *sc)$/;"	f
+freekey	hashtable_private.h	/^#define freekey(/;"	d
+getColumns	linenoise/linenoise.c	/^static int getColumns(int ifd, int ofd) {$/;"	f	file:
+getCursorPosition	linenoise/linenoise.c	/^static int getCursorPosition(int ifd, int ofd) {$/;"	f	file:
+getFirstWatcher	zk_hashtable.c	/^watcher_object_t* getFirstWatcher(zk_hashtable* ht,const char* path)$/;"	f
+getImpl	zk_hashtable.c	/^hashtable_impl* getImpl(zk_hashtable* ht){$/;"	f
+getLogStream	zk_log.c	/^FILE* getLogStream(){$/;"	f
+getTSData	zk_log.c	/^char* getTSData(pthread_key_t key,int size){$/;"	f
+get_auth_completions	zookeeper.c	/^static void get_auth_completions(auth_list_head_t *auth_list, auth_completion_list_t *a_list) {$/;"	f	file:
+get_buffer	recordio.c	/^char *get_buffer(struct oarchive *oa)$/;"	f
+get_buffer_len	recordio.c	/^int get_buffer_len(struct oarchive *oa)$/;"	f
+get_errno	winconfig.h	/^#define get_errno(/;"	d
+get_format_log_buffer	zk_log.c	/^char* get_format_log_buffer(){  $/;"	f
+get_format_log_buffer	zk_log.c	/^char* get_format_log_buffer(){$/;"	f
+get_last_auth	zookeeper.c	/^static auth_info* get_last_auth(auth_list_head_t *auth_list) {$/;"	f	file:
+get_queue_len	zookeeper.c	/^static __attribute__ ((unused)) int get_queue_len(buffer_head_t *list)$/;"	f	file:
+get_time_buffer	zk_log.c	/^char* get_time_buffer(){$/;"	f
+get_timeval	zookeeper.c	/^static struct timeval get_timeval(int interval)$/;"	f	file:
+get_xid	mt_adaptor.c	/^__attribute__((constructor)) int32_t get_xid()$/;"	f
+get_xid	st_adaptor.c	/^int32_t get_xid()$/;"	f
+getaddrinfo_errno	zookeeper.c	/^static int getaddrinfo_errno(int rc) { $/;"	f	file:
+getaddrs	zookeeper.c	/^int getaddrs(zhandle_t *zh)$/;"	f
+gettimeofday	winport.h	/^inline int gettimeofday(struct timeval *tp, void *tzp) {$/;"	f
+group_list	kafka_inspect.c	/^void group_list() {$/;"	f
+h	hashtable_itr.h	/^    struct hashtable *h;$/;"	m	struct:hashtable_itr	typeref:struct:hashtable_itr::hashtable
+h	hashtable_private.h	/^    unsigned int h;$/;"	m	struct:entry
+handle_error	mt_adaptor.c	/^int handle_error(SOCKET sock, char* message)$/;"	f
+handle_error	zookeeper.c	/^static void handle_error(zhandle_t *zh,int rc)$/;"	f	file:
+handle_socket_error_msg	zookeeper.c	/^static int handle_socket_error_msg(zhandle_t *zh, int line, int rc,$/;"	f	file:
+hash	hashtable.c	/^hash(struct hashtable *h, void *k)$/;"	f
+hashfn	hashtable_private.h	/^    unsigned int (*hashfn) (void *k);$/;"	m	struct:hashtable
+hashtable	hashtable_private.h	/^struct hashtable {$/;"	s
+hashtable_count	hashtable.c	/^hashtable_count(struct hashtable *h)$/;"	f
+hashtable_destroy	hashtable.c	/^hashtable_destroy(struct hashtable *h, int free_values)$/;"	f
+hashtable_expand	hashtable.c	/^hashtable_expand(struct hashtable *h)$/;"	f	file:
+hashtable_impl	zk_hashtable.c	/^typedef struct hashtable hashtable_impl;$/;"	t	typeref:struct:hashtable	file:
+hashtable_insert	hashtable.c	/^hashtable_insert(struct hashtable *h, void *k, void *v)$/;"	f
+hashtable_iterator	hashtable_itr.c	/^hashtable_iterator(struct hashtable *h)$/;"	f
+hashtable_iterator_advance	hashtable_itr.c	/^hashtable_iterator_advance(struct hashtable_itr *itr)$/;"	f
+hashtable_iterator_key	hashtable_itr.h	/^hashtable_iterator_key(struct hashtable_itr *i)$/;"	f
+hashtable_iterator_remove	hashtable_itr.c	/^hashtable_iterator_remove(struct hashtable_itr *itr)$/;"	f
+hashtable_iterator_search	hashtable_itr.c	/^hashtable_iterator_search(struct hashtable_itr *itr,$/;"	f
+hashtable_iterator_value	hashtable_itr.h	/^hashtable_iterator_value(struct hashtable_itr *i)$/;"	f
+hashtable_itr	hashtable_itr.h	/^struct hashtable_itr$/;"	s
+hashtable_remove	hashtable.c	/^hashtable_remove(struct hashtable *h, void *k)$/;"	f
+hashtable_search	hashtable.c	/^hashtable_search(struct hashtable *h, void *k)$/;"	f
+head	zk_adaptor.h	/^    struct _buffer_list *volatile head;$/;"	m	struct:_buffer_head
+head	zk_adaptor.h	/^    struct _completion_list *volatile head;$/;"	m	struct:_completion_head
+head	zk_hashtable.c	/^    watcher_object_t* head;$/;"	m	struct:watcher_object_list	file:
+history	linenoise/linenoise.c	/^static char **history = NULL;$/;"	v	file:
+history_index	linenoise/linenoise.c	/^    int history_index;  \/* The history index we are currently editing. *\/$/;"	m	struct:linenoiseState	file:
+history_len	linenoise/linenoise.c	/^static int history_len = 0;$/;"	v	file:
+history_max_len	linenoise/linenoise.c	/^static int history_max_len = LINENOISE_DEFAULT_HISTORY_MAX_LEN;$/;"	v	file:
+hostPort	cli.c	/^static const char *hostPort;$/;"	v	file:
+hostname	zk_adaptor.h	/^    char *hostname; \/* the hostname of zookeeper *\/$/;"	m	struct:_zhandle
+ht	zk_hashtable.c	/^    struct hashtable* ht;$/;"	m	struct:_zk_hashtable	typeref:struct:_zk_hashtable::hashtable	file:
+htonll	recordio.c	/^int64_t htonll(int64_t v)$/;"	f
+ia_default	recordio.c	/^static struct iarchive ia_default = { STRUCT_INITIALIZER (start_record ,ia_start_record),$/;"	v	typeref:struct:iarchive	file:
+ia_deserialize_bool	recordio.c	/^int ia_deserialize_bool(struct iarchive *ia, const char *name, int32_t *v)$/;"	f
+ia_deserialize_buffer	recordio.c	/^int ia_deserialize_buffer(struct iarchive *ia, const char *name,$/;"	f
+ia_deserialize_int	recordio.c	/^int ia_deserialize_int(struct iarchive *ia, const char *tag, int32_t *count)$/;"	f
+ia_deserialize_long	recordio.c	/^int ia_deserialize_long(struct iarchive *ia, const char *tag, int64_t *count)$/;"	f
+ia_deserialize_string	recordio.c	/^int ia_deserialize_string(struct iarchive *ia, const char *name, char **s)$/;"	f
+ia_end_record	recordio.c	/^int ia_end_record(struct iarchive *ia, const char *tag)$/;"	f
+ia_end_vector	recordio.c	/^int ia_end_vector(struct iarchive *ia, const char *tag)$/;"	f
+ia_start_record	recordio.c	/^int ia_start_record(struct iarchive *ia, const char *tag)$/;"	f
+ia_start_vector	recordio.c	/^int ia_start_vector(struct iarchive *ia, const char *tag, int32_t *count)$/;"	f
+iarchive	recordio.h	/^struct iarchive {$/;"	s
+id	zookeeper.jute.h	/^    char * id;$/;"	m	struct:Id
+id	zookeeper.jute.h	/^    struct Id id;$/;"	m	struct:ACL	typeref:struct:ACL::Id
+ifd	linenoise/linenoise.c	/^    int ifd;            \/* Terminal stdin file descriptor. *\/$/;"	m	struct:linenoiseState	file:
+incCounter	load_gen.c	/^void incCounter(int delta){$/;"	f
+inc_ref_counter	mt_adaptor.c	/^int32_t inc_ref_counter(zhandle_t* zh,int i)$/;"	f
+inc_ref_counter	st_adaptor.c	/^int32_t inc_ref_counter(zhandle_t* zh,int i)$/;"	f
+index	hashtable_itr.h	/^    unsigned int index;$/;"	m	struct:hashtable_itr
+indexFor	hashtable_private.h	/^indexFor(unsigned int tablelength, unsigned int hashvalue) {$/;"	f
+init_auth_info	zookeeper.c	/^static void init_auth_info(auth_list_head_t *auth_list)$/;"	f	file:
+inline	winconfig.h	/^#define inline /;"	d
+input_buffer	zk_adaptor.h	/^    buffer_list_t *input_buffer; \/* the current buffer being read in *\/$/;"	m	struct:_zhandle
+insert_watcher_object	zk_hashtable.c	/^static int insert_watcher_object(zk_hashtable *ht, const char *path,$/;"	f	file:
+int16_t	winstdint.h	/^   typedef signed __int16    int16_t;$/;"	t
+int16_t	winstdint.h	/^   typedef signed short      int16_t;$/;"	t
+int32_t	winstdint.h	/^   typedef signed __int32    int32_t;$/;"	t
+int32_t	winstdint.h	/^   typedef signed int        int32_t;$/;"	t
+int64_t	winstdint.h	/^typedef signed __int64       int64_t;$/;"	t
+int8_t	winstdint.h	/^   typedef signed __int8     int8_t;$/;"	t
+int8_t	winstdint.h	/^   typedef signed char       int8_t;$/;"	t
+int_fast16_t	winstdint.h	/^typedef int16_t   int_fast16_t;$/;"	t
+int_fast32_t	winstdint.h	/^typedef int32_t   int_fast32_t;$/;"	t
+int_fast64_t	winstdint.h	/^typedef int64_t   int_fast64_t;$/;"	t
+int_fast8_t	winstdint.h	/^typedef int8_t    int_fast8_t;$/;"	t
+int_least16_t	winstdint.h	/^typedef int16_t   int_least16_t;$/;"	t
+int_least32_t	winstdint.h	/^typedef int32_t   int_least32_t;$/;"	t
+int_least64_t	winstdint.h	/^typedef int64_t   int_least64_t;$/;"	t
+int_least8_t	winstdint.h	/^typedef int8_t    int_least8_t;$/;"	t
+intmax_t	winstdint.h	/^typedef int64_t   intmax_t;$/;"	t
+intptr_t	winstdint.h	/^   typedef _W64 signed int   intptr_t;$/;"	t
+intptr_t	winstdint.h	/^   typedef signed __int64    intptr_t;$/;"	t
+io	zk_adaptor.h	/^     pthread_t io;$/;"	m	struct:adaptor_threads
+isSocketReadable	zookeeper.c	/^static void isSocketReadable(zhandle_t* zh)$/;"	f	file:
+isUnsupportedTerm	linenoise/linenoise.c	/^static int isUnsupportedTerm(void) {$/;"	f	file:
+isValidPath	zookeeper.c	/^static int isValidPath(const char* path, const int flags) {$/;"	f	file:
+is_unrecoverable	zookeeper.c	/^int is_unrecoverable(zhandle_t *zh)$/;"	f
+k	hashtable_private.h	/^    void *k, *v;$/;"	m	struct:entry
+key	winport.h	/^  DWORD key;$/;"	m	struct:pthread_key_t_
+last	zk_adaptor.h	/^    struct _buffer_list *last;$/;"	m	struct:_buffer_head	typeref:struct:_buffer_head::_buffer_list
+last	zk_adaptor.h	/^    struct _completion_list *last;$/;"	m	struct:_completion_head	typeref:struct:_completion_head::_completion_list
+lastZxidSeen	zk_adaptor.h	/^    int64_t lastZxidSeen;$/;"	m	struct:connect_req
+lastZxidSeen	zookeeper.jute.h	/^    int64_t lastZxidSeen;$/;"	m	struct:ConnectRequest
+last_ping	zk_adaptor.h	/^    struct timeval last_ping; \/* The time that the last PING was sent *\/$/;"	m	struct:_zhandle	typeref:struct:_zhandle::timeval
+last_recv	zk_adaptor.h	/^    struct timeval last_recv; \/* The time that the last message was received *\/$/;"	m	struct:_zhandle	typeref:struct:_zhandle::timeval
+last_send	zk_adaptor.h	/^    struct timeval last_send; \/* The time that the last message was sent *\/$/;"	m	struct:_zhandle	typeref:struct:_zhandle::timeval
+last_zxid	zk_adaptor.h	/^    long long last_zxid;$/;"	m	struct:_zhandle
+lat	cJSON/test.c	/^struct record {const char *precision;double lat,lon;const char *address,*city,*state,*zip,*country; };$/;"	m	struct:record	file:
+leave_critical	mt_adaptor.c	/^void leave_critical(zhandle_t* zh)$/;"	f
+leave_critical	st_adaptor.c	/^void leave_critical(zhandle_t* zh){}$/;"	f
+len	linenoise/linenoise.c	/^    int len;$/;"	m	struct:abuf	file:
+len	linenoise/linenoise.c	/^    size_t len;         \/* Current edited line length. *\/$/;"	m	struct:linenoiseState	file:
+len	linenoise/linenoise.h	/^  size_t len;$/;"	m	struct:linenoiseCompletions
+len	recordio.c	/^    int32_t len;$/;"	m	struct:buff_struct	file:
+len	recordio.h	/^    int32_t len;$/;"	m	struct:buffer
+len	zk_adaptor.h	/^    int len; \/* This represents the length of sizeof(header) + length of buffer *\/$/;"	m	struct:_buffer_list
+len	zk_adaptor.h	/^    int32_t len;$/;"	m	struct:prime_struct
+length	cJSON/cJSON.c	/^typedef struct {char *buffer; int length; int offset; } printbuffer;$/;"	m	struct:__anon1	file:
+linenoise	linenoise/linenoise.c	/^char *linenoise(const char *prompt) {$/;"	f
+linenoiseAddCompletion	linenoise/linenoise.c	/^void linenoiseAddCompletion(linenoiseCompletions *lc, const char *str) {$/;"	f
+linenoiseAtExit	linenoise/linenoise.c	/^static void linenoiseAtExit(void) {$/;"	f	file:
+linenoiseBeep	linenoise/linenoise.c	/^static void linenoiseBeep(void) {$/;"	f	file:
+linenoiseClearScreen	linenoise/linenoise.c	/^void linenoiseClearScreen(void) {$/;"	f
+linenoiseCompletionCallback	linenoise/linenoise.h	/^typedef void(linenoiseCompletionCallback)(const char *, linenoiseCompletions *);$/;"	t
+linenoiseCompletions	linenoise/linenoise.h	/^typedef struct linenoiseCompletions {$/;"	s
+linenoiseCompletions	linenoise/linenoise.h	/^} linenoiseCompletions;$/;"	t	typeref:struct:linenoiseCompletions
+linenoiseEdit	linenoise/linenoise.c	/^static int linenoiseEdit(int stdin_fd, int stdout_fd, char *buf, size_t buflen, const char *prompt)$/;"	f	file:
+linenoiseEditBackspace	linenoise/linenoise.c	/^void linenoiseEditBackspace(struct linenoiseState *l) {$/;"	f
+linenoiseEditDelete	linenoise/linenoise.c	/^void linenoiseEditDelete(struct linenoiseState *l) {$/;"	f
+linenoiseEditDeletePrevWord	linenoise/linenoise.c	/^void linenoiseEditDeletePrevWord(struct linenoiseState *l) {$/;"	f
+linenoiseEditHistoryNext	linenoise/linenoise.c	/^void linenoiseEditHistoryNext(struct linenoiseState *l, int dir) {$/;"	f
+linenoiseEditInsert	linenoise/linenoise.c	/^int linenoiseEditInsert(struct linenoiseState *l, char c) {$/;"	f
+linenoiseEditMoveEnd	linenoise/linenoise.c	/^void linenoiseEditMoveEnd(struct linenoiseState *l) {$/;"	f
+linenoiseEditMoveHome	linenoise/linenoise.c	/^void linenoiseEditMoveHome(struct linenoiseState *l) {$/;"	f
+linenoiseEditMoveLeft	linenoise/linenoise.c	/^void linenoiseEditMoveLeft(struct linenoiseState *l) {$/;"	f
+linenoiseEditMoveRight	linenoise/linenoise.c	/^void linenoiseEditMoveRight(struct linenoiseState *l) {$/;"	f
+linenoiseHistoryAdd	linenoise/linenoise.c	/^int linenoiseHistoryAdd(const char *line) {$/;"	f
+linenoiseHistoryLoad	linenoise/linenoise.c	/^int linenoiseHistoryLoad(const char *filename) {$/;"	f
+linenoiseHistorySave	linenoise/linenoise.c	/^int linenoiseHistorySave(const char *filename) {$/;"	f
+linenoiseHistorySetMaxLen	linenoise/linenoise.c	/^int linenoiseHistorySetMaxLen(int len) {$/;"	f
+linenoisePrintKeyCodes	linenoise/linenoise.c	/^void linenoisePrintKeyCodes(void) {$/;"	f
+linenoiseRaw	linenoise/linenoise.c	/^static int linenoiseRaw(char *buf, size_t buflen, const char *prompt) {$/;"	f	file:
+linenoiseSetCompletionCallback	linenoise/linenoise.c	/^void linenoiseSetCompletionCallback(linenoiseCompletionCallback *fn) {$/;"	f
+linenoiseSetMultiLine	linenoise/linenoise.c	/^void linenoiseSetMultiLine(int ml) {$/;"	f
+linenoiseState	linenoise/linenoise.c	/^struct linenoiseState {$/;"	s	file:
+listener	load_gen.c	/^void listener(zhandle_t *zzh, int type, int state, const char *path,void* ctx) {$/;"	f
+lndebug	linenoise/linenoise.c	/^#define lndebug(/;"	d	file:
+loadlimit	hashtable_private.h	/^    unsigned int loadlimit;$/;"	m	struct:hashtable
+localtime_r	winconfig.h	/^#define localtime_r(/;"	d
+lock	load_gen.c	/^static pthread_mutex_t lock=PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+lock	zk_adaptor.h	/^     pthread_mutex_t lock;      \/\/ ... and a lock$/;"	m	struct:adaptor_threads
+lock	zk_adaptor.h	/^     pthread_mutex_t lock;$/;"	m	struct:_auth_list_head
+lock	zk_adaptor.h	/^    pthread_mutex_t lock;$/;"	m	struct:_buffer_head
+lock	zk_adaptor.h	/^    pthread_mutex_t lock;$/;"	m	struct:_completion_head
+lock	zk_adaptor.h	/^    pthread_mutex_t lock;$/;"	m	struct:sync_completion
+lock_buffer_list	mt_adaptor.c	/^void lock_buffer_list(buffer_head_t *l)$/;"	f
+lock_buffer_list	st_adaptor.c	/^void lock_buffer_list(buffer_head_t *l)$/;"	f
+lock_completion_list	mt_adaptor.c	/^void lock_completion_list(completion_head_t *l)$/;"	f
+lock_completion_list	st_adaptor.c	/^void lock_completion_list(completion_head_t *l)$/;"	f
+logLevel	zk_log.c	/^ZooLogLevel logLevel=ZOO_LOG_LEVEL_INFO;$/;"	v
+logStream	zk_log.c	/^static FILE* logStream=0;$/;"	v	file:
+log_env	zookeeper.c	/^static void log_env() {$/;"	f	file:
+log_message	zk_log.c	/^void log_message(ZooLogLevel curLevel,int line,const char* funcName,$/;"	f
+lon	cJSON/test.c	/^struct record {const char *precision;double lat,lon;const char *address,*city,*state,*zip,*country; };$/;"	m	struct:record	file:
+magic	zookeeper.jute.h	/^    int32_t magic;$/;"	m	struct:FileHeader
+main	cJSON/test.c	/^int main (int argc, const char * argv[]) {$/;"	f
+main	cJSON/test_utils.c	/^int main()$/;"	f
+main	cli.c	/^int main(int argc, char **argv) {$/;"	f
+main	kafka_inspect.c	/^int main(int argc, char **argv) {$/;"	f
+main	linenoise/example.c	/^int main(int argc, char **argv) {$/;"	f
+main	load_gen.c	/^int main(int argc, char **argv) {$/;"	f
+main	zkclient.c	/^int main(int argc, char **argv) {$/;"	f
+malloc_fn	cJSON/cJSON.h	/^      void *(*malloc_fn)(size_t sz);$/;"	m	struct:cJSON_Hooks
+mark_active_auth	zookeeper.c	/^static void mark_active_auth(zhandle_t *zh) {$/;"	f	file:
+max	winconfig.h	/^#undef max$/;"	d
+max	zookeeper.jute.h	/^    int32_t max;$/;"	m	struct:GetMaxChildrenResponse
+max	zookeeper.jute.h	/^    int32_t max;$/;"	m	struct:SetMaxChildrenRequest
+max	zookeeper.jute.h	/^    int32_t max;$/;"	m	struct:SetMaxChildrenTxn
+max_load_factor	hashtable.c	/^const float max_load_factor = 0.65;$/;"	v
+maxrows	linenoise/linenoise.c	/^    size_t maxrows;     \/* Maximum num of rows used so far (multiline mode) *\/$/;"	m	struct:linenoiseState	file:
+min	winconfig.h	/^#undef min$/;"	d
+mlmode	linenoise/linenoise.c	/^static int mlmode = 0;  \/* Multi line mode. Default is single line. *\/$/;"	v	file:
+mtime	zookeeper.jute.h	/^    int64_t mtime;$/;"	m	struct:Stat
+mtime	zookeeper.jute.h	/^    int64_t mtime;$/;"	m	struct:StatPersisted
+mtime	zookeeper.jute.h	/^    int64_t mtime;$/;"	m	struct:StatPersistedV1
+my_data_completion	cli.c	/^void my_data_completion(int rc, const char *value, int value_len,$/;"	f
+my_silent_data_completion	cli.c	/^void my_silent_data_completion(int rc, const char *value, int value_len,$/;"	f
+my_silent_stat_completion	cli.c	/^void my_silent_stat_completion(int rc, const struct Stat *stat,$/;"	f
+my_stat_completion	cli.c	/^void my_stat_completion(int rc, const struct Stat *stat, const void *data) {$/;"	f
+my_string_completion	cli.c	/^void my_string_completion(int rc, const char *name, const void *data) {$/;"	f
+my_string_completion_free_data	cli.c	/^void my_string_completion_free_data(int rc, const char *name, const void *data) {$/;"	f
+my_strings_completion	cli.c	/^void my_strings_completion(int rc, const struct String_vector *strings,$/;"	f
+my_strings_stat_completion	cli.c	/^void my_strings_stat_completion(int rc, const struct String_vector *strings,$/;"	f
+my_void_completion	cli.c	/^void my_void_completion(int rc, const void *data) {$/;"	f
+myid	cli.c	/^static clientid_t myid;$/;"	v	file:
+myid	kafka_inspect.c	/^static clientid_t myid;$/;"	v	file:
+mzxid	zookeeper.jute.h	/^    int64_t mzxid;$/;"	m	struct:Stat
+mzxid	zookeeper.jute.h	/^    int64_t mzxid;$/;"	m	struct:StatPersisted
+mzxid	zookeeper.jute.h	/^    int64_t mzxid;$/;"	m	struct:StatPersistedV1
+negone	recordio.c	/^static const int32_t negone = -1;$/;"	v	file:
+next	cJSON/cJSON.h	/^	struct cJSON *next,*prev;	\/* next\/prev allow you to walk array\/object chains. Alternatively, use GetArraySize\/GetArrayItem\/GetObjectItem *\/$/;"	m	struct:cJSON	typeref:struct:cJSON::cJSON
+next	hashtable_private.h	/^    struct entry *next;$/;"	m	struct:entry	typeref:struct:entry::entry
+next	zk_adaptor.h	/^    struct _auth_info *next;$/;"	m	struct:_auth_info	typeref:struct:_auth_info::_auth_info
+next	zk_adaptor.h	/^    struct _buffer_list *next;$/;"	m	struct:_buffer_list	typeref:struct:_buffer_list::_buffer_list
+next	zk_hashtable.c	/^    struct _watcher_object* next;$/;"	m	struct:_watcher_object	typeref:struct:_watcher_object::_watcher_object	file:
+next	zookeeper.c	/^    struct _auth_completion_list *next;$/;"	m	struct:_auth_completion_list	typeref:struct:_auth_completion_list::_auth_completion_list	file:
+next	zookeeper.c	/^    struct _completion_list *next;$/;"	m	struct:_completion_list	typeref:struct:_completion_list::_completion_list	file:
+next_deadline	zk_adaptor.h	/^    struct timeval next_deadline; \/* The time of the next deadline *\/$/;"	m	struct:_zhandle	typeref:struct:_zhandle::timeval
+notify_sync_completion	mt_adaptor.c	/^void notify_sync_completion(struct sync_completion *sc)$/;"	f
+notify_sync_completion	st_adaptor.c	/^void notify_sync_completion(struct sync_completion *sc)$/;"	f
+notify_thread_ready	mt_adaptor.c	/^void notify_thread_ready(zhandle_t* zh)$/;"	f
+null_watcher_fn	zookeeper.c	/^static void null_watcher_fn(zhandle_t* p1, int p2, int p3,const char* p4,void*p5){}$/;"	f	file:
+numChildren	zookeeper.jute.h	/^    int32_t numChildren;$/;"	m	struct:Stat
+oa_default	recordio.c	/^static struct oarchive oa_default = { STRUCT_INITIALIZER (start_record , oa_start_record),$/;"	v	typeref:struct:oarchive	file:
+oa_end_record	recordio.c	/^int oa_end_record(struct oarchive *oa, const char *tag)$/;"	f
+oa_end_vector	recordio.c	/^int oa_end_vector(struct oarchive *oa, const char *tag)$/;"	f
+oa_serialize_bool	recordio.c	/^int oa_serialize_bool(struct oarchive *oa, const char *name, const int32_t *i)$/;"	f
+oa_serialize_buffer	recordio.c	/^int oa_serialize_buffer(struct oarchive *oa, const char *name,$/;"	f
+oa_serialize_int	recordio.c	/^int oa_serialize_int(struct oarchive *oa, const char *tag, const int32_t *d)$/;"	f
+oa_serialize_long	recordio.c	/^int oa_serialize_long(struct oarchive *oa, const char *tag, const int64_t *d)$/;"	f
+oa_serialize_string	recordio.c	/^int oa_serialize_string(struct oarchive *oa, const char *name, char **s)$/;"	f
+oa_start_record	recordio.c	/^int oa_start_record(struct oarchive *oa, const char *tag)$/;"	f
+oa_start_vector	recordio.c	/^int oa_start_vector(struct oarchive *oa, const char *tag, const int32_t *count)$/;"	f
+oarchive	recordio.h	/^struct oarchive {$/;"	s
+od_completion	cli.c	/^void od_completion(int rc, const struct Stat *stat, const void *data) {$/;"	f
+ofd	linenoise/linenoise.c	/^    int ofd;            \/* Terminal stdout file descriptor. *\/$/;"	m	struct:linenoiseState	file:
+off	recordio.c	/^    int32_t off;$/;"	m	struct:buff_struct	file:
+offset	cJSON/cJSON.c	/^typedef struct {char *buffer; int length; int offset; } printbuffer;$/;"	m	struct:__anon1	file:
+oldpos	linenoise/linenoise.c	/^    size_t oldpos;      \/* Previous refresh cursor position. *\/$/;"	m	struct:linenoiseState	file:
+op_result_stat_completion	zookeeper.c	/^static void op_result_stat_completion(int err, const struct Stat *stat, const void *data)$/;"	f	file:
+op_result_string_completion	zookeeper.c	/^static void op_result_string_completion(int err, const char *value, const void *data)$/;"	f	file:
+op_result_void_completion	zookeeper.c	/^static void op_result_void_completion(int err, const void *data)$/;"	f	file:
+orig_termios	linenoise/linenoise.c	/^static struct termios orig_termios; \/* In order to restore at exit.*\/$/;"	v	typeref:struct:termios	file:
+outstanding_sync	zk_adaptor.h	/^    int outstanding_sync; \/* Number of outstanding synchronous requests *\/$/;"	m	struct:_zhandle
+parent	hashtable_itr.h	/^    struct entry *parent;$/;"	m	struct:hashtable_itr	typeref:struct:hashtable_itr::entry
+parentCVersion	zookeeper.jute.h	/^    int32_t parentCVersion;$/;"	m	struct:CreateTxn
+parse_array	cJSON/cJSON.c	/^static const char *parse_array(cJSON *item,const char *value)$/;"	f	file:
+parse_hex4	cJSON/cJSON.c	/^static unsigned parse_hex4(const char *str)$/;"	f	file:
+parse_number	cJSON/cJSON.c	/^static const char *parse_number(cJSON *item,const char *num)$/;"	f	file:
+parse_object	cJSON/cJSON.c	/^static const char *parse_object(cJSON *item,const char *value)$/;"	f	file:
+parse_string	cJSON/cJSON.c	/^static const char *parse_string(cJSON *item,const char *str)$/;"	f	file:
+parse_value	cJSON/cJSON.c	/^static const char *parse_value(cJSON *item,const char *value)$/;"	f	file:
+passwd	zk_adaptor.h	/^    char passwd[16];$/;"	m	struct:connect_req
+passwd	zk_adaptor.h	/^    char passwd[16];$/;"	m	struct:prime_struct
+passwd	zookeeper.h	/^    char passwd[16];$/;"	m	struct:__anon10
+passwd	zookeeper.jute.h	/^    struct buffer passwd;$/;"	m	struct:ConnectRequest	typeref:struct:ConnectRequest::buffer
+passwd	zookeeper.jute.h	/^    struct buffer passwd;$/;"	m	struct:ConnectResponse	typeref:struct:ConnectResponse::buffer
+passwd_len	zk_adaptor.h	/^    int32_t passwd_len;$/;"	m	struct:connect_req
+passwd_len	zk_adaptor.h	/^    int32_t passwd_len;$/;"	m	struct:prime_struct
+path	zk_hashtable.h	/^    const char* path;$/;"	m	struct:_watcher_registration
+path	zookeeper.h	/^            const char *path;$/;"	m	struct:zoo_op::__anon11::__anon12
+path	zookeeper.h	/^            const char *path;$/;"	m	struct:zoo_op::__anon11::__anon13
+path	zookeeper.h	/^            const char *path;$/;"	m	struct:zoo_op::__anon11::__anon14
+path	zookeeper.h	/^            const char *path;$/;"	m	struct:zoo_op::__anon11::__anon15
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:CheckVersionRequest
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:CheckVersionTxn
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:CreateRequest
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:CreateResponse
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:CreateTxn
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:CreateTxnV0
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:DeleteRequest
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:DeleteTxn
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:ExistsRequest
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:GetACLRequest
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:GetChildren2Request
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:GetChildrenRequest
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:GetDataRequest
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:GetMaxChildrenRequest
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:SetACLRequest
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:SetACLTxn
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:SetDataRequest
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:SetDataTxn
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:SetMaxChildrenRequest
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:SetMaxChildrenTxn
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:SyncRequest
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:SyncResponse
+path	zookeeper.jute.h	/^    char * path;$/;"	m	struct:WatcherEvent
+path_completion	zkclient.c	/^static void path_completion(const char *buf, int len, linenoiseCompletions *lc) {$/;"	f	file:
+perms	zookeeper.jute.h	/^    int32_t perms;$/;"	m	struct:ACL
+pid_t	winconfig.h	/^typedef int pid_t;$/;"	t
+plen	linenoise/linenoise.c	/^    size_t plen;        \/* Prompt length. *\/$/;"	m	struct:linenoiseState	file:
+pos	linenoise/linenoise.c	/^    size_t pos;         \/* Current cursor position. *\/$/;"	m	struct:linenoiseState	file:
+pow2gt	cJSON/cJSON.c	/^static int pow2gt (int x)	{	--x;	x|=x>>1;	x|=x>>2;	x|=x>>4;	x|=x>>8;	x|=x>>16;	return x+1;	}$/;"	f	file:
+precision	cJSON/test.c	/^struct record {const char *precision;double lat,lon;const char *address,*city,*state,*zip,*country; };$/;"	m	struct:record	file:
+prepareTSDKeys	zk_log.c	/^__attribute__((constructor)) void prepareTSDKeys() {$/;"	f
+prepend_string	zookeeper.c	/^static char* prepend_string(zhandle_t *zh, const char* client_path) {$/;"	f	file:
+prev	cJSON/cJSON.h	/^	struct cJSON *next,*prev;	\/* next\/prev allow you to walk array\/object chains. Alternatively, use GetArraySize\/GetArrayItem\/GetObjectItem *\/$/;"	m	struct:cJSON	typeref:struct:cJSON::
+prime_connection	zookeeper.c	/^static int prime_connection(zhandle_t *zh)$/;"	f	file:
+prime_struct	zk_adaptor.h	/^struct prime_struct {$/;"	s
+prime_table_length	hashtable.c	/^const unsigned int prime_table_length = sizeof(primes)\/sizeof(primes[0]);$/;"	v
+primeindex	hashtable_private.h	/^    unsigned int primeindex;$/;"	m	struct:hashtable
+primer_buffer	zk_adaptor.h	/^    struct _buffer_list primer_buffer; \/* The buffer used for the handshake at the start of a connection *\/$/;"	m	struct:_zhandle	typeref:struct:_zhandle::_buffer_list
+primer_storage	zk_adaptor.h	/^    struct prime_struct primer_storage; \/* the connect response *\/$/;"	m	struct:_zhandle	typeref:struct:_zhandle::prime_struct
+primer_storage_buffer	zk_adaptor.h	/^    char primer_storage_buffer[40]; \/* the true size of primer_storage *\/$/;"	m	struct:_zhandle
+primes	hashtable.c	/^static const unsigned int primes[] = {$/;"	v	file:
+printProfileInfo	cli.c	/^printProfileInfo(struct timeval start, struct timeval end, int thres,$/;"	f	file:
+print_array	cJSON/cJSON.c	/^static char *print_array(cJSON *item,int depth,int fmt,printbuffer *p)$/;"	f	file:
+print_completion_queue	zookeeper.c	/^static __attribute__((unused)) void print_completion_queue(zhandle_t *zh)$/;"	f	file:
+print_number	cJSON/cJSON.c	/^static char *print_number(cJSON *item,printbuffer *p)$/;"	f	file:
+print_object	cJSON/cJSON.c	/^static char *print_object(cJSON *item,int depth,int fmt,printbuffer *p)$/;"	f	file:
+print_string	cJSON/cJSON.c	/^static char *print_string(cJSON *item,printbuffer *p)	{return print_string_ptr(item->valuestring,p);}$/;"	f	file:
+print_string_ptr	cJSON/cJSON.c	/^static char *print_string_ptr(const char *str,printbuffer *p)$/;"	f	file:
+print_value	cJSON/cJSON.c	/^static char *print_value(cJSON *item,int depth,int fmt,printbuffer *p)$/;"	f	file:
+printbuffer	cJSON/cJSON.c	/^typedef struct {char *buffer; int length; int offset; } printbuffer;$/;"	t	typeref:struct:__anon1	file:
+priv	recordio.h	/^    void *priv;$/;"	m	struct:iarchive
+priv	recordio.h	/^    void *priv;$/;"	m	struct:oarchive
+processCommand	zkclient.c	/^void processCommand(char **args, int narg) {$/;"	f
+process_async	mt_adaptor.c	/^int process_async(int outstanding_sync)$/;"	f
+process_async	st_adaptor.c	/^int process_async(int outstanding_sync)$/;"	f
+process_completions	zookeeper.c	/^void process_completions(zhandle_t *zh)$/;"	f
+process_sync_completion	zookeeper.c	/^static void process_sync_completion($/;"	f	file:
+processline	cli.c	/^void processline(char *line) {$/;"	f
+prompt	linenoise/linenoise.c	/^    const char *prompt; \/* Prompt to display. *\/$/;"	m	struct:linenoiseState	file:
+protocolVersion	zk_adaptor.h	/^    int32_t protocolVersion;$/;"	m	struct:connect_req
+protocolVersion	zk_adaptor.h	/^    int32_t protocolVersion;$/;"	m	struct:prime_struct
+protocolVersion	zookeeper.jute.h	/^    int32_t protocolVersion;$/;"	m	struct:ConnectRequest
+protocolVersion	zookeeper.jute.h	/^    int32_t protocolVersion;$/;"	m	struct:ConnectResponse
+protocolVersion	zookeeper.jute.h	/^    int32_t protocolVersion;$/;"	m	struct:LearnerInfo
+pthread_attr_t	winport.h	/^typedef int pthread_attr_t; $/;"	t
+pthread_cond_broadcast	winport.c	/^pthread_cond_broadcast (pthread_cond_t *cv)$/;"	f
+pthread_cond_destroy	winport.c	/^int pthread_cond_destroy(pthread_cond_t *cond)$/;"	f
+pthread_cond_init	winport.c	/^pthread_cond_init (pthread_cond_t *cv,$/;"	f
+pthread_cond_signal	winport.c	/^pthread_cond_signal (pthread_cond_t *cv)$/;"	f
+pthread_cond_t	winport.h	/^}pthread_cond_t;$/;"	t	typeref:struct:__anon2
+pthread_cond_wait	winport.c	/^pthread_cond_wait (pthread_cond_t *cv, $/;"	f
+pthread_condattr_t	winport.h	/^typedef int pthread_condattr_t;        $/;"	t
+pthread_create	winport.c	/^int pthread_create(pthread_t *thread, const pthread_attr_t *attr, unsigned  (__stdcall* start_routine)(void* a), void *arg)$/;"	f
+pthread_detach	winport.c	/^int pthread_detach(pthread_t _thread)$/;"	f
+pthread_equal	winport.c	/^int pthread_equal(pthread_t t1, pthread_t t2){$/;"	f
+pthread_getspecific	winport.c	/^void *pthread_getspecific(pthread_key_t key)$/;"	f
+pthread_join	winport.c	/^int pthread_join(pthread_t _thread, void** ignore)$/;"	f
+pthread_key_create	winport.c	/^int pthread_key_create(pthread_key_t *key, void (*destructor)(void *) )$/;"	f
+pthread_key_delete	winport.c	/^int pthread_key_delete(pthread_key_t key)$/;"	f
+pthread_key_t	winport.h	/^typedef struct pthread_key_t_ pthread_key_t;$/;"	t	typeref:struct:pthread_key_t_
+pthread_key_t_	winport.h	/^struct pthread_key_t_$/;"	s
+pthread_mutex_destroy	winport.c	/^int pthread_mutex_destroy(pthread_mutex_t* _mutex)$/;"	f
+pthread_mutex_init	winport.c	/^int pthread_mutex_init(pthread_mutex_t* _mutex, void* ignoredAttr){$/;"	f
+pthread_mutex_lock	winport.c	/^int pthread_mutex_lock(pthread_mutex_t* _mutex ){      $/;"	f
+pthread_mutex_t	winport.h	/^typedef HANDLE pthread_mutex_t;$/;"	t
+pthread_mutex_unlock	winport.c	/^int pthread_mutex_unlock( pthread_mutex_t* _mutex ){   $/;"	f
+pthread_mutexattr_destroy	winport.c	/^void pthread_mutexattr_destroy(pthread_mutexattr_t* ignore_attr){}$/;"	f
+pthread_mutexattr_init	winport.c	/^void pthread_mutexattr_init(pthread_mutexattr_t* ignore){}$/;"	f
+pthread_mutexattr_settype	winport.c	/^void pthread_mutexattr_settype(pthread_mutexattr_t* ingore_attr, int ignore){}$/;"	f
+pthread_mutexattr_t	winport.h	/^typedef int pthread_mutexattr_t;       $/;"	t
+pthread_self	winport.c	/^pthread_t pthread_self(){$/;"	f
+pthread_setspecific	winport.c	/^int pthread_setspecific(pthread_key_t key, const void *value)$/;"	f
+pthread_t	winport.h	/^typedef struct pthread_t_ pthread_t;$/;"	t	typeref:struct:pthread_t_
+pthread_t_	winport.h	/^struct pthread_t_$/;"	s
+pzxid	zookeeper.jute.h	/^    int64_t pzxid;$/;"	m	struct:Stat
+pzxid	zookeeper.jute.h	/^    int64_t pzxid;$/;"	m	struct:StatPersisted
+queue_buffer	zookeeper.c	/^static void queue_buffer(buffer_head_t *list, buffer_list_t *b, int add_to_front)$/;"	f	file:
+queue_buffer_bytes	zookeeper.c	/^static int queue_buffer_bytes(buffer_head_t *list, char *buff, int len)$/;"	f	file:
+queue_completion	zookeeper.c	/^static void queue_completion(completion_head_t *list, completion_list_t *c,$/;"	f	file:
+queue_completion_nolock	zookeeper.c	/^static void queue_completion_nolock(completion_head_t *list, $/;"	f	file:
+queue_front_buffer_bytes	zookeeper.c	/^static int queue_front_buffer_bytes(buffer_head_t *list, char *buff, int len)$/;"	f	file:
+queue_session_event	zookeeper.c	/^static int queue_session_event(zhandle_t *zh, int state)$/;"	f	file:
+random	winconfig.h	/^#define random /;"	d
+rawmode	linenoise/linenoise.c	/^static int rawmode = 0; \/* For atexit() function to check if restore is needed*\/$/;"	v	file:
+rc	zk_adaptor.h	/^    int rc;$/;"	m	struct:sync_completion
+read_completion	load_gen.c	/^void read_completion(int rc, const char *value, int value_len,$/;"	f
+record	cJSON/test.c	/^struct record {const char *precision;double lat,lon;const char *address,*city,*state,*zip,*country; };$/;"	s	file:
+recursiveDelete	load_gen.c	/^int recursiveDelete(const char* root){$/;"	f
+recv_buffer	zookeeper.c	/^static int recv_buffer(SOCKET fd, buffer_list_t *buff)$/;"	f	file:
+recv_timeout	zk_adaptor.h	/^    int recv_timeout; \/* The maximum amount of time that can go by without $/;"	m	struct:_zhandle
+recvd	cli.c	/^static int recvd=0;$/;"	v	file:
+ref_counter	zk_adaptor.h	/^    int32_t ref_counter;$/;"	m	struct:_zhandle
+refreshLine	linenoise/linenoise.c	/^static void refreshLine(struct linenoiseState *l) {$/;"	f	file:
+refreshMultiLine	linenoise/linenoise.c	/^static void refreshMultiLine(struct linenoiseState *l) {$/;"	f	file:
+refreshSingleLine	linenoise/linenoise.c	/^static void refreshSingleLine(struct linenoiseState *l) {$/;"	f	file:
+relativeZxid	zookeeper.jute.h	/^    int64_t relativeZxid;$/;"	m	struct:SetWatches
+remove_buffer	zookeeper.c	/^static int remove_buffer(buffer_head_t *list)$/;"	f	file:
+resize_buffer	recordio.c	/^static int resize_buffer(struct buff_struct *s, int newlen)$/;"	f	file:
+result_checker_fn	zk_hashtable.h	/^typedef zk_hashtable *(*result_checker_fn)(zhandle_t *, int rc);$/;"	t
+scheme	zk_adaptor.h	/^    char* scheme;$/;"	m	struct:_auth_info
+scheme	zookeeper.jute.h	/^    char * scheme;$/;"	m	struct:AuthPacket
+scheme	zookeeper.jute.h	/^    char * scheme;$/;"	m	struct:Id
+sdsfreesplitres	zkclient.c	/^void sdsfreesplitres(char **tokens, int count) {$/;"	f
+sdssplitlen	zkclient.c	/^char **sdssplitlen(const char *s, int len, const char *sep, int seplen, int *count) {$/;"	f
+search_watcher	zk_hashtable.c	/^static watcher_object_t* search_watcher(watcher_object_list_t** wl,watcher_object_t* wo)$/;"	f	file:
+self_pipe	zk_adaptor.h	/^     SOCKET self_pipe[2];$/;"	m	struct:adaptor_threads
+self_pipe	zk_adaptor.h	/^     int self_pipe[2];$/;"	m	struct:adaptor_threads
+sema_	winport.h	/^    HANDLE sema_;$/;"	m	struct:__anon2
+sendRequest	cli.c	/^static void sendRequest(const char* data) {$/;"	f	file:
+send_auth_info	zookeeper.c	/^static int send_auth_info(zhandle_t *zh) {$/;"	f	file:
+send_buffer	zookeeper.c	/^static int send_buffer(SOCKET fd, buffer_list_t *buff)$/;"	f	file:
+send_info_packet	zookeeper.c	/^static int send_info_packet(zhandle_t *zh, auth_info* auth) {$/;"	f	file:
+send_last_auth_info	zookeeper.c	/^static int send_last_auth_info(zhandle_t *zh)$/;"	f	file:
+send_ping	zookeeper.c	/^ int send_ping(zhandle_t* zh)$/;"	f
+send_set_watches	zookeeper.c	/^static int send_set_watches(zhandle_t *zh)$/;"	f	file:
+sent	cli.c	/^static int sent=0;$/;"	v	file:
+sent_requests	zk_adaptor.h	/^    completion_head_t sent_requests; \/* The outstanding requests *\/$/;"	m	struct:_zhandle
+serialize_ACL	zookeeper.jute.c	/^int serialize_ACL(struct oarchive *out, const char *tag, struct ACL *v){$/;"	f
+serialize_ACL_vector	zookeeper.jute.c	/^int serialize_ACL_vector(struct oarchive *out, const char *tag, struct ACL_vector *v)$/;"	f
+serialize_AuthPacket	zookeeper.jute.c	/^int serialize_AuthPacket(struct oarchive *out, const char *tag, struct AuthPacket *v){$/;"	f
+serialize_Bool	recordio.h	/^    int (*serialize_Bool)(struct oarchive *oa, const char *name, const int32_t *);$/;"	m	struct:oarchive
+serialize_Buffer	recordio.h	/^    int (*serialize_Buffer)(struct oarchive *oa, const char *name,$/;"	m	struct:oarchive
+serialize_CheckVersionRequest	zookeeper.jute.c	/^int serialize_CheckVersionRequest(struct oarchive *out, const char *tag, struct CheckVersionRequest *v){$/;"	f
+serialize_CheckVersionTxn	zookeeper.jute.c	/^int serialize_CheckVersionTxn(struct oarchive *out, const char *tag, struct CheckVersionTxn *v){$/;"	f
+serialize_ConnectRequest	zookeeper.jute.c	/^int serialize_ConnectRequest(struct oarchive *out, const char *tag, struct ConnectRequest *v){$/;"	f
+serialize_ConnectResponse	zookeeper.jute.c	/^int serialize_ConnectResponse(struct oarchive *out, const char *tag, struct ConnectResponse *v){$/;"	f
+serialize_CreateRequest	zookeeper.jute.c	/^int serialize_CreateRequest(struct oarchive *out, const char *tag, struct CreateRequest *v){$/;"	f
+serialize_CreateResponse	zookeeper.jute.c	/^int serialize_CreateResponse(struct oarchive *out, const char *tag, struct CreateResponse *v){$/;"	f
+serialize_CreateSessionTxn	zookeeper.jute.c	/^int serialize_CreateSessionTxn(struct oarchive *out, const char *tag, struct CreateSessionTxn *v){$/;"	f
+serialize_CreateTxn	zookeeper.jute.c	/^int serialize_CreateTxn(struct oarchive *out, const char *tag, struct CreateTxn *v){$/;"	f
+serialize_CreateTxnV0	zookeeper.jute.c	/^int serialize_CreateTxnV0(struct oarchive *out, const char *tag, struct CreateTxnV0 *v){$/;"	f
+serialize_DeleteRequest	zookeeper.jute.c	/^int serialize_DeleteRequest(struct oarchive *out, const char *tag, struct DeleteRequest *v){$/;"	f
+serialize_DeleteTxn	zookeeper.jute.c	/^int serialize_DeleteTxn(struct oarchive *out, const char *tag, struct DeleteTxn *v){$/;"	f
+serialize_ErrorResponse	zookeeper.jute.c	/^int serialize_ErrorResponse(struct oarchive *out, const char *tag, struct ErrorResponse *v){$/;"	f
+serialize_ErrorTxn	zookeeper.jute.c	/^int serialize_ErrorTxn(struct oarchive *out, const char *tag, struct ErrorTxn *v){$/;"	f
+serialize_ExistsRequest	zookeeper.jute.c	/^int serialize_ExistsRequest(struct oarchive *out, const char *tag, struct ExistsRequest *v){$/;"	f
+serialize_ExistsResponse	zookeeper.jute.c	/^int serialize_ExistsResponse(struct oarchive *out, const char *tag, struct ExistsResponse *v){$/;"	f
+serialize_FileHeader	zookeeper.jute.c	/^int serialize_FileHeader(struct oarchive *out, const char *tag, struct FileHeader *v){$/;"	f
+serialize_GetACLRequest	zookeeper.jute.c	/^int serialize_GetACLRequest(struct oarchive *out, const char *tag, struct GetACLRequest *v){$/;"	f
+serialize_GetACLResponse	zookeeper.jute.c	/^int serialize_GetACLResponse(struct oarchive *out, const char *tag, struct GetACLResponse *v){$/;"	f
+serialize_GetChildren2Request	zookeeper.jute.c	/^int serialize_GetChildren2Request(struct oarchive *out, const char *tag, struct GetChildren2Request *v){$/;"	f
+serialize_GetChildren2Response	zookeeper.jute.c	/^int serialize_GetChildren2Response(struct oarchive *out, const char *tag, struct GetChildren2Response *v){$/;"	f
+serialize_GetChildrenRequest	zookeeper.jute.c	/^int serialize_GetChildrenRequest(struct oarchive *out, const char *tag, struct GetChildrenRequest *v){$/;"	f
+serialize_GetChildrenResponse	zookeeper.jute.c	/^int serialize_GetChildrenResponse(struct oarchive *out, const char *tag, struct GetChildrenResponse *v){$/;"	f
+serialize_GetDataRequest	zookeeper.jute.c	/^int serialize_GetDataRequest(struct oarchive *out, const char *tag, struct GetDataRequest *v){$/;"	f
+serialize_GetDataResponse	zookeeper.jute.c	/^int serialize_GetDataResponse(struct oarchive *out, const char *tag, struct GetDataResponse *v){$/;"	f
+serialize_GetMaxChildrenRequest	zookeeper.jute.c	/^int serialize_GetMaxChildrenRequest(struct oarchive *out, const char *tag, struct GetMaxChildrenRequest *v){$/;"	f
+serialize_GetMaxChildrenResponse	zookeeper.jute.c	/^int serialize_GetMaxChildrenResponse(struct oarchive *out, const char *tag, struct GetMaxChildrenResponse *v){$/;"	f
+serialize_GetSASLRequest	zookeeper.jute.c	/^int serialize_GetSASLRequest(struct oarchive *out, const char *tag, struct GetSASLRequest *v){$/;"	f
+serialize_Id	zookeeper.jute.c	/^int serialize_Id(struct oarchive *out, const char *tag, struct Id *v){$/;"	f
+serialize_Id_vector	zookeeper.jute.c	/^int serialize_Id_vector(struct oarchive *out, const char *tag, struct Id_vector *v)$/;"	f
+serialize_Int	recordio.h	/^    int (*serialize_Int)(struct oarchive *oa, const char *name, const int32_t *);$/;"	m	struct:oarchive
+serialize_LearnerInfo	zookeeper.jute.c	/^int serialize_LearnerInfo(struct oarchive *out, const char *tag, struct LearnerInfo *v){$/;"	f
+serialize_Long	recordio.h	/^    int (*serialize_Long)(struct oarchive *oa, const char *name,$/;"	m	struct:oarchive
+serialize_MultiHeader	zookeeper.jute.c	/^int serialize_MultiHeader(struct oarchive *out, const char *tag, struct MultiHeader *v){$/;"	f
+serialize_MultiTxn	zookeeper.jute.c	/^int serialize_MultiTxn(struct oarchive *out, const char *tag, struct MultiTxn *v){$/;"	f
+serialize_QuorumPacket	zookeeper.jute.c	/^int serialize_QuorumPacket(struct oarchive *out, const char *tag, struct QuorumPacket *v){$/;"	f
+serialize_ReplyHeader	zookeeper.jute.c	/^int serialize_ReplyHeader(struct oarchive *out, const char *tag, struct ReplyHeader *v){$/;"	f
+serialize_RequestHeader	zookeeper.jute.c	/^int serialize_RequestHeader(struct oarchive *out, const char *tag, struct RequestHeader *v){$/;"	f
+serialize_SetACLRequest	zookeeper.jute.c	/^int serialize_SetACLRequest(struct oarchive *out, const char *tag, struct SetACLRequest *v){$/;"	f
+serialize_SetACLResponse	zookeeper.jute.c	/^int serialize_SetACLResponse(struct oarchive *out, const char *tag, struct SetACLResponse *v){$/;"	f
+serialize_SetACLTxn	zookeeper.jute.c	/^int serialize_SetACLTxn(struct oarchive *out, const char *tag, struct SetACLTxn *v){$/;"	f
+serialize_SetDataRequest	zookeeper.jute.c	/^int serialize_SetDataRequest(struct oarchive *out, const char *tag, struct SetDataRequest *v){$/;"	f
+serialize_SetDataResponse	zookeeper.jute.c	/^int serialize_SetDataResponse(struct oarchive *out, const char *tag, struct SetDataResponse *v){$/;"	f
+serialize_SetDataTxn	zookeeper.jute.c	/^int serialize_SetDataTxn(struct oarchive *out, const char *tag, struct SetDataTxn *v){$/;"	f
+serialize_SetMaxChildrenRequest	zookeeper.jute.c	/^int serialize_SetMaxChildrenRequest(struct oarchive *out, const char *tag, struct SetMaxChildrenRequest *v){$/;"	f
+serialize_SetMaxChildrenTxn	zookeeper.jute.c	/^int serialize_SetMaxChildrenTxn(struct oarchive *out, const char *tag, struct SetMaxChildrenTxn *v){$/;"	f
+serialize_SetSASLRequest	zookeeper.jute.c	/^int serialize_SetSASLRequest(struct oarchive *out, const char *tag, struct SetSASLRequest *v){$/;"	f
+serialize_SetSASLResponse	zookeeper.jute.c	/^int serialize_SetSASLResponse(struct oarchive *out, const char *tag, struct SetSASLResponse *v){$/;"	f
+serialize_SetWatches	zookeeper.jute.c	/^int serialize_SetWatches(struct oarchive *out, const char *tag, struct SetWatches *v){$/;"	f
+serialize_Stat	zookeeper.jute.c	/^int serialize_Stat(struct oarchive *out, const char *tag, struct Stat *v){$/;"	f
+serialize_StatPersisted	zookeeper.jute.c	/^int serialize_StatPersisted(struct oarchive *out, const char *tag, struct StatPersisted *v){$/;"	f
+serialize_StatPersistedV1	zookeeper.jute.c	/^int serialize_StatPersistedV1(struct oarchive *out, const char *tag, struct StatPersistedV1 *v){$/;"	f
+serialize_String	recordio.h	/^    int (*serialize_String)(struct oarchive *oa, const char *name, char **);$/;"	m	struct:oarchive
+serialize_String_vector	zookeeper.jute.c	/^int serialize_String_vector(struct oarchive *out, const char *tag, struct String_vector *v)$/;"	f
+serialize_SyncRequest	zookeeper.jute.c	/^int serialize_SyncRequest(struct oarchive *out, const char *tag, struct SyncRequest *v){$/;"	f
+serialize_SyncResponse	zookeeper.jute.c	/^int serialize_SyncResponse(struct oarchive *out, const char *tag, struct SyncResponse *v){$/;"	f
+serialize_Txn	zookeeper.jute.c	/^int serialize_Txn(struct oarchive *out, const char *tag, struct Txn *v){$/;"	f
+serialize_TxnHeader	zookeeper.jute.c	/^int serialize_TxnHeader(struct oarchive *out, const char *tag, struct TxnHeader *v){$/;"	f
+serialize_Txn_vector	zookeeper.jute.c	/^int serialize_Txn_vector(struct oarchive *out, const char *tag, struct Txn_vector *v)$/;"	f
+serialize_WatcherEvent	zookeeper.jute.c	/^int serialize_WatcherEvent(struct oarchive *out, const char *tag, struct WatcherEvent *v){$/;"	f
+serialize_prime_connect	zookeeper.c	/^static int serialize_prime_connect(struct connect_req *req, char* buffer){$/;"	f	file:
+serverid	zookeeper.jute.h	/^    int64_t serverid;$/;"	m	struct:LearnerInfo
+sessionId	zk_adaptor.h	/^    int64_t sessionId;$/;"	m	struct:connect_req
+sessionId	zk_adaptor.h	/^    int64_t sessionId;$/;"	m	struct:prime_struct
+sessionId	zookeeper.jute.h	/^    int64_t sessionId;$/;"	m	struct:ConnectRequest
+sessionId	zookeeper.jute.h	/^    int64_t sessionId;$/;"	m	struct:ConnectResponse
+setCounter	load_gen.c	/^void setCounter(int cnt){$/;"	f
+set_nonblock	mt_adaptor.c	/^static int set_nonblock(SOCKET fd){$/;"	f	file:
+set_nonblock	mt_adaptor.c	/^static int set_nonblock(int fd){$/;"	f	file:
+set_op	zookeeper.h	/^        } set_op;$/;"	m	union:zoo_op::__anon11	typeref:struct:zoo_op::__anon11::__anon14
+setup_random	zookeeper.c	/^static void setup_random()$/;"	f	file:
+shutdownThisThing	cli.c	/^static int shutdownThisThing=0;$/;"	v	file:
+shutdownThisThing	load_gen.c	/^static int shutdownThisThing=0;$/;"	v	file:
+skip	cJSON/cJSON.c	/^static const char *skip(const char *in) {while (in && *in && (unsigned char)*in<=32) in++; return in;}$/;"	f	file:
+snprintf	winconfig.h	/^#define snprintf /;"	d
+socket_readable	zk_adaptor.h	/^    struct timeval socket_readable;$/;"	m	struct:_zhandle	typeref:struct:_zhandle::timeval
+ssize_t	winport.h	/^typedef int ssize_t;$/;"	t
+startTime	cli.c	/^struct timeval startTime;$/;"	v	typeref:struct:timeval
+start_record	recordio.h	/^    int (*start_record)(struct iarchive *ia, const char *tag);$/;"	m	struct:iarchive
+start_record	recordio.h	/^    int (*start_record)(struct oarchive *oa, const char *tag);$/;"	m	struct:oarchive
+start_threads	mt_adaptor.c	/^void start_threads(zhandle_t* zh)$/;"	f
+start_vector	recordio.h	/^    int (*start_vector)(struct iarchive *ia, const char *tag, int32_t *count);$/;"	m	struct:iarchive
+start_vector	recordio.h	/^    int (*start_vector)(struct oarchive *oa, const char *tag, const int32_t *count);$/;"	m	struct:oarchive
+startsWith	cli.c	/^int startsWith(const char *line, const char *prefix) {$/;"	f
+stat	zk_adaptor.h	/^            struct Stat stat;$/;"	m	struct:sync_completion::__anon3::__anon5	typeref:struct:sync_completion::__anon3::__anon5::Stat
+stat	zk_adaptor.h	/^            struct Stat stat;$/;"	m	struct:sync_completion::__anon3::__anon6	typeref:struct:sync_completion::__anon3::__anon6::Stat
+stat	zk_adaptor.h	/^        struct Stat stat;$/;"	m	union:sync_completion::__anon3	typeref:struct:sync_completion::__anon3::Stat
+stat	zookeeper.h	/^            struct Stat *stat;$/;"	m	struct:zoo_op::__anon11::__anon14	typeref:struct:zoo_op::__anon11::__anon14::Stat
+stat	zookeeper.h	/^    struct Stat *stat;$/;"	m	struct:zoo_op_result	typeref:struct:zoo_op_result::Stat
+stat	zookeeper.jute.h	/^    struct Stat stat;$/;"	m	struct:ExistsResponse	typeref:struct:ExistsResponse::Stat
+stat	zookeeper.jute.h	/^    struct Stat stat;$/;"	m	struct:GetACLResponse	typeref:struct:GetACLResponse::Stat
+stat	zookeeper.jute.h	/^    struct Stat stat;$/;"	m	struct:GetChildren2Response	typeref:struct:GetChildren2Response::Stat
+stat	zookeeper.jute.h	/^    struct Stat stat;$/;"	m	struct:GetDataResponse	typeref:struct:GetDataResponse::Stat
+stat	zookeeper.jute.h	/^    struct Stat stat;$/;"	m	struct:SetACLResponse	typeref:struct:SetACLResponse::Stat
+stat	zookeeper.jute.h	/^    struct Stat stat;$/;"	m	struct:SetDataResponse	typeref:struct:SetDataResponse::Stat
+stat2	zk_adaptor.h	/^            struct Stat stat2;$/;"	m	struct:sync_completion::__anon3::__anon7	typeref:struct:sync_completion::__anon3::__anon7::Stat
+stat_completion_t	zookeeper.h	/^typedef void (*stat_completion_t)(int rc, const struct Stat *stat,$/;"	t
+stat_result	zookeeper.c	/^        stat_completion_t stat_result;$/;"	m	union:completion::__anon8	file:
+state	cJSON/test.c	/^struct record {const char *precision;double lat,lon;const char *address,*city,*state,*zip,*country; };$/;"	m	struct:record	file:
+state	zk_adaptor.h	/^    int state; \/* 0=>inactive, >0 => active *\/$/;"	m	struct:_auth_info
+state	zk_adaptor.h	/^    volatile int state;$/;"	m	struct:_zhandle
+state	zookeeper.jute.h	/^    int32_t state;$/;"	m	struct:WatcherEvent
+state2String	cli.c	/^static const char* state2String(int state){$/;"	f	file:
+state2String	zookeeper.c	/^static __attribute__ ((unused)) const char* state2String(int state){$/;"	f	file:
+str	zk_adaptor.h	/^            char *str;$/;"	m	struct:sync_completion::__anon3::__anon4
+str	zk_adaptor.h	/^        } str;$/;"	m	union:sync_completion::__anon3	typeref:struct:sync_completion::__anon3::__anon4
+str_len	zk_adaptor.h	/^            int str_len;$/;"	m	struct:sync_completion::__anon3::__anon4
+string	cJSON/cJSON.h	/^	char *string;				\/* The item's name string, if this item is the child of, or is in the list of subitems of an object. *\/$/;"	m	struct:cJSON
+string_completion_t	zookeeper.h	/^        (*string_completion_t)(int rc, const char *value, const void *data);$/;"	t
+string_equal	zk_hashtable.c	/^static int string_equal(void *key1,void *key2)$/;"	f	file:
+string_hash_djb2	zk_hashtable.c	/^static unsigned int string_hash_djb2(void *str) $/;"	f	file:
+string_result	zookeeper.c	/^        string_completion_t string_result;$/;"	m	union:completion::__anon8	file:
+strings_completion_t	zookeeper.h	/^typedef void (*strings_completion_t)(int rc,$/;"	t
+strings_result	zookeeper.c	/^        strings_completion_t strings_result;$/;"	m	union:completion::__anon8	file:
+strings_stat_completion_t	zookeeper.h	/^typedef void (*strings_stat_completion_t)(int rc,$/;"	t
+strings_stat_result	zookeeper.c	/^        strings_stat_completion_t strings_stat_result;$/;"	m	union:completion::__anon8	file:
+strs2	zk_adaptor.h	/^            struct String_vector strs2;$/;"	m	struct:sync_completion::__anon3::__anon7	typeref:struct:sync_completion::__anon3::__anon7::String_vector
+strs2	zk_adaptor.h	/^        struct String_vector strs2;$/;"	m	union:sync_completion::__anon3	typeref:struct:sync_completion::__anon3::String_vector
+strs_stat	zk_adaptor.h	/^        } strs_stat;$/;"	m	union:sync_completion::__anon3	typeref:struct:sync_completion::__anon3::__anon7
+strtok_r	winconfig.h	/^#define strtok_r /;"	d
+sub_string	zookeeper.c	/^char* sub_string(zhandle_t *zh, const char* server_path) {$/;"	f
+suffix_object	cJSON/cJSON.c	/^static void suffix_object(cJSON *prev,cJSON *item) {prev->next=item;item->prev=prev;}$/;"	f	file:
+sync_completion	zk_adaptor.h	/^struct sync_completion {$/;"	s
+table	hashtable_private.h	/^    struct entry **table;$/;"	m	struct:hashtable	typeref:struct:hashtable::entry
+tablelength	hashtable_private.h	/^    unsigned int tablelength;$/;"	m	struct:hashtable
+thread_handle	winport.h	/^  HANDLE thread_handle;$/;"	m	struct:pthread_t_
+thread_id	winport.h	/^  DWORD  thread_id;$/;"	m	struct:pthread_t_
+threadsToWait	zk_adaptor.h	/^     int threadsToWait;         \/\/ barrier$/;"	m	struct:adaptor_threads
+time	zookeeper.jute.h	/^    int64_t time;$/;"	m	struct:TxnHeader
+timeOut	zk_adaptor.h	/^    int32_t timeOut;$/;"	m	struct:connect_req
+timeOut	zk_adaptor.h	/^    int32_t timeOut;$/;"	m	struct:prime_struct
+timeOut	zookeeper.jute.h	/^    int32_t timeOut;$/;"	m	struct:ConnectRequest
+timeOut	zookeeper.jute.h	/^    int32_t timeOut;$/;"	m	struct:ConnectResponse
+timeOut	zookeeper.jute.h	/^    int32_t timeOut;$/;"	m	struct:CreateSessionTxn
+time_now	zk_log.c	/^static const char* time_now(char* now_str){$/;"	f	file:
+time_now_buffer	zk_log.c	/^static pthread_key_t time_now_buffer;$/;"	v	file:
+to_process	zk_adaptor.h	/^    buffer_head_t to_process; \/* The buffers that have been read and are ready to be processed. *\/$/;"	m	struct:_zhandle
+to_send	cli.c	/^static int to_send=0;$/;"	v	file:
+to_send	zk_adaptor.h	/^    buffer_head_t to_send; \/* The packets queued to send *\/$/;"	m	struct:_zhandle
+token	zookeeper.jute.h	/^    struct buffer token;$/;"	m	struct:GetSASLRequest	typeref:struct:GetSASLRequest::buffer
+token	zookeeper.jute.h	/^    struct buffer token;$/;"	m	struct:SetSASLRequest	typeref:struct:SetSASLRequest::buffer
+token	zookeeper.jute.h	/^    struct buffer token;$/;"	m	struct:SetSASLResponse	typeref:struct:SetSASLResponse::buffer
+txns	zookeeper.jute.h	/^    struct Txn_vector txns;$/;"	m	struct:MultiTxn	typeref:struct:MultiTxn::Txn_vector
+type	cJSON/cJSON.h	/^	int type;					\/* The type of the item, as above. *\/$/;"	m	struct:cJSON
+type	zookeeper.c	/^    int type; \/* one of COMPLETION_* values above *\/$/;"	m	struct:completion	file:
+type	zookeeper.h	/^    int type;$/;"	m	struct:zoo_op
+type	zookeeper.jute.h	/^    int32_t type;$/;"	m	struct:AuthPacket
+type	zookeeper.jute.h	/^    int32_t type;$/;"	m	struct:MultiHeader
+type	zookeeper.jute.h	/^    int32_t type;$/;"	m	struct:QuorumPacket
+type	zookeeper.jute.h	/^    int32_t type;$/;"	m	struct:RequestHeader
+type	zookeeper.jute.h	/^    int32_t type;$/;"	m	struct:Txn
+type	zookeeper.jute.h	/^    int32_t type;$/;"	m	struct:TxnHeader
+type	zookeeper.jute.h	/^    int32_t type;$/;"	m	struct:WatcherEvent
+type2String	cli.c	/^static const char* type2String(int state){$/;"	f	file:
+u	zk_adaptor.h	/^    } u;$/;"	m	struct:sync_completion	typeref:union:sync_completion::__anon3
+uint16_t	winstdint.h	/^   typedef unsigned __int16  uint16_t;$/;"	t
+uint16_t	winstdint.h	/^   typedef unsigned short    uint16_t;$/;"	t
+uint32_t	winstdint.h	/^   typedef unsigned __int32  uint32_t;$/;"	t
+uint32_t	winstdint.h	/^   typedef unsigned int      uint32_t;$/;"	t
+uint64_t	winstdint.h	/^typedef unsigned __int64     uint64_t;$/;"	t
+uint8_t	winstdint.h	/^   typedef unsigned __int8   uint8_t;$/;"	t
+uint8_t	winstdint.h	/^   typedef unsigned char     uint8_t;$/;"	t
+uint_fast16_t	winstdint.h	/^typedef uint16_t  uint_fast16_t;$/;"	t
+uint_fast32_t	winstdint.h	/^typedef uint32_t  uint_fast32_t;$/;"	t
+uint_fast64_t	winstdint.h	/^typedef uint64_t  uint_fast64_t;$/;"	t
+uint_fast8_t	winstdint.h	/^typedef uint8_t   uint_fast8_t;$/;"	t
+uint_least16_t	winstdint.h	/^typedef uint16_t  uint_least16_t;$/;"	t
+uint_least32_t	winstdint.h	/^typedef uint32_t  uint_least32_t;$/;"	t
+uint_least64_t	winstdint.h	/^typedef uint64_t  uint_least64_t;$/;"	t
+uint_least8_t	winstdint.h	/^typedef uint8_t   uint_least8_t;$/;"	t
+uintmax_t	winstdint.h	/^typedef uint64_t  uintmax_t;$/;"	t
+uintptr_t	winstdint.h	/^   typedef _W64 unsigned int uintptr_t;$/;"	t
+uintptr_t	winstdint.h	/^   typedef unsigned __int64  uintptr_t;$/;"	t
+uname_S	cJSON/Makefile	/^uname_S := $(shell sh -c 'uname -s 2>\/dev\/null || echo false')$/;"	m
+unlock_buffer_list	mt_adaptor.c	/^void unlock_buffer_list(buffer_head_t *l)$/;"	f
+unlock_buffer_list	st_adaptor.c	/^void unlock_buffer_list(buffer_head_t *l)$/;"	f
+unlock_completion_list	mt_adaptor.c	/^void unlock_completion_list(completion_head_t *l)$/;"	f
+unlock_completion_list	st_adaptor.c	/^void unlock_completion_list(completion_head_t *l)$/;"	f
+unsupported_term	linenoise/linenoise.c	/^static char *unsupported_term[] = {"dumb","cons25","emacs",NULL};$/;"	v	file:
+update	cJSON/cJSON.c	/^static int update(printbuffer *p)$/;"	f	file:
+usage	kafka_inspect.c	/^static void usage()$/;"	f	file:
+usage	load_gen.c	/^void usage(char *argv[]){$/;"	f
+v	hashtable_private.h	/^    void *k, *v;$/;"	m	struct:entry
+value	zookeeper.h	/^    char *value;$/;"	m	struct:zoo_op_result
+valuedouble	cJSON/cJSON.h	/^	double valuedouble;			\/* The item's number, if type==cJSON_Number *\/$/;"	m	struct:cJSON
+valueint	cJSON/cJSON.h	/^	int valueint;				\/* The item's number, if type==cJSON_Number *\/$/;"	m	struct:cJSON
+valuelen	zookeeper.h	/^	int valuelen;$/;"	m	struct:zoo_op_result
+valuestring	cJSON/cJSON.h	/^	char *valuestring;			\/* The item's string, if type==cJSON_String *\/$/;"	m	struct:cJSON
+verbose	cli.c	/^static int verbose = 0;$/;"	v	file:
+version	zookeeper.h	/^            int version;$/;"	m	struct:zoo_op::__anon11::__anon13
+version	zookeeper.h	/^            int version;$/;"	m	struct:zoo_op::__anon11::__anon14
+version	zookeeper.h	/^            int version;$/;"	m	struct:zoo_op::__anon11::__anon15
+version	zookeeper.jute.h	/^    int32_t version;$/;"	m	struct:CheckVersionRequest
+version	zookeeper.jute.h	/^    int32_t version;$/;"	m	struct:CheckVersionTxn
+version	zookeeper.jute.h	/^    int32_t version;$/;"	m	struct:DeleteRequest
+version	zookeeper.jute.h	/^    int32_t version;$/;"	m	struct:FileHeader
+version	zookeeper.jute.h	/^    int32_t version;$/;"	m	struct:SetACLRequest
+version	zookeeper.jute.h	/^    int32_t version;$/;"	m	struct:SetACLTxn
+version	zookeeper.jute.h	/^    int32_t version;$/;"	m	struct:SetDataRequest
+version	zookeeper.jute.h	/^    int32_t version;$/;"	m	struct:SetDataTxn
+version	zookeeper.jute.h	/^    int32_t version;$/;"	m	struct:Stat
+version	zookeeper.jute.h	/^    int32_t version;$/;"	m	struct:StatPersisted
+version	zookeeper.jute.h	/^    int32_t version;$/;"	m	struct:StatPersistedV1
+void_completion_t	zookeeper.h	/^typedef void (*void_completion_t)(int rc, const void *data);$/;"	t
+void_result	zookeeper.c	/^        void_completion_t void_result;$/;"	m	union:completion::__anon8	file:
+waitCounter	load_gen.c	/^void waitCounter(){$/;"	f
+wait_for_others	mt_adaptor.c	/^void wait_for_others(zhandle_t* zh)$/;"	f
+wait_sync_completion	mt_adaptor.c	/^int wait_sync_completion(struct sync_completion *sc)$/;"	f
+wait_sync_completion	st_adaptor.c	/^int wait_sync_completion(struct sync_completion *sc)$/;"	f
+waiters_count_	winport.h	/^       int waiters_count_;$/;"	m	struct:__anon2
+waiters_count_lock_	winport.h	/^    CRITICAL_SECTION waiters_count_lock_;$/;"	m	struct:__anon2
+waiters_done_	winport.h	/^    HANDLE waiters_done_;$/;"	m	struct:__anon2
+wakeup_io_thread	mt_adaptor.c	/^int wakeup_io_thread(zhandle_t *zh)$/;"	f
+was_broadcast_	winport.h	/^    size_t was_broadcast_;$/;"	m	struct:__anon2
+watch	zookeeper.jute.h	/^    int32_t watch;$/;"	m	struct:ExistsRequest
+watch	zookeeper.jute.h	/^    int32_t watch;$/;"	m	struct:GetChildren2Request
+watch	zookeeper.jute.h	/^    int32_t watch;$/;"	m	struct:GetChildrenRequest
+watch	zookeeper.jute.h	/^    int32_t watch;$/;"	m	struct:GetDataRequest
+watcher	cli.c	/^void watcher(zhandle_t *zzh, int type, int state, const char *path,$/;"	f
+watcher	zk_adaptor.h	/^    watcher_fn watcher; \/* the registered watcher *\/$/;"	m	struct:_zhandle
+watcher	zk_hashtable.c	/^    watcher_fn watcher;$/;"	m	struct:_watcher_object	file:
+watcher	zk_hashtable.h	/^    watcher_fn watcher;$/;"	m	struct:_watcher_registration
+watcher	zookeeper.c	/^    watcher_registration_t* watcher;$/;"	m	struct:_completion_list	file:
+watcherEvent2String	zookeeper.c	/^static __attribute__ ((unused)) const char* watcherEvent2String(int ev){$/;"	f	file:
+watcher_fn	zookeeper.h	/^typedef void (*watcher_fn)(zhandle_t *zh, int type, $/;"	t
+watcher_object_list	zk_hashtable.c	/^struct watcher_object_list {$/;"	s	file:
+watcher_object_list_t	zk_hashtable.h	/^    typedef struct watcher_object_list watcher_object_list_t;$/;"	t	typeref:struct:watcher_object_list
+watcher_object_t	zk_hashtable.c	/^} watcher_object_t;$/;"	t	typeref:struct:_watcher_object	file:
+watcher_registration_t	zk_hashtable.h	/^} watcher_registration_t;$/;"	t	typeref:struct:_watcher_registration
+watcher_result	zookeeper.c	/^        struct watcher_object_list *watcher_result;$/;"	m	union:completion::__anon8	typeref:struct:completion::__anon8::watcher_object_list	file:
+write_completion	load_gen.c	/^void write_completion(int rc, const struct Stat *stat, const void *data) {$/;"	f
+xid	zookeeper.c	/^    int xid;$/;"	m	struct:_completion_list	file:
+xid	zookeeper.jute.h	/^    int32_t xid;$/;"	m	struct:ReplyHeader
+xid	zookeeper.jute.h	/^    int32_t xid;$/;"	m	struct:RequestHeader
+zerror	zookeeper.c	/^const char* zerror(int c)$/;"	f
+zh	cli.c	/^static zhandle_t *zh;$/;"	v	file:
+zh	kafka_inspect.c	/^static zhandle_t *zh;$/;"	v	file:
+zh	load_gen.c	/^static zhandle_t *zh;$/;"	v	file:
+zh	zkclient.c	/^static zhandle_t *zh;$/;"	v	file:
+zh_lock	zk_adaptor.h	/^     pthread_mutex_t zh_lock;   \/\/ critical section lock$/;"	m	struct:adaptor_threads
+zhandle_t	zookeeper.h	/^typedef struct _zhandle zhandle_t;$/;"	t	typeref:struct:_zhandle
+zip	cJSON/test.c	/^struct record {const char *precision;double lat,lon;const char *address,*city,*state,*zip,*country; };$/;"	m	struct:record	file:
+zk_hashtable	zk_hashtable.h	/^typedef struct _zk_hashtable zk_hashtable;$/;"	t	typeref:struct:_zk_hashtable
+zoo_acreate	zookeeper.c	/^int zoo_acreate(zhandle_t *zh, const char *path, const char *value,$/;"	f
+zoo_add_auth	zookeeper.c	/^int zoo_add_auth(zhandle_t *zh,const char* scheme,const char* cert,$/;"	f
+zoo_adelete	zookeeper.c	/^int zoo_adelete(zhandle_t *zh, const char *path, int version,$/;"	f
+zoo_aexists	zookeeper.c	/^int zoo_aexists(zhandle_t *zh, const char *path, int watch,$/;"	f
+zoo_aget	zookeeper.c	/^int zoo_aget(zhandle_t *zh, const char *path, int watch, data_completion_t dc,$/;"	f
+zoo_aget_acl	zookeeper.c	/^int zoo_aget_acl(zhandle_t *zh, const char *path, acl_completion_t completion,$/;"	f
+zoo_aget_children	zookeeper.c	/^int zoo_aget_children(zhandle_t *zh, const char *path, int watch,$/;"	f
+zoo_aget_children2	zookeeper.c	/^int zoo_aget_children2(zhandle_t *zh, const char *path, int watch,$/;"	f
+zoo_amulti	zookeeper.c	/^int zoo_amulti(zhandle_t *zh, int count, const zoo_op_t *ops,$/;"	f
+zoo_aset	zookeeper.c	/^int zoo_aset(zhandle_t *zh, const char *path, const char *buffer, int buflen,$/;"	f
+zoo_aset_acl	zookeeper.c	/^int zoo_aset_acl(zhandle_t *zh, const char *path, int version,$/;"	f
+zoo_async	zookeeper.c	/^int zoo_async(zhandle_t *zh, const char *path,$/;"	f
+zoo_awexists	zookeeper.c	/^int zoo_awexists(zhandle_t *zh, const char *path,$/;"	f
+zoo_awget	zookeeper.c	/^int zoo_awget(zhandle_t *zh, const char *path,$/;"	f
+zoo_awget_children	zookeeper.c	/^int zoo_awget_children(zhandle_t *zh, const char *path,$/;"	f
+zoo_awget_children2	zookeeper.c	/^int zoo_awget_children2(zhandle_t *zh, const char *path,$/;"	f
+zoo_awget_children2_	zookeeper.c	/^static int zoo_awget_children2_(zhandle_t *zh, const char *path,$/;"	f	file:
+zoo_awget_children_	zookeeper.c	/^static int zoo_awget_children_(zhandle_t *zh, const char *path,$/;"	f	file:
+zoo_check_op_init	zookeeper.c	/^void zoo_check_op_init(zoo_op_t *op, const char *path, int version)$/;"	f
+zoo_client_id	zookeeper.c	/^const clientid_t *zoo_client_id(zhandle_t *zh)$/;"	f
+zoo_create	zookeeper.c	/^int zoo_create(zhandle_t *zh, const char *path, const char *value,$/;"	f
+zoo_create_op_init	zookeeper.c	/^void zoo_create_op_init(zoo_op_t *op, const char *path, const char *value,$/;"	f
+zoo_delete	zookeeper.c	/^int zoo_delete(zhandle_t *zh, const char *path, int version)$/;"	f
+zoo_delete_op_init	zookeeper.c	/^void zoo_delete_op_init(zoo_op_t *op, const char *path, int version)$/;"	f
+zoo_deterministic_conn_order	zookeeper.c	/^void zoo_deterministic_conn_order(int yesOrNo)$/;"	f
+zoo_exists	zookeeper.c	/^int zoo_exists(zhandle_t *zh, const char *path, int watch, struct Stat *stat)$/;"	f
+zoo_get	zookeeper.c	/^int zoo_get(zhandle_t *zh, const char *path, int watch, char *buffer,$/;"	f
+zoo_get_acl	zookeeper.c	/^int zoo_get_acl(zhandle_t *zh, const char *path, struct ACL_vector *acl,$/;"	f
+zoo_get_children	zookeeper.c	/^int zoo_get_children(zhandle_t *zh, const char *path, int watch,$/;"	f
+zoo_get_children2	zookeeper.c	/^int zoo_get_children2(zhandle_t *zh, const char *path, int watch,$/;"	f
+zoo_get_context	zookeeper.c	/^const void *zoo_get_context(zhandle_t *zh)$/;"	f
+zoo_lock_auth	mt_adaptor.c	/^void zoo_lock_auth(zhandle_t *zh)$/;"	f
+zoo_lock_auth	st_adaptor.c	/^void zoo_lock_auth(zhandle_t *zh)$/;"	f
+zoo_multi	zookeeper.c	/^int zoo_multi(zhandle_t *zh, int count, const zoo_op_t *ops, zoo_op_result_t *results)$/;"	f
+zoo_op	zookeeper.h	/^typedef struct zoo_op {$/;"	s
+zoo_op_result	zookeeper.h	/^typedef struct zoo_op_result {$/;"	s
+zoo_op_result_t	zookeeper.h	/^} zoo_op_result_t; $/;"	t	typeref:struct:zoo_op_result
+zoo_op_t	zookeeper.h	/^} zoo_op_t;$/;"	t	typeref:struct:zoo_op
+zoo_recv_timeout	zookeeper.c	/^int zoo_recv_timeout(zhandle_t *zh)$/;"	f
+zoo_set	zookeeper.c	/^int zoo_set(zhandle_t *zh, const char *path, const char *buffer, int buflen,$/;"	f
+zoo_set2	zookeeper.c	/^int zoo_set2(zhandle_t *zh, const char *path, const char *buffer, int buflen,$/;"	f
+zoo_set_acl	zookeeper.c	/^int zoo_set_acl(zhandle_t *zh, const char *path, int version,$/;"	f
+zoo_set_context	zookeeper.c	/^void zoo_set_context(zhandle_t *zh, void *context)$/;"	f
+zoo_set_debug_level	zk_log.c	/^void zoo_set_debug_level(ZooLogLevel level)$/;"	f
+zoo_set_log_stream	zk_log.c	/^void zoo_set_log_stream(FILE* stream){$/;"	f
+zoo_set_op_init	zookeeper.c	/^void zoo_set_op_init(zoo_op_t *op, const char *path, const char *buffer, $/;"	f
+zoo_set_watcher	zookeeper.c	/^watcher_fn zoo_set_watcher(zhandle_t *zh,watcher_fn newFn)$/;"	f
+zoo_state	zookeeper.c	/^int zoo_state(zhandle_t *zh)$/;"	f
+zoo_unlock_auth	mt_adaptor.c	/^void zoo_unlock_auth(zhandle_t *zh)$/;"	f
+zoo_unlock_auth	st_adaptor.c	/^void zoo_unlock_auth(zhandle_t *zh)$/;"	f
+zoo_wexists	zookeeper.c	/^int zoo_wexists(zhandle_t *zh, const char *path,$/;"	f
+zoo_wget	zookeeper.c	/^int zoo_wget(zhandle_t *zh, const char *path,$/;"	f
+zoo_wget_children	zookeeper.c	/^int zoo_wget_children(zhandle_t *zh, const char *path,$/;"	f
+zoo_wget_children2	zookeeper.c	/^int zoo_wget_children2(zhandle_t *zh, const char *path,$/;"	f
+zoo_wget_children2_	zookeeper.c	/^static int zoo_wget_children2_(zhandle_t *zh, const char *path,$/;"	f	file:
+zoo_wget_children_	zookeeper.c	/^static int zoo_wget_children_(zhandle_t *zh, const char *path,$/;"	f	file:
+zookeeper_close	zookeeper.c	/^int zookeeper_close(zhandle_t *zh)$/;"	f
+zookeeper_get_connected_host	zookeeper.c	/^struct sockaddr* zookeeper_get_connected_host(zhandle_t *zh,$/;"	f
+zookeeper_init	zookeeper.c	/^zhandle_t *zookeeper_init(const char *host, watcher_fn watcher,$/;"	f
+zookeeper_interest	zookeeper.c	/^int zookeeper_interest(zhandle_t *zh, SOCKET *fd, int *interest,$/;"	f
+zookeeper_process	zookeeper.c	/^int zookeeper_process(zhandle_t *zh, int events)$/;"	f
+zookeeper_send	zookeeper.c	/^static int zookeeper_send(SOCKET s, const char* buf, int len)$/;"	f	file:
+zxid	zookeeper.jute.h	/^    int64_t zxid;$/;"	m	struct:QuorumPacket
+zxid	zookeeper.jute.h	/^    int64_t zxid;$/;"	m	struct:ReplyHeader
+zxid	zookeeper.jute.h	/^    int64_t zxid;$/;"	m	struct:TxnHeader
