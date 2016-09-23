@@ -8,6 +8,7 @@
 
 #include "request.h"
 #include "util.h"
+#include "conn.h"
 #include "zkclient.h"
 #include "zookeeper.jute.h"
 
@@ -67,7 +68,7 @@ static int read_socket(int fd, char *buf, int len) {
 }
 
 static int send_request(zk_client *c, struct oarchive *oa) {
-    int len, w_bytes, bytes;
+    int rc, len, w_bytes, bytes;
     char *buf;
     
     len = get_buffer_len(oa);
@@ -82,6 +83,12 @@ static int send_request(zk_client *c, struct oarchive *oa) {
     buf[2] = len >> 8;
     buf[3] = len & 0xff;
     memcpy(buf + 4, get_buffer(oa), len);
+
+    rc = wait_socket(c->sock, c->write_timeout, CR_WRITE);
+    if (rc != ZK_OK) {
+        fprintf(stderr, "send data to server failed, %s.", strerror(errno));
+        return ZK_ERROR;
+    }
     w_bytes = 0;
     while(w_bytes < len + 4) {
         bytes = write(c->sock, buf + w_bytes, len + 4 - w_bytes);
@@ -120,6 +127,11 @@ struct iarchive *recv_response(zk_client *c) {
     
     rc = read_socket(c->sock, buf, 4); 
     if (rc == ZK_ERROR) return NULL;
+    rc = wait_socket(c->sock, c->read_timeout, CR_READ);
+    if(rc != ZK_OK) {
+        fprintf(stderr, "Connection Timeout, as %s.", strerror(errno));
+        return NULL;
+    }
 
     len = decode_int32(buf, 0);
     recv_buf = malloc(len);
@@ -193,11 +205,15 @@ int zk_create(zk_client *c, char *path, char *data, int size, int flags) {
     }
     struct CreateRequest req = {path, value, default_acl, flags};
     rc = rc < 0 ? rc : serialize_CreateRequest(oa, "req", &req);
+
+    pthread_mutex_lock(&c->lock);
     rc = rc < 0 ? rc : send_request(c, oa);
     if (rc == ZK_ERROR || !(ia = recv_response(c))) {
         err = ZK_ERROR;
         goto ERROR;
     }
+    pthread_mutex_unlock(&c->lock);
+
     if ((err = decode_reply_header(ia))) {
         goto ERROR;
     }
@@ -207,6 +223,7 @@ int zk_create(zk_client *c, char *path, char *data, int size, int flags) {
     return rc < 0 ? ZK_ERROR : ZK_OK;
 
 ERROR:
+    pthread_mutex_unlock(&c->lock);
     destory_archive(oa, ia);
     return err; 
 }
@@ -223,12 +240,16 @@ int zk_exists(zk_client *c, char *path, struct Stat *stat) {
     struct ExistsRequest req = {path, 0};
     rc = add_request_header(oa, EXISTS_OPCODE);
     rc = rc < 0 ? rc : serialize_ExistsRequest(oa, "req", &req);
+
+    pthread_mutex_lock(&c->lock);
     rc = rc < 0 ? rc : send_request(c, oa);
 
     if (rc == ZK_ERROR || !(ia = recv_response(c))) {
         err = ZK_ERROR;
         goto ERROR;
     }
+    pthread_mutex_unlock(&c->lock);
+
     if ((err = decode_reply_header(ia)) && err != ZNONODE) {
         goto ERROR;
     }
@@ -244,6 +265,7 @@ int zk_exists(zk_client *c, char *path, struct Stat *stat) {
     return result;
 
 ERROR:
+    pthread_mutex_unlock(&c->lock);
     destory_archive(oa, ia);
     return err;
 }
@@ -269,11 +291,15 @@ int zk_get(zk_client *c, char *path,  struct buffer *data) {
     struct GetDataRequest req = {path, 0};
     rc = add_request_header(oa, GETDATA_OPCODE);
     rc = rc < 0 ? rc : serialize_GetDataRequest(oa, "req", &req);
+
+    pthread_mutex_lock(&c->lock);
     rc = rc < 0 ? rc : send_request(c, oa);
     if (rc == ZK_ERROR || !(ia = recv_response(c))) {
         err = ZK_ERROR;
         goto ERROR;
     }
+    pthread_mutex_unlock(&c->lock);
+
     if ((err = decode_reply_header(ia))) {
         goto ERROR;
     }
@@ -284,6 +310,7 @@ int zk_get(zk_client *c, char *path,  struct buffer *data) {
     return  ZK_OK;
 
 ERROR:
+    pthread_mutex_unlock(&c->lock);
     destory_archive(oa, ia);
     return err;
 }
@@ -300,11 +327,15 @@ int zk_del(zk_client *c, char *path) {
     rc = add_request_header(oa, DELETE_OPCODE);
     struct DeleteRequest req = {path, -1};
     rc = rc < 0 ? rc : serialize_DeleteRequest(oa, "req", &req);
+
+    pthread_mutex_unlock(&c->lock);
     rc = rc < 0 ? rc : send_request(c, oa);
     if (rc == ZK_ERROR || !(ia = recv_response(c))) {
         err = ZK_ERROR;
         goto ERROR;
     }
+    pthread_mutex_unlock(&c->lock);
+
     if ((err = decode_reply_header(ia))) {
         goto ERROR;
     }
@@ -312,6 +343,7 @@ int zk_del(zk_client *c, char *path) {
     return ZK_OK;
 
 ERROR:
+    pthread_mutex_unlock(&c->lock);
     destory_archive(oa, ia);
     return err;
 }
@@ -330,11 +362,15 @@ int zk_set(zk_client *c, char *path, struct buffer *data) {
     rc = add_request_header(oa, SETDATA_OPCODE);
     struct SetDataRequest req = {path, *data, -1};
     rc = rc < 0 ? rc : serialize_SetDataRequest(oa, "req", &req);
+
+    pthread_mutex_lock(&c->lock);
     rc = rc < 0 ? rc : send_request(c, oa);
     if (rc == ZK_ERROR || !(ia = recv_response(c))) {
         err = ZK_ERROR;
         goto ERROR;
     }
+    pthread_mutex_unlock(&c->lock);
+
     if ((err = decode_reply_header(ia))) {
         goto ERROR;
     }
@@ -344,6 +380,7 @@ int zk_set(zk_client *c, char *path, struct buffer *data) {
     return rc < 0 ? ZK_ERROR : ZK_OK;
 
 ERROR:
+    pthread_mutex_unlock(&c->lock);
     destory_archive(oa, ia);
     return err;
 }
@@ -361,11 +398,15 @@ int zk_get_children(zk_client *c, char *path, struct String_vector *children) {
     rc = add_request_header(oa, GETCHILDREN_OPCODE);
     struct GetChildrenRequest req = {path, 0};
     rc = rc < 0 ? rc : serialize_GetChildrenRequest(oa, "req", &req);
+
+    pthread_mutex_lock(&c->lock);
     rc = rc < 0 ? rc : send_request(c, oa);
     if (rc == ZK_ERROR || !(ia = recv_response(c))) {
         err = ZK_ERROR;
         goto ERROR;
     }
+    pthread_mutex_unlock(&c->lock);
+
     if ((err = decode_reply_header(ia))) {
         goto ERROR;
     }
@@ -377,6 +418,7 @@ int zk_get_children(zk_client *c, char *path, struct String_vector *children) {
     return ZK_OK;
 
 ERROR:
+    pthread_mutex_unlock(&c->lock);
     destory_archive(oa, ia);
     return err;
 }
@@ -389,11 +431,13 @@ static int do_header_request(zk_client *c, int opcode) {
     if (!c) return ZK_ERROR;
     oa = create_buffer_oarchive();
     rc = add_request_header(oa, opcode);
+
     rc = rc < 0 ? rc : send_request(c, oa);
     if (rc == ZK_ERROR || !(ia = recv_response(c))) {
         err = ZK_ERROR;
         goto ERROR;
     }
+
     if ((err = decode_reply_header(ia))) {
         goto ERROR;
     }
@@ -405,7 +449,13 @@ ERROR:
 }
 
 int zk_ping(zk_client *c) {
-    return do_header_request(c, PING_OPCODE);
+    int rc;
+
+    pthread_mutex_lock(&c->lock);
+    rc = do_header_request(c, PING_OPCODE);
+    pthread_mutex_unlock(&c->lock);
+
+    return rc;
 }
 
 int zk_close(zk_client *c) {

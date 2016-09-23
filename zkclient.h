@@ -2,6 +2,7 @@
 #define __ZKCLIENT_H_
 
 #include "zookeeper.jute.h"
+#include <pthread.h>
 
 #define ZK_OK 0
 #define ZK_ERROR -10000
@@ -58,6 +59,7 @@ struct _zk_client {
     int32_t last_err;
     struct buffer passwd;
     int last_ping;
+    pthread_mutex_t lock;
 };
 
 typedef struct _zk_client zk_client;
