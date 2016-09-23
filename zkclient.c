@@ -108,4 +108,36 @@ void destroy_client(zk_client *c) {
     if (c->sock > 0) close(c->sock);
     if (c->passwd.buff) free(c->passwd.buff);
     free(c);
+    c->state = ZK_STATE_STOP;
+}
+
+const char *zk_error(zk_client *c) {
+    switch(c->last_err) {
+        case 0: return "null";
+        case ZK_ERROR: return "Inner error";
+        case ZSYSTEMERROR: return "System error";
+        case ZRUNTIMEINCONSISTENCY: return "A runtime inconsistency was found";
+        case ZDATAINCONSISTENCY: return "A data inconsistency was found";
+        case ZCONNECTIONLOSS: return "Connection to the server has been lost";
+        case ZMARSHALLINGERROR: return "Error while marshalling or unmarshalling data";
+        case ZUNIMPLEMENTED: return "Operation is unimplemented";
+        case ZOPERATIONTIMEOUT: return "Operation timeout";
+        case ZBADARGUMENTS: return "Invalid arguments";
+        case ZINVALIDSTATE: return "Invliad client state";
+        case ZAPIERROR: return "Api error";
+        case ZNONODE: return "Node does not exist ";
+        case ZNOAUTH: return "Not authenticated";
+        case ZBADVERSION: return "Version conflict";
+        case ZNOCHILDRENFOREPHEMERALS: return "Ephemeral nodes may not have children";
+        case ZNODEEXISTS: return "The node already exists";
+        case ZNOTEMPTY: return "The node has children";
+        case ZSESSIONEXPIRED: return "The session has been expired by the server";
+        case ZINVALIDCALLBACK: return "Invalid callback specified";
+        case ZINVALIDACL: return "Invalid ACL specified";
+        case ZAUTHFAILED: return "Client authentication failed";
+        case ZCLOSING: return "ZooKeeper is closing";
+        case ZNOTHING: return "(not error) no server responses to process";
+        case ZSESSIONMOVED: return "Session moved to another server, so operation is ignored";
+        default: return "unknown error";
+    }
 }

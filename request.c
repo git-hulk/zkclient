@@ -197,6 +197,7 @@ int zk_create(zk_client *c, char *path, char *data, int size, int flags) {
     struct CreateResponse resp;
 
     if (!c || !path) return ZK_ERROR;
+    c->last_err = 0;
     oa = create_buffer_oarchive();
     rc = add_request_header(oa, CREATE_OPCODE);
     value.len = 0;
@@ -236,6 +237,7 @@ int zk_exists(zk_client *c, char *path, struct Stat *stat) {
     struct ExistsResponse resp;
 
     if (!c || !path) return ZK_ERROR;
+    c->last_err = 0;
     // send exist request
     oa = create_buffer_oarchive();
     struct ExistsRequest req = {path, 0};
@@ -268,6 +270,7 @@ int zk_exists(zk_client *c, char *path, struct Stat *stat) {
 ERROR:
     pthread_mutex_unlock(&c->lock);
     destory_archive(oa, ia);
+    c->last_err = err;
     return err;
 }
 
@@ -288,6 +291,7 @@ int zk_get(zk_client *c, char *path,  struct buffer *data) {
     if (!c || !path || !data) {
         return ZK_ERROR;
     }
+    c->last_err = 0;
     oa = create_buffer_oarchive();
     struct GetDataRequest req = {path, 0};
     rc = add_request_header(oa, GETDATA_OPCODE);
@@ -313,6 +317,7 @@ int zk_get(zk_client *c, char *path,  struct buffer *data) {
 ERROR:
     pthread_mutex_unlock(&c->lock);
     destory_archive(oa, ia);
+    c->last_err = err;
     return err;
 }
 
@@ -324,6 +329,7 @@ int zk_del(zk_client *c, char *path) {
     if (!c || !path) {
         return ZK_ERROR;
     }
+    c->last_err = 0;
     oa = create_buffer_oarchive();
     rc = add_request_header(oa, DELETE_OPCODE);
     struct DeleteRequest req = {path, -1};
@@ -346,6 +352,7 @@ int zk_del(zk_client *c, char *path) {
 ERROR:
     pthread_mutex_unlock(&c->lock);
     destory_archive(oa, ia);
+    c->last_err = err;
     return err;
 }
 
@@ -359,6 +366,7 @@ int zk_set(zk_client *c, char *path, struct buffer *data) {
     if (!c || !path) {
         return ZK_ERROR;
     }
+    c->last_err = 0;
     oa = create_buffer_oarchive();
     rc = add_request_header(oa, SETDATA_OPCODE);
     struct SetDataRequest req = {path, *data, -1};
@@ -383,6 +391,7 @@ int zk_set(zk_client *c, char *path, struct buffer *data) {
 ERROR:
     pthread_mutex_unlock(&c->lock);
     destory_archive(oa, ia);
+    c->last_err = err;
     return err;
 }
 
@@ -395,6 +404,7 @@ int zk_get_children(zk_client *c, char *path, struct String_vector *children) {
     if (!c || !path) {
         return ZK_ERROR;
     }
+    c->last_err = 0;
     oa = create_buffer_oarchive();
     rc = add_request_header(oa, GETCHILDREN_OPCODE);
     struct GetChildrenRequest req = {path, 0};
@@ -421,6 +431,7 @@ int zk_get_children(zk_client *c, char *path, struct String_vector *children) {
 ERROR:
     pthread_mutex_unlock(&c->lock);
     destory_archive(oa, ia);
+    c->last_err = err;
     return err;
 }
 
@@ -430,6 +441,7 @@ static int do_header_request(zk_client *c, int opcode) {
     struct iarchive *ia = NULL;
 
     if (!c) return ZK_ERROR;
+    c->last_err = 0;
     oa = create_buffer_oarchive();
     rc = add_request_header(oa, opcode);
 
@@ -446,6 +458,7 @@ static int do_header_request(zk_client *c, int opcode) {
 
 ERROR:
     destory_archive(oa, ia);
+    c->last_err = err;
     return err;
 }
 

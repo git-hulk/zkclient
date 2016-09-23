@@ -13,11 +13,12 @@
 #define CREATE_CMD "create"
 #define SET_CMD  "set"
 #define QUIT_CMD "quit"
+#define EXIT_CMD "exit"
 #define STAT_CMD "stat"
 #define DEL_CMD  "del" 
 
 #define PROMPT "zkclient> "
-#define HISTORY_FILE_PATH "/tmp/zkclient_history.txt"
+#define HISTORY_FILE_PATH "/tmp/.zkclient_history.txt"
 #define STRING_EQUAL(a, b)  \
 ((strlen(a) == strlen(b)) && (!strncmp(a, b, strlen(a))))
 
@@ -144,14 +145,14 @@ static void getCommand(zk_client *c, char *path) {
     return;
 
 ERR:
-    printf("%s\n", msg);
+    printf("get %s failed, %s.\n", path, zk_error(c));
 }
 
 static void createCommand(zk_client *c, char *path, char *buf, int len) {
     if(zk_create(c, path, buf, len, 0) == ZK_OK) {
-        printf("success.\n");
+        printf("create %s success.\n", path);
     } else {
-        printf("failed.\n");
+        printf("create %s failed, %s.\n", path, zk_error(c));
     }
 }
 
@@ -160,6 +161,7 @@ static void lsCommand(zk_client *c, char *path) {
     struct String_vector childs;
     
     if ((status = zk_get_children(c, path, &childs)) != ZK_OK) {
+        printf("ls %s failed, %s.\n", path, zk_error(c));
         return;
     }
 
@@ -188,7 +190,9 @@ static void statCommand(zk_client *c, char *path) {
     char *jsonStr;
     cJSON  *cjson;
 
-    if(zk_exists(c, path, &stat) != 1) return;
+    if(zk_exists(c, path, &stat) != 1) {
+        return;
+    }
     cjson = cJSON_CreateObject();
     cJSON_AddNumberToObject(cjson, "version", stat.version);
     cJSON_AddNumberToObject(cjson, "cversion", stat.cversion);
@@ -217,9 +221,9 @@ static void setCommand(zk_client *c, char *path,
     data.buff = buf;
     data.len = len;
     if((status = zk_set(c, path, &data)) != ZK_OK) {
-        printf("set %s failed.\n", path);
+        printf("set %s failed, %s.\n", path, zk_error(c));
     } else {
-        printf("success.\n");
+        printf("set %s success.\n", path);
     }
 }
 
@@ -227,7 +231,7 @@ static void delCommand(zk_client *c, char *path, int version) {
     int status;
 
     if((status = zk_del(c, path)) != ZK_OK) {
-        printf("del %s failed\n", path);
+        printf("del %s failed, %s.\n", path, zk_error(c));
     } else {
         printf("success.\n");
     }
@@ -270,15 +274,15 @@ static void processCommand(zk_client *c, char **args, int narg) {
         if (narg < 2) goto ARGN_ERR;
         if (narg >= 3) version = atoi(args[2]);
         delCommand(c, path, version);
-    } else if (STRING_EQUAL(cmd, QUIT_CMD)) {
+    } else if (STRING_EQUAL(cmd, QUIT_CMD) || STRING_EQUAL(cmd, EXIT_CMD)) {
         quitCommand();
     } else {
-        printf("%s\n", "UNKONWN COMMAND.");
+        printf("%s\n", "Unkonwn command.");
     }
     return;
 
 ARGN_ERR:
-    printf("ERROR NUM OF ARGUMENTS.\n");
+    printf("Error num of arguments.\n");
 }
 
 void usage(const char *prog) {
