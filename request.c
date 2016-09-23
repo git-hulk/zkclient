@@ -125,13 +125,14 @@ struct iarchive *recv_response(zk_client *c) {
     int rc, len;
     char buf[4], *recv_buf;
     
-    rc = read_socket(c->sock, buf, 4); 
-    if (rc == ZK_ERROR) return NULL;
     rc = wait_socket(c->sock, c->read_timeout, CR_READ);
     if(rc != ZK_OK) {
         fprintf(stderr, "Connection Timeout, as %s.", strerror(errno));
         return NULL;
     }
+
+    rc = read_socket(c->sock, buf, 4); 
+    if (rc == ZK_ERROR) return NULL;
 
     len = decode_int32(buf, 0);
     recv_buf = malloc(len);

@@ -11,20 +11,18 @@
 #include "zkclient.h"
 
 static void* do_ping_loop(void *v) {
-    return NULL;
     int now;
     zk_client *c = v;
 
     while(c->state != ZK_STATE_STOP) {
         now = time(NULL);
-        // session timeout is ms, so we need to div 3 *1000
-        if(now - c->last_ping >= c->session_timeout/1000/3) {
+        // session timeout is ms, so we need to div 6 *1000
+        if(now - c->last_ping >= c->session_timeout/1000/6) {
             // send ping
             zk_ping(c);
-            printf("=====ping\n");
             c->last_ping = now;
         }
-        usleep(500000);
+        usleep(200000);
     }
     return NULL;
 }
@@ -48,11 +46,26 @@ int do_connect(zk_client *c) {
     c->sock = sock;
     c->state = ZK_STATE_CONNECTED;
     if (authenticate(c) == ZK_OK) {
-        //start_ping_thread(c);
+        start_ping_thread(c);
         c->state = ZK_STATE_AUTHED;
         return ZK_OK;
     }
     return ZK_ERROR;
+}
+
+void set_connect_timeout(zk_client *c, int timeout) {
+    if (!c || timeout < 0) {
+        return;
+    }
+    c->connect_timeout = timeout;
+}
+
+void set_socket_timeout(zk_client *c, int timeout) {
+    if (!c || timeout < 0) {
+        return;
+    }
+    c->read_timeout = timeout;
+    c->write_timeout = timeout;
 }
 
 zk_client *new_client(const char *host, int port, int session_timeout) {
@@ -102,10 +115,14 @@ int main(int argc, char **argv) {
      struct Stat stat;
     struct String_vector children;
     zk_client *c = new_client("127.0.0.1", 2181, 60);
+    set_connect_timeout(c, 2000);
+    set_socket_timeout(c, 2000);
+
     int status = zk_exists(c, "/", &stat);
     //int status = zk_create(c, "/abc/test", "abc", 3, 0);
     //int status = zk_del(c, "/abc/test");
     printf("%d\n", status);
+    sleep(100);
     destroy_client(c);
     return 0;
 }
