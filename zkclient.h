@@ -63,4 +63,8 @@ struct _zk_client {
 };
 
 typedef struct _zk_client zk_client;
+zk_client *new_client(const char *host, int port, int session_timeout); 
+void set_connect_timeout(zk_client *c, int timeout); 
+void set_socket_timeout(zk_client *c, int timeout); 
+void destroy_client(zk_client *c); 
 #endif

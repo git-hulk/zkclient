@@ -109,20 +109,3 @@ void destroy_client(zk_client *c) {
     if (c->passwd.buff) free(c->passwd.buff);
     free(c);
 }
-
-
-int main(int argc, char **argv) {
-     struct Stat stat;
-    struct String_vector children;
-    zk_client *c = new_client("127.0.0.1", 2181, 60);
-    set_connect_timeout(c, 2000);
-    set_socket_timeout(c, 2000);
-
-    int status = zk_exists(c, "/", &stat);
-    //int status = zk_create(c, "/abc/test", "abc", 3, 0);
-    //int status = zk_del(c, "/abc/test");
-    printf("%d\n", status);
-    sleep(100);
-    destroy_client(c);
-    return 0;
-}
