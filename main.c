@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include <assert.h>
 #include "util.h"
 #include "request.h"
@@ -34,6 +35,20 @@ const char * commands[] = {
     QUIT_CMD
 };
 
+static int check_reconnect(zk_client *c) {
+    switch (c->last_err) {
+        case ZSYSTEMERROR:
+        case ZOPERATIONTIMEOUT:
+        case ZINVALIDSTATE:
+        case ZSESSIONEXPIRED:
+        case ZINVALIDACL:
+        case ZCLOSING:
+        case ZAUTHFAILED:
+        case ZSESSIONMOVED:
+            return 1;
+    }
+    return 0;
+}
 
 //------------------------------ Completion -------------------------------------//
 static void command_completion(const char *buf, int len, linenoiseCompletions *lc) {
@@ -51,7 +66,7 @@ static void path_completion(zk_client *c, const char *buf, int len, linenoiseCom
     int i, j, lastSpacePos, lastSlashPos, status, pathLen, dataLen;
     char *path = NULL;
     char *completion_buf;
-    struct String_vector childrens;
+    struct String_vector childrens= {0, NULL};
     
     i = j = len - 1;
     // index of ' ' or '\t' from the end
@@ -66,7 +81,7 @@ static void path_completion(zk_client *c, const char *buf, int len, linenoiseCom
     pathLen = lastSlashPos - lastSpacePos;
     path = malloc(pathLen + 1);
     if (!path) {
-        fprintf(stderr, "Malloc memory failed.\n");
+        logger(ERROR, "Malloc memory failed.");
         exit(1);
     }
     memcpy(path, buf + lastSpacePos + 1, pathLen);
@@ -113,7 +128,7 @@ void completion(const char *buf, linenoiseCompletions *lc) {
     }
 }
 
-static void getCommand(zk_client *c, char *path) {
+static int getCommand(zk_client *c, char *path) {
     struct Stat stat;
     int status;
     char *jsonStr;
@@ -142,27 +157,30 @@ static void getCommand(zk_client *c, char *path) {
     }
     deallocate_Buffer(&data);
     cJSON_Delete(cjson);
-    return;
+    return ZK_OK;
 
 ERR:
     printf("get %s failed, %s.\n", path, zk_error(c));
+    return c->last_err;
 }
 
-static void createCommand(zk_client *c, char *path, char *buf, int len) {
+static int createCommand(zk_client *c, char *path, char *buf, int len) {
     if(zk_create(c, path, buf, len, 0) == ZK_OK) {
         printf("create %s success.\n", path);
+        return ZK_OK;
     } else {
         printf("create %s failed, %s.\n", path, zk_error(c));
+        return c->last_err;
     }
 }
 
-static void lsCommand(zk_client *c, char *path) {
+static int lsCommand(zk_client *c, char *path) {
     int i, status;
     struct String_vector childs;
     
     if ((status = zk_get_children(c, path, &childs)) != ZK_OK) {
         printf("ls %s failed, %s.\n", path, zk_error(c));
-        return;
+        return c->last_err;
     }
 
     for (i = 0; i < childs.count; i++) {
@@ -170,6 +188,7 @@ static void lsCommand(zk_client *c, char *path) {
     }
     if(childs.count > 0) printf("\n");
     deallocate_String_vector(&childs);
+    return ZK_OK;
 }
 
 static inline void cJSON_AddLonglongToObject(cJSON *cjson, const char *name, long long v) {
@@ -185,13 +204,13 @@ static inline void cJSON_AddLonglongToObject(cJSON *cjson, const char *name, lon
     }
 }
 
-static void statCommand(zk_client *c, char *path) {
+static int statCommand(zk_client *c, char *path) {
     struct Stat stat;
     char *jsonStr;
     cJSON  *cjson;
 
     if(zk_exists(c, path, &stat) != 1) {
-        return;
+        return c->last_err;
     }
     cjson = cJSON_CreateObject();
     cJSON_AddNumberToObject(cjson, "version", stat.version);
@@ -211,9 +230,10 @@ static void statCommand(zk_client *c, char *path) {
 
     cJSON_Delete(cjson);
     free(jsonStr);
+    return ZK_OK;
 }
 
-static void setCommand(zk_client *c, char *path,
+static int setCommand(zk_client *c, char *path,
         char *buf, int len, int version) {
     int status;
     struct buffer data;
@@ -222,18 +242,22 @@ static void setCommand(zk_client *c, char *path,
     data.len = len;
     if((status = zk_set(c, path, &data)) != ZK_OK) {
         printf("set %s failed, %s.\n", path, zk_error(c));
+        return c->last_err;
     } else {
         printf("set %s success.\n", path);
+        return ZK_OK;
     }
 }
 
-static void delCommand(zk_client *c, char *path, int version) {
+static int delCommand(zk_client *c, char *path, int version) {
     int status;
 
     if((status = zk_del(c, path)) != ZK_OK) {
         printf("del %s failed, %s.\n", path, zk_error(c));
+        return c->last_err;
     } else {
-        printf("success.\n");
+        printf("del %s success.\n", path);
+        return ZK_OK;
     }
 }
 
@@ -242,14 +266,16 @@ static void quitCommand() {
 }
 
 static void processCommand(zk_client *c, char **args, int narg) {
-    int version = -1;
+    int status = ZK_OK, version = -1;
     char *cmd, *path;
 
     cmd = args[0];
     if (narg >= 2) path = args[1];
+    TIME_START();
+    logger(DEBUG, "Begin to process %s command.", cmd);
     if (STRING_EQUAL(cmd, GET_CMD)) {
         if (narg < 2) goto ARGN_ERR;
-        getCommand(c, path);
+        status = getCommand(c, path);
     } else if (STRING_EQUAL(cmd, CREATE_CMD)) {
         int len = 0;
         char *buf = NULL;
@@ -258,48 +284,74 @@ static void processCommand(zk_client *c, char **args, int narg) {
             buf = args[2];
             len = strlen(buf);
         }
-        createCommand(c, path, buf, len);
+        status = createCommand(c, path, buf, len);
     } else if (STRING_EQUAL(cmd, LS_CMD)) {
         if (narg < 2) goto ARGN_ERR;
-        lsCommand(c, path);
+        status = lsCommand(c, path);
     } else if (STRING_EQUAL(cmd, STAT_CMD)) {
         if (narg < 2) goto ARGN_ERR;
-        statCommand(c, path);
+        status = statCommand(c, path);
     } else if (STRING_EQUAL(cmd, SET_CMD)) {
         // don't support empty node value.
         if (narg < 3) goto ARGN_ERR;
         if (narg >= 4) version = atoi(args[3]);
-        setCommand(c, path, args[2], strlen(args[2]), version);
+        status = setCommand(c, path, args[2], strlen(args[2]), version);
     } else if (STRING_EQUAL(cmd, DEL_CMD)) {
         if (narg < 2) goto ARGN_ERR;
         if (narg >= 3) version = atoi(args[2]);
-        delCommand(c, path, version);
+        status = delCommand(c, path, version);
     } else if (STRING_EQUAL(cmd, QUIT_CMD) || STRING_EQUAL(cmd, EXIT_CMD)) {
         quitCommand();
     } else {
         printf("%s\n", "Unkonwn command.");
     }
+    // reconnect
+    if (status == ZK_SOCKET_ERR || check_reconnect(c)) {
+        reset_zkclient(c);
+        if (do_connect(c) != ZK_OK) {
+            logger(ERROR, "Reconnect to zookeeper error, exited...");
+            exit(1);
+        } else {
+            logger(WARN, "Reconnect to zookeeper success.");
+        }
+    }
+    TIME_END();
+    logger(DEBUG, "Process %s command cost %d ms", cmd, TIME_COST());
     return;
 
 ARGN_ERR:
     printf("Error num of arguments.\n");
+    TIME_END();
+    logger(DEBUG, "Process %s command cost %d ms", cmd, TIME_COST());
 }
 
-void usage(const char *prog) {
-    printf("Usage: %s host1:port1,host2:port2...\n", prog);
+static void usage(const char *prog_name) {
+    fprintf(stderr, "Usage: %s\n", prog_name);
+    fprintf(stderr, "\t-z default 127.0.0.1:2181, delimiter is comma.\n");
+    fprintf(stderr, "\t-d debug mode.\n");
+    fprintf(stderr, "\t-h help.\n");
     exit(0);
 }
 
 int main(int argc, char **argv) {
-    char *line, **args;
-    int narg;
+    char *line, **args, *zk_list;
+    int ch, narg, show_usage = 0;
 
-    if (argc < 2) usage(argv[0]);
+    while((ch = getopt(argc, argv, "z:dh")) != -1) {
+        switch(ch) {
+            case 'z': zk_list = optarg; break;
+            case 'd': set_log_level(DEBUG); break;
+            case 'h': show_usage = 1; break;
+        }
+    }
+    if (show_usage) usage(argv[0]);
+    if (!zk_list) {
+        zk_list = "127.0.0.1:2181";
+    }
 
     quit = 0;
-    client= new_client("127.0.0.1", 2181, 60);
-    set_connect_timeout(client, 2000);
-    set_socket_timeout(client, 2000);
+    srand(time(0));
+    client = new_client(zk_list, 6, 2);
 
     linenoiseHistoryLoad(HISTORY_FILE_PATH);
     linenoiseSetCompletionCallback(completion);

@@ -6,6 +6,8 @@
 
 #define ZK_OK 0
 #define ZK_ERROR -10000
+#define ZK_TIMEOUT -10001
+#define ZK_SOCKET_ERR -10002
 
 #define ZK_STATE_INIT 0
 #define ZK_STATE_CONNECTED 1
@@ -47,8 +49,8 @@ enum ZK_ERRORS {
 
 struct _zk_client {
     int sock;
-    char *host;
-    int port;
+    int nservers;
+    char **servers;
     int last_zxid;
     int session_id;
     int session_timeout;
@@ -59,13 +61,16 @@ struct _zk_client {
     int32_t last_err;
     struct buffer passwd;
     int last_ping;
+    pthread_t ping_tid;
     pthread_mutex_t lock;
 };
 
 typedef struct _zk_client zk_client;
-zk_client *new_client(const char *host, int port, int session_timeout); 
+zk_client *new_client(const char *zk_list, int session_timeout, int timeout); 
+int do_connect(zk_client *c); 
 void set_connect_timeout(zk_client *c, int timeout); 
 void set_socket_timeout(zk_client *c, int timeout); 
 void destroy_client(zk_client *c); 
-const char *zk_error(zk_client *c); 
+void reset_zkclient(zk_client *c); 
+const char *zk_error(zk_client *c);
 #endif

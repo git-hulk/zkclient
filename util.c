@@ -3,6 +3,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdarg.h>
+
+static char *log_file = NULL;
+static enum LEVEL log_level = INFO;
 
 int32_t atomic_inc(volatile int32_t* operand, int incr) {
     int32_t result;
@@ -112,4 +116,65 @@ void sdsfreesplitres(char **tokens, int count) {
     while(count--)
         free(tokens[count]);
     free(tokens);
+}
+
+void set_loglevel_by_string(const char *level) {
+    int len;
+    
+    len = strlen(level);
+    if (strlen("debug") == len && !memcmp("debug", level, len)) {
+        log_level = DEBUG;
+    } else if (strlen("info") == len && !memcmp("info", level, len)) {
+        log_level = INFO;
+    } else if (strlen("warn") == len && !memcmp("warn", level, len)) {
+        log_level = WARN;
+    } else if (strlen("error") == len && !memcmp("error", level, len)) {
+        log_level = ERROR;
+    }
+}
+
+void set_log_level(enum LEVEL level) {
+    log_level  = level;
+} 
+
+void set_log_file(char *filename) {
+    log_file = filename;
+}
+
+void logger(enum LEVEL loglevel,char *fmt, ...) {
+    FILE *fp;
+    va_list ap;
+    time_t now;
+    char buf[4096];
+    char t_buf[64];
+    char *msg = NULL;
+    const char *color = "";
+
+    if(loglevel < log_level) {
+        return;
+    }
+
+    va_start(ap, fmt);
+    vsnprintf(buf, sizeof(buf), fmt, ap);
+    va_end(ap);
+    switch(loglevel) {
+        case DEBUG: msg = "DEBUG"; color = C_YELLOW; break;
+        case INFO:  msg = "INFO";  color = C_GREEN; break;
+        case WARN:  msg = "WARN";  color = C_PURPLE; break;
+        case ERROR: msg = "ERROR"; color = C_RED; break;
+    }
+
+    now = time(NULL);
+    strftime(t_buf,64,"%Y-%m-%d %H:%M:%S",localtime(&now));
+    fp = (log_file == NULL) ? stdout : fopen(log_file,"a");
+    if(log_file) {
+        fprintf(fp, "[%s] [%s] %s\n", t_buf, msg, buf);
+        fclose(fp);
+    } else {
+        fprintf(fp, "%s[%s] [%s] %s"C_NONE"\n", color, t_buf, msg, buf);
+    }
+
+    if(loglevel >= ERROR) {
+        exit(1);
+    }
 }

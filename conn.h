@@ -9,4 +9,5 @@ typedef enum {
 
 int wait_socket(int fd, int timeout, RW_MODE rw); 
 int connect_server(const char *host, int port, int timeout);
+int do_poll(int fd, int timeout, int events);
 #endif

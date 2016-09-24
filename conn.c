@@ -62,22 +62,32 @@ cleanup:
     return ZK_ERROR;
 }
 
-int wait_socket(int fd, int timeout, RW_MODE rw) { 
+int do_poll(int fd, int timeout, int events) {
     int n;
     struct pollfd p;
 
     p.fd  = fd;
-    p.events = 0;
-    if (rw & CR_READ) p.events |= POLLIN; 
-    if (rw & CR_WRITE) p.events |= POLLOUT; 
+    p.events = events;
     p.revents = 0; // recevie event
     n = poll(&p, 1, timeout); 
-    if (n <= 0) return ZK_ERROR;
-    if ((rw & CR_READ) && (p.revents & POLLIN)) {
+    if (n > 0) {
+        return p.revents;
+    }
+    return n;
+}
+
+int wait_socket(int fd, int timeout, RW_MODE rw) { 
+    int rc, events = 0;
+
+    if (rw & CR_READ) events |= POLLIN; 
+    if (rw & CR_WRITE) events |= POLLOUT; 
+    rc = do_poll(fd, timeout, events); 
+    if (rc <= 0) return ZK_SOCKET_ERR;
+    if ((rw & CR_READ) && (rc & POLLIN)) {
         return ZK_OK; 
     }
-    if ((rw & CR_WRITE) && (p.revents & POLLOUT)) {
+    if ((rw & CR_WRITE) && (rc & POLLOUT)) {
         return ZK_OK; 
     }
-    return ZK_ERROR;
+    return ZK_SOCKET_ERR;
 }
