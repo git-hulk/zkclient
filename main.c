@@ -351,9 +351,17 @@ ARGN_ERR:
 
 static void usage(const char *prog_name) {
     fprintf(stderr, "Usage: %s -z zookeeper\n", prog_name);
-    fprintf(stderr, "\t-z default 127.0.0.1:2181, delimiter is comma.\n");
+    fprintf(stderr, "\t-z default 127.0.0.1:2181, delimiter is comma\n");
     fprintf(stderr, "\t-d debug mode.\n");
-    fprintf(stderr, "\t-h help.\n");
+    fprintf(stderr, "\t-h help\n");
+    fprintf(stderr, "\n\tsupport commands:\n");
+    fprintf(stderr, "\t\tget path\n");
+    fprintf(stderr, "\t\tls path\n");
+    fprintf(stderr, "\t\tcreate path [data]\n");
+    fprintf(stderr, "\t\tmkdir path\n");
+    fprintf(stderr, "\t\tset path data\n");
+    fprintf(stderr, "\t\tdel path\n");
+    fprintf(stderr, "\t\tstat path\n");
     exit(0);
 }
 
