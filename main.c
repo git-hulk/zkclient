@@ -266,11 +266,19 @@ static void quitCommand() {
 }
 
 static void processCommand(zk_client *c, char **args, int narg) {
-    int status = ZK_OK, version = -1;
+    int status = ZK_OK, version = -1, path_len;
     char *cmd, *path;
 
     cmd = args[0];
     if (narg >= 2) path = args[1];
+    // strip '/'
+    path_len = strlen(path);
+    path_len = strlen(path);
+    while(path_len > 1 && path[path_len - 1] == '/') {
+        path[path_len-1] = '\0';
+        --path_len;
+    }
+
     TIME_START();
     logger(DEBUG, "Begin to process %s command.", cmd);
     if (STRING_EQUAL(cmd, GET_CMD)) {

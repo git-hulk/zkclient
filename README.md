@@ -22,6 +22,7 @@ Usage: ./zkclient -z zookeeper
 #### support commands 
 
 ```
+get path
 ls path
 create path [data]
 set path data
@@ -32,5 +33,3 @@ stat path
 ## 3) TODO
 
 1. create path recursive 
-2. create ephemeral node
-3. delete recursive 
