@@ -150,13 +150,13 @@ zk_client *new_client(const char *zk_list, int session_timeout, int timeout) {
 }
 
 void destroy_client(zk_client *c) {
-    pthread_cancel(c->ping_tid);
+    c->state = ZK_STATE_STOP;
+    pthread_join(c->ping_tid, NULL);
     zk_close(c);
     sdsfreesplitres(c->servers, c->nservers);
     if (c->sock > 0) close(c->sock);
     if (c->passwd.buff) free(c->passwd.buff);
     free(c);
-    c->state = ZK_STATE_STOP;
 }
 
 const char *zk_error(zk_client *c) {

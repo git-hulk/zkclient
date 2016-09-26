@@ -135,7 +135,7 @@ static int getCommand(zk_client *c, char *path) {
     int status;
     char *jsonStr;
     cJSON *cjson;
-    struct buffer data;
+    struct buffer data = {0, NULL};
 
     if((status = zk_exists(c, path, &stat)) != 1) {
         goto ERR;
@@ -153,6 +153,7 @@ static int getCommand(zk_client *c, char *path) {
         printf("%s\n", jsonStr);
         free(jsonStr);
     } else {
+        data.buff[data.len - 1] = '\0';
         printf("%s\n", data.buff);
     }
     deallocate_Buffer(&data);
@@ -161,6 +162,7 @@ static int getCommand(zk_client *c, char *path) {
 
 ERR:
     printf("get %s failed, %s.\n", path, zk_error(c));
+    deallocate_Buffer(&data);
     return c->last_err;
 }
 
@@ -278,16 +280,17 @@ static void quitCommand() {
 
 static void processCommand(zk_client *c, char **args, int narg) {
     int status = ZK_OK, version = -1, path_len;
-    char *cmd, *path;
+    char *cmd, *path = NULL;
 
     cmd = args[0];
     if (narg >= 2) path = args[1];
-    // strip '/'
-    path_len = strlen(path);
-    path_len = strlen(path);
-    while(path_len > 1 && path[path_len - 1] == '/') {
-        path[path_len-1] = '\0';
-        --path_len;
+    if (path) {
+        // strip '/'
+        path_len = strlen(path);
+        while(path_len > 1 && path[path_len - 1] == '/') {
+            path[path_len-1] = '\0';
+            --path_len;
+        }
     }
 
     TIME_START();
@@ -364,7 +367,7 @@ static void usage(const char *prog_name) {
 }
 
 int main(int argc, char **argv) {
-    char *line, **args, *zk_list;
+    char *line, **args, *zk_list = NULL;
     int ch, narg, show_usage = 0;
 
     while((ch = getopt(argc, argv, "z:dh")) != -1) {

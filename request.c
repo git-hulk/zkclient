@@ -487,6 +487,7 @@ static int do_header_request(zk_client *c, int opcode) {
     if ((err = decode_reply_header(c, ia))) {
         goto ERROR;
     }
+    destory_archive(oa, ia);
     return ZK_OK;
 
 ERROR:
