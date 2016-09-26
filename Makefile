@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -g -Wall
-CLIBS= -lpthread
+CLIBS= -lpthread -lm
 PROG = zkclient 
 
 ifeq ($(UNAME), Darwin)

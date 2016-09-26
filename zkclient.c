@@ -12,7 +12,7 @@
 #include "zkclient.h"
 
 static void* do_ping_loop(void *v) {
-    int rc, now;
+    int now;
     zk_client *c = v;
 
     while(c->state != ZK_STATE_STOP) {
@@ -20,7 +20,7 @@ static void* do_ping_loop(void *v) {
         // session timeout is ms, so we need to div 6 *1000
         if(now - c->last_ping >= c->session_timeout/1000/6) {
             // send ping
-            rc = zk_ping(c);
+            zk_ping(c);
             //logger(DEBUG, "PING %s", rc == ZK_OK ? "success":"failed");
             c->last_ping = now;
         }

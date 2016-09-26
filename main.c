@@ -134,7 +134,6 @@ static int getCommand(zk_client *c, char *path) {
     struct Stat stat;
     int status;
     char *jsonStr;
-    const char *msg;
     cJSON *cjson;
     struct buffer data;
 
@@ -142,7 +141,6 @@ static int getCommand(zk_client *c, char *path) {
         goto ERR;
     }
     if(!stat.dataLength) {
-        msg = "{}";
         goto ERR;
     }
     
