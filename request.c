@@ -255,6 +255,25 @@ ERROR:
     return err; 
 }
 
+int zk_mkdir(zk_client *c, char *path) {
+    int status;
+    char *pos, *parent;
+
+    status = zk_create(c, path, NULL, 0, 0);
+    if (status == ZNONODE) {
+        pos = strrchr(path, '/');
+        parent = malloc(pos - path + 1); 
+        memcpy(parent, path, pos-path);
+        parent[pos-path] = '\0';
+        status = zk_mkdir(c, parent); 
+        free(parent);
+        if (status == ZK_OK) {
+            status = zk_create(c, path, NULL, 0, 0);
+        }
+    }
+    return status;
+}
+
 int zk_exists(zk_client *c, char *path, struct Stat *stat) {
     int rc, err, result;
     struct oarchive *oa = NULL;

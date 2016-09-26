@@ -25,6 +25,7 @@ Usage: ./zkclient -z zookeeper
 get path
 ls path
 create path [data]
+mkdir path
 set path data
 del path
 stat path
@@ -32,4 +33,4 @@ stat path
 
 ## 3) TODO
 
-1. create path recursive 
+* watch

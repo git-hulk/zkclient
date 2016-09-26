@@ -17,6 +17,7 @@
 #define EXIT_CMD "exit"
 #define STAT_CMD "stat"
 #define DEL_CMD  "del" 
+#define MKDIR_CMD  "mkdir" 
 
 #define PROMPT "zkclient> "
 #define HISTORY_FILE_PATH "/tmp/.zkclient_history.txt"
@@ -32,6 +33,7 @@ const char * commands[] = {
     SET_CMD,
     DEL_CMD,
     STAT_CMD,
+    MKDIR_CMD,
     QUIT_CMD
 };
 
@@ -174,6 +176,17 @@ static int createCommand(zk_client *c, char *path, char *buf, int len) {
     }
 }
 
+
+static int mkdirCommand(zk_client *c, char *path) {
+    if (zk_mkdir(c, path) == ZK_OK) {
+        printf("mkdir %s success.\n", path);
+        return ZK_OK;
+    } else {
+        printf("mkdir %s failed, %s.\n", path, zk_error(c));
+        return c->last_err;
+    }
+}
+
 static int lsCommand(zk_client *c, char *path) {
     int i, status;
     struct String_vector childs;
@@ -293,6 +306,9 @@ static void processCommand(zk_client *c, char **args, int narg) {
             len = strlen(buf);
         }
         status = createCommand(c, path, buf, len);
+    } else if (STRING_EQUAL(cmd, MKDIR_CMD)) {
+        if (narg < 2) goto ARGN_ERR;
+        status = mkdirCommand(c, path);
     } else if (STRING_EQUAL(cmd, LS_CMD)) {
         if (narg < 2) goto ARGN_ERR;
         status = lsCommand(c, path);
