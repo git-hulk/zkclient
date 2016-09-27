@@ -8,6 +8,7 @@ A simple client for zookeeper with auto-complete
 $ git clone https://github.com/git-hulk/zkclient.git 
 $ cd zkclient
 $ make
+$ sudo make install
 ```
 
 ## 2) how to use
