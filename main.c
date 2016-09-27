@@ -141,7 +141,8 @@ static int getCommand(zk_client *c, char *path) {
         goto ERR;
     }
     if(!stat.dataLength) {
-        goto ERR;
+        printf("{}\n");
+        return ZK_OK;
     }
     
     if ((status = zk_get(c, path, &data)) != ZOK) {
