@@ -133,8 +133,6 @@ void completion(const char *buf, linenoiseCompletions *lc) {
 static int getCommand(zk_client *c, char *path) {
     struct Stat stat;
     int status;
-    char *jsonStr;
-    cJSON *cjson;
     struct buffer data = {0, NULL};
 
     if((status = zk_exists(c, path, &stat)) != 1) {
@@ -148,17 +146,8 @@ static int getCommand(zk_client *c, char *path) {
     if ((status = zk_get(c, path, &data)) != ZOK) {
         goto ERR;
     }
-    cjson = cJSON_Parse(data.buff);
-    jsonStr = cJSON_Print(cjson);
-    if (jsonStr) {
-        printf("%s\n", jsonStr);
-        free(jsonStr);
-    } else {
-        data.buff[data.len - 1] = '\0';
-        printf("%s\n", data.buff);
-    }
+    printf("%s\n", data.buff);
     deallocate_Buffer(&data);
-    cJSON_Delete(cjson);
     return ZK_OK;
 
 ERR:
