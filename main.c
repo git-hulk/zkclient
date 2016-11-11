@@ -146,6 +146,7 @@ static int getCommand(zk_client *c, char *path) {
     if ((status = zk_get(c, path, &data)) != ZOK) {
         goto ERR;
     }
+    data.buff[data.len - 1] = '\0';
     printf("%s\n", data.buff);
     deallocate_Buffer(&data);
     return ZK_OK;
