@@ -65,7 +65,6 @@ static int read_socket(int fd, char *buf, int len) {
             return ZK_SOCKET_ERR;
         }
     }
-
     return ZK_OK;
 }
 
@@ -75,24 +74,19 @@ static int send_request(zk_client *c, struct oarchive *oa) {
     
     len = get_buffer_len(oa);
     buf = malloc(len + 4);
-    if (!buf) {
-        // out of memory
+    if (!buf) { // out of memory
         c->last_err = ZK_ERROR;
         return ZK_ERROR;
     }
 
+    TIME_START();
     buf[0] = len >> 24;
     buf[1] = len >> 16;
     buf[2] = len >> 8;
     buf[3] = len & 0xff;
     memcpy(buf + 4, get_buffer(oa), len);
-    
-    TIME_START();
     rc = wait_socket(c->sock, c->write_timeout, CR_WRITE);
-    if (rc != ZK_OK) {
-        c->last_err = ZK_SOCKET_ERR;
-        return ZK_SOCKET_ERR;
-    }
+    if (rc != ZK_OK) goto cleanup;
     w_bytes = 0;
     while(w_bytes < len + 4) {
         bytes = write(c->sock, buf + w_bytes, len + 4 - w_bytes);
@@ -102,16 +96,13 @@ static int send_request(zk_client *c, struct oarchive *oa) {
         w_bytes += bytes;
     }
     free(buf);
-
     TIME_END();
-    //logger(DEBUG, "Send request success, cost %d ms", TIME_COST());
     return ZK_OK;
 
 cleanup:
     free(buf);
     c->last_err = ZK_SOCKET_ERR;
     TIME_END();
-    //logger(DEBUG, "Send request failed, as %s, cost %d ms", strerror(errno), TIME_COST());
     return ZK_SOCKET_ERR;
 }
 
@@ -133,7 +124,6 @@ static int decode_reply_header(zk_client *c, struct iarchive *ia) {
         err = reply_header.err;
     }
     c->last_err = err;
-    //logger(DEBUG, "decode header error, %s", zk_error(c));
     return err;
 }
 
@@ -146,7 +136,6 @@ struct iarchive *recv_response(zk_client *c) {
     if(rc != ZK_OK) {
         c->last_err = rc;
         TIME_END();
-        //logger(DEBUG, "receive response failed as %s, cost %d ms", strerror(errno), TIME_COST());
         return NULL;
     }
 
@@ -166,7 +155,6 @@ struct iarchive *recv_response(zk_client *c) {
     }
 
     TIME_END();
-    //logger(DEBUG, "receivee response success, cost %d ms", TIME_COST());
     return create_buffer_iarchive(recv_buf, len);
 }
 
