@@ -375,7 +375,7 @@ int main(int argc, char **argv) {
 
     quit = 0;
     srand(time(0));
-    client = new_client(zk_list, 6, 2);
+    client = new_client(zk_list, 60, 3);
 
     linenoiseHistoryLoad(HISTORY_FILE_PATH);
     linenoiseSetCompletionCallback(completion);

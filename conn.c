@@ -1,7 +1,9 @@
 #include <fcntl.h>
+#include <stdio.h>
 #include <errno.h>
 #include <unistd.h>
 #include <string.h>
+#include <netdb.h>
 #include <arpa/inet.h>
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -30,6 +32,28 @@ static int set_socket_nodelay(int fd) {
     return rc < 0 ? ZK_ERROR : ZK_OK;
 }
 
+
+const char *host2IP(const char *host) {
+    int i, n, isIP = 1;
+    
+    n = strlen(host);
+    for (i = 0; i < n; i++) {
+        if (host[i] != '.' || host[i] < '0' || host[i] > '9') {
+            isIP = 0;
+            break;
+        }
+    }
+    if (isIP) return host;
+    struct hostent * hp = gethostbyname(host);
+    if (!hp || hp->h_length <= 0) return NULL;
+    switch(hp->h_addrtype) {
+        case AF_INET:
+        case AF_INET6:
+            return inet_ntoa(*(struct in_addr*)hp->h_addr_list[0]);
+    }
+    return NULL;
+}
+
 int connect_server(const char *host, int port, int timeout) {
     int sock, rc;
     const char *ip;
@@ -40,8 +64,10 @@ int connect_server(const char *host, int port, int timeout) {
         // make socket error
         return -1;
     }
-    // TODO: check host type, ip or domain
-    ip = host;
+    ip = host2IP(host);
+    if (ip) {
+        return -1;
+    }
     memset(&srv_addr, 0, sizeof(struct sockaddr_in));
     srv_addr.sin_family = AF_INET;
     srv_addr.sin_port = htons(port); 
