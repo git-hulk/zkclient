@@ -65,7 +65,7 @@ int connect_server(const char *host, int port, int timeout) {
         return -1;
     }
     ip = host2IP(host);
-    if (ip) {
+    if (!ip) {
         return -1;
     }
     memset(&srv_addr, 0, sizeof(struct sockaddr_in));
